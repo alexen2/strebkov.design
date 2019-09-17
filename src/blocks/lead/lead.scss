@@ -1,0 +1,14 @@
+.lead {
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+  font-weight: normal;
+  line-height: 1.6; 
+  color: $color-text_3;
+
+	@media(min-width: 992px) {
+		/* 3 Typography */
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}

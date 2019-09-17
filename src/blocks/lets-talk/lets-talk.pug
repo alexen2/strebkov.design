@@ -1,0 +1,14 @@
+div.lets-talk
+	h3.h1 Let’s talk.
+
+	p.lets-talk__desc Enter your e-mail and press the button. I&rsquo;ll be&nbsp;back with your project planner and some additional materials about the process.
+
+	form.lets-talk__form(action="mail.php", method="post")
+		include ../input/input.pug
+		+input({type: 'email', name: 'email', placeholder: 'Your email address'})(id="lets_talk_input")
+		input(type="hidden" name="in" id="lets-talk__in")
+
+		include ../btn/btn.pug
+		+btn({text: 'Get in touch', type: 'submit'})(id="lets_talk_btn")
+
+	p.lets-talk__bottom I&nbsp;do not send spam or&nbsp;pass your email address to&nbsp;a&nbsp;third party. You can request your email address be&nbsp;removed at&nbsp;any time.

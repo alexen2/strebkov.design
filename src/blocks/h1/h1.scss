@@ -1,0 +1,15 @@
+.h1 {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	margin: 0;
+	padding-bottom: 20px;
+	margin-bottom: 30px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 28px;
+	line-height: 36px;
+	font-weight: bold;
+}

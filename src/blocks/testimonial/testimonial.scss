@@ -1,0 +1,93 @@
+.testimonial {
+	/* 2 Block model */
+	padding-bottom: 37px;
+}
+.testimonial__body {
+	/* 1 Positioning */ 
+	position: relative;
+
+	/* 2 Block model */
+	padding: 20px 25px;
+
+	/* 4 Visual */ 
+	border-radius: 10px;
+  border: solid 5px $color-sun-yellow;  
+}
+.testimonial__body::before {
+	/* 1 Positioning */ 
+	position: absolute;
+	bottom: -42px;
+	right: 39px;
+
+	/* 2 Block model */ 
+	display: block;
+	z-index: 2;
+	width: 64px;
+	height: 42px;
+
+	/* 3 Typography */ 
+	
+	/* 4 Visual */ 
+	content: "";
+	overflow: hidden;
+	background-image: url(../images/testimonial.png);
+	
+	/* 5 Animation*/ 
+	
+	/* 6 Misc */	
+}
+.testimonial__text {
+	/* 2 Block model */ 
+	margin-top: 0;
+	
+	/* 3 Typography */
+	font-size: 20px;
+  font-weight: 300;
+  line-height: 1.3em;
+  font-family: $font-third;
+  color: $color-text_1;
+}
+.testimonial__bottom {
+	/* 2 Block model */ 
+	display: flex;
+	flex-direction: row;	
+	padding-top: 5px;
+
+	/* 3 Typography */
+	align-items: center;
+}
+.testimonial__bottom img {
+	/* 2 Block model */ 
+	display: block;
+	width: 43px;
+	height: 43px;
+
+	/* 4 Visual */
+	border-radius: 50%;
+}
+.testimonial__info {
+	/* 2 Block model */
+	padding-left: 12px;
+}
+.testimonial__info h3 {
+	/* 2 Block model */
+	margin-top: 0;
+	margin-bottom: 7px;
+
+	/* 3 Typography */
+	font-size: 13px;
+  font-weight: 300;
+  line-height: 0.85em;
+  font-family: $font-third;
+  color: $color-text_1;
+}
+.testimonial__info span {
+	/* 2 Block model */
+	display: block;
+
+	/* 3 Typography */
+	font-size: 13px;
+  font-weight: normal;
+  line-height: 0.85em;
+  color: $color-text_1;
+}

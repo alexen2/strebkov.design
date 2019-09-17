@@ -1,0 +1,55 @@
+div.cat
+	ul.cat__list
+		li.cat__item
+			include ../cat-item/cat-item.pug
+			+cat-item({
+				img: 'cat-item__fluentu',
+				company: 'FluentU',
+				text: 'Online language<br> immersion',
+				link: '/case-fluentu.html'
+			})
+
+		li.cat__item
+			+cat-item({
+				img: 'cat-item__proved',
+				company: 'proved.',
+				text: 'Design for automated <br>market validation tool',
+				link: '/case-proved.html'
+			})(class="cat-item--white cat-item--top")
+
+		li.cat__item
+			+cat-item({
+				img: 'cat-item__xnt',
+				company: 'Investment company',
+				text: 'Design of sophisticated web-based and mobile trading platforms',
+				link: '/case-broker.html'
+			})(class="cat-item--top")
+
+		li.cat__item
+			+cat-item({
+				img: 'cat-item__updown',
+				company: 'UpDown.Club',
+				text: 'Design for online market research self-service tool',
+				link: '/case-updown.html'
+			})(class="cat-item--top cat-item--white")
+
+		li.cat__item
+			+cat-item({
+				img: 'cat-item__hg',
+				company: 'Health Gorilla',
+				text: 'Design for a Secure <br>Clinical Network',
+			})
+
+		li.cat__item
+			+cat-item({
+				img: 'cat-item__investex',
+				company: 'Investex',
+				text: 'Design of digital products for <br>Chinese forex bank',
+			})(class="cat-item--white")
+
+		//li.cat__item
+			+cat-item({
+				img: 'cat-item__dt',
+				company: 'DATATILE',
+				text: 'Look and feel for online data<br> analytics platform',
+			})(class="cat-item--white cat-item--top")

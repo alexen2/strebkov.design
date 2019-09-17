@@ -1,0 +1,13 @@
+.h3 {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+}

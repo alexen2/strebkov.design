@@ -1,0 +1,28 @@
+mixin cat-item(data)
+	article.cat-item(class!=attributes.class)
+		a.cat-item__link(href!=data.link)
+			picture.cat-item__bg
+				source(
+					srcset="images/"+data.img+"-270.jpg, images/"+data.img+"-270@2x.jpg 2x",
+					media="(max-width: 767px)"
+				)
+
+				source(
+					srcset="images/"+data.img+"-320.jpg, images/"+data.img+"-320@2x.jpg 2x",
+					media="(max-width: 1199px)"
+				)
+
+				source(
+					srcset="images/"+data.img+"-400.jpg, images/"+data.img+"-400@2x.jpg 2x",
+					media="(min-width: 1200px)"
+				)
+
+				img(
+					src="images/"+data.img+"-400.jpg", 
+					srcset="images/"+data.img+"-400@2x.jpg 2x", 
+					alt=data.company
+				)
+
+			h3.cat-item__title(class=data.color_company)!=data.company
+
+			span.cat-item__text(class=data.color_text)!=data.text
