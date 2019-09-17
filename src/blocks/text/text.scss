@@ -1,0 +1,30 @@
+.text {
+	font-family: $font-third;
+	font-weight: 300;
+	line-height: 1.4;
+	color: $color-gray;
+	font-size: 16px;
+	letter-spacing: -0.1px;
+	margin: 0;
+}
+.text--18 {
+	font-size: 16px;
+
+	@media(min-width: 992px) {
+		font-size: 18px;
+	}
+}
+.text--20 {
+	font-size: 17px;
+
+	@media(min-width: 992px) {
+		font-size: 20px;
+	}
+}
+.text--24 {
+	font-size: 17px;
+
+	@media(min-width: 992px) {
+		font-size: 24px;
+	}
+}

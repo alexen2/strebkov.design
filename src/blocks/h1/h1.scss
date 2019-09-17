@@ -9,7 +9,12 @@
 
 	/* 3 Typography */
 	font-family: $font-main;
-	font-size: 28px;
-	line-height: 36px;
+	font-size: 30px;
+	line-height: 1.4;
 	font-weight: bold;
+	color: #000000;
+
+	@media(min-width: 768px) {
+		font-size: 80px;
+	}
 }

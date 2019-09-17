@@ -12,15 +12,123 @@ body {
   margin: 0;
 
   /* 3 Typography */
-  font-family: $font-main;
-  font-size: 20px;
-  line-height: 26px;
+  font-family: $font-third;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
 
   /* 4 Visual */ 
   overflow-x: hidden;
-  color: #000000;
+  color: $color-gray;
 
   /* 5 Animation*/ 
 
   /* 6 Misc */
+}
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 480px;
+
+  @media(min-width: 768px) {
+    max-width: none;
+    width: 700px;
+    padding: 0;
+  }
+  @media(min-width: 992px) {
+    width: 940px;
+  }
+  @media(min-width: 1200px) {
+    width: 1180px;
+  }
+}
+.container-small {
+  margin: 0 auto;
+
+  @media(min-width: 768px) {
+    width: 580px;
+  }
+  @media(min-width: 992px) {
+    width: 780px;
+  }
+  @media(min-width: 1200px) {
+    width: 980px;
+  }
+}
+.container-x-small {
+  margin: 0 auto;
+
+  @media(min-width: 768px) {
+    width: 580px;
+  }
+  @media(min-width: 992px) {
+    width: 780px;
+  }
+}
+
+.testimonial-list {
+  padding-bottom: 20px;
+
+  @media(min-width: 768px) {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media(min-width: 992px) {
+    flex-wrap: nowrap;
+    padding-bottom: 60px;
+  }
+}
+.testimonial-list__item {
+  padding: 0 0 20px 0;
+  box-sizing: border-box;
+
+  @media(min-width: 768px) {
+    width: 50%;
+    flex: 0 0 50%;
+    padding: 0 20px 20px 0;
+  }
+  @media(min-width: 992px) {
+    width: 25%;
+    flex: 0 0 25%;
+    padding: 0 20px 0 0;
+  }
+}
+.testimonial-list__item:last-child {
+  @media(min-width: 992px) {
+    padding: 0;
+  }
+}
+
+.icon-text-list {
+  display: flex;
+  flex-direction: column;
+
+  @media(min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 40px;
+  }
+  @media(min-width: 1200px) {
+    justify-content: flex-start;
+    padding-bottom: 84px;
+  }
+}
+.icon-text-list .icon-text {
+  margin-bottom: 20px;
+
+  @media(min-width: 768px) {
+    box-sizing: border-box;
+    padding-right: 20px;
+    margin-bottom: 0;
+  }
+  @media(min-width: 1200px) {
+    padding-right: 0;
+    margin-right: 120px;
+  }
+}
+.icon-text-list .icon-text:last-child {
+  margin-right: 0;
 }

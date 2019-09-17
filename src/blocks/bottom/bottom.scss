@@ -1,0 +1,61 @@
+.bottom {
+  background-color: $color-gray--xlite;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  max-width: 980px;
+  margin: 0 auto;
+
+  @media(min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media(min-width: 992px) {
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+}
+.bottom .container {
+  @media(min-width: 992px) {
+    width: 780px;
+  }
+  @media(min-width: 1200px) {
+    width: 980px;
+  }
+}
+.bottom__block {
+  margin-bottom: 52px;
+
+  @media(min-width: 768px) {
+    margin-bottom: 40px;
+    display: flex;
+  }
+  @media(min-width: 992px) {
+    margin-bottom: 62px;
+  }
+}
+.bottom__block .lets-talk {
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media(min-width: 768px) {
+    margin-left: 0;
+    margin-right: 57px;
+    margin-bottom: 0;
+    flex: 0 0 240px;    
+  }
+  @media(min-width: 992px) {
+    margin-right: 40px;
+    flex: 0 0 400px;    
+  }  
+  @media(min-width: 1200px) {
+    margin-right: 60px;
+    flex: 0 0 500px;
+  }
+}
+.bottom__block .list {
+  @media(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

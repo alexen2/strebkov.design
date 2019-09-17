@@ -1,0 +1,19 @@
+.icon-text {
+	max-width: 280px;
+}
+.icon-text__title {
+	font-family: $font-second;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 1.4;
+	color: #000000;
+	padding-bottom: 4px;
+
+	@media(min-width: 992px) {
+		font-size: 60px;
+	}
+}
+.icon-text__text {
+	font-size: 16px;
+	line-height: 1.4;
+}

@@ -1,25 +1,32 @@
 .lets-talk {
-	background-color: $color-white;
-	border-radius: 10px;
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.05), 0 1px 4px 0 rgba(0, 0, 0, 0.05);
+	background-color: #000000;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05), 0px 1px 4px rgba(0, 0, 0, 0.05);  
   padding: 20px 30px;
-  margin-bottom: 40px;  
+  margin-bottom: 40px; 
 
+  @media(min-width: 520px) {
+    border-radius: 10px;
+  }
   @media(min-width: 992px) {
     padding: 24px 30px;
   }
   @media(min-width: 1200px) {
-    padding: 30px 40px;
+    padding: 33px 40px 30px 40px;
   }
 }
-.lets-talk .h1 {
+.lets-talk__title {
   /* 1 Positioning */ 
   
   /* 2 Block model */ 
-  margin-top: 0;
-  margin-bottom: 15px;
+  margin: 0 0 12px 0;
 
   /* 3 Typography */ 
+  font-family: $font-main;
+  font-weight: 900;
+  font-size: 31px;
+  line-height: 1.4;
+  color: #ffffff;
+  letter-spacing: -0.19px;
 
   /* 4 Visual */ 
   
@@ -28,18 +35,19 @@
   /* 6 Misc */  
 
   @media(min-width: 1200px) {
-    /* 2 Block model */ 
-    margin-top: 3px;
-    margin-bottom: 16px;
+
+    letter-spacing: -0.24px;
+    font-size: 39px;
   }
 }
 .lets-talk__desc {
-	font-size: 15px;
+	font-size: 14px;
   font-weight: normal;
   line-height: 1.4em;
-  color: $color-text_1;
+  color: $color-gray--lite;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  letter-spacing: -0.08px;
 }
 .lets-talk__form {
 	display: flex;
@@ -68,14 +76,11 @@
 	font-size: 13px;
   font-weight: normal;
   line-height: 1.31em;
-  color: $color-text_2;
-  padding-bottom: 7px;
-
-  @media(min-width: 992px) {
-    margin-bottom: 0;
-  }
+  color: $color-gray--lite;
+  padding: 0;
+  letter-spacing: -0.08px;
+  margin: 30px 0 0 0;
 }
-.lets-talk .btn,
-.lets-talk input {
-  max-width: 100%; 
+.lets-talk .btn {
+  max-width: 228px;
 }

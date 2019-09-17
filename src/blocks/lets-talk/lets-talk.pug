@@ -1,14 +1,9 @@
 div.lets-talk
-	h3.h1 Let’s talk.
+	h3.lets-talk__title Let’s talk.
 
-	p.lets-talk__desc Enter your e-mail and press the button. I&rsquo;ll be&nbsp;back with your project planner and some additional materials about the process.
+	p.lets-talk__desc Book a&nbsp;free 20-minute call with&nbsp;us and get full clarity on&nbsp;timing and budget for your project
 
-	form.lets-talk__form(action="mail.php", method="post")
-		include ../input/input.pug
-		+input({type: 'email', name: 'email', placeholder: 'Your email address'})(id="lets_talk_input")
-		input(type="hidden" name="in" id="lets-talk__in")
+	include ../btn/btn.pug
+	+btn({text: 'Book free call', type: 'link', url: 'https://calendly.com/strebkovdesign/introcall', target: '_blank'})
 
-		include ../btn/btn.pug
-		+btn({text: 'Get in touch', type: 'submit'})(id="lets_talk_btn")
-
-	p.lets-talk__bottom I&nbsp;do not send spam or&nbsp;pass your email address to&nbsp;a&nbsp;third party. You can request your email address be&nbsp;removed at&nbsp;any time.
+	p.lets-talk__bottom After pressing the button above you&rsquo;ll be&nbsp;redirected to&nbsp;Calendly&nbsp;&mdash; an&nbsp;appointment booking service that we&rsquo;re using

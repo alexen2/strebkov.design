@@ -8,11 +8,44 @@
  *
  */
 
+@import '../blocks/h1/h1';
+@import '../blocks/h2/h2';
+@import '../blocks/h3/h3';
+@import '../blocks/h4/h4';
+@import '../blocks/text/text';
+@import '../blocks/margin/margin';
+@import '../blocks/lead/lead';
+@import '../blocks/btn/btn';
+@import '../blocks/input/input';
+@import '../blocks/icon/icon';
+@import '../blocks/link-bg/link-bg';
+@import '../blocks/hamburger/hamburger';
+@import '../blocks/icon-text/icon-text';
 
 
 /*
  * Blocks
  *
  */
- 
-@import '../blocks/h2/h2';
+
+@import '../blocks/testimonial/testimonial';
+@import '../blocks/address/address';
+@import '../blocks/list/list';
+@import '../blocks/cat-item/cat-item';
+@import '../blocks/lets-talk/lets-talk';
+@import '../blocks/menu/menu';
+@import '../blocks/menu-mobile/menu-mobile';
+
+
+/*
+ * Sections
+ *
+ */
+
+@import '../blocks/header/header';
+@import '../blocks/home-top/home-top';
+@import '../blocks/main-services/main-services';
+@import '../blocks/cat/cat';
+@import '../blocks/companies/companies';
+@import '../blocks/bottom/bottom';
+@import '../blocks/footer/footer';

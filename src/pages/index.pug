@@ -4,6 +4,81 @@ html(lang="ru")
 	+head('Home - Strebkov Design')
 
 	body
-		p dfghdf
+		include ../blocks/header/header.pug
+
+		div.container
+			include ../blocks/home-top/home-top.pug
+
+		include ../blocks/main-services/main-services.pug
+
+		div.container
+			h2.h2 Trusted by 70+ companies
+
+			p.text.text--20 We&rsquo;re always up&nbsp;to&nbsp;speed with new technologies that attract a&nbsp;younger audience, and we&nbsp;help them to&nbsp;make decisions that make them want to&nbsp;stay with you. We&nbsp;also help you anticipate what they&rsquo;ll want in&nbsp;future because we&rsquo;re all about helping you attract and retain them.
+
+		include ../blocks/cat/cat.pug
+
+		div.container
+			div.margin--b-62
+				h2.h2 Why Strebkov Design
+
+				p.text.text--24 We&rsquo;re always up&nbsp;to&nbsp;speed with new technologies that attract a&nbsp;younger audience, and we&nbsp;help them to&nbsp;make decisions that make them want to&nbsp;stay with you. We&nbsp;also help you anticipate what they&rsquo;ll want in&nbsp;future because we&rsquo;re all about helping you attract and retain them.
+
+			div.icon-text-list
+				include ../blocks/icon-text/icon-text.pug
+
+				+icon-text({
+					title: '19yr',
+					text: 'Companies will stay for years once they’ve started working with us, so why not join them? Our average cooperation term is six years.'
+				})
+
+				+icon-text({
+					title: '70+',
+					text: 'Companies will stay for years once they’ve started working with us, so why not join them? Our average cooperation term is six years.'
+				})
+
+				+icon-text({
+					title: '57',
+					text: 'Companies will stay for years once they’ve started working with us, so why not join them? Our average cooperation term is six years.'
+				})
+
+			div.testimonial-list
+				include ../blocks/testimonial/testimonial.pug
+
+				div.testimonial-list__item
+					+testimonial({
+						text: '... our user interface was really one of the major weaknesses of our site. Tim came in, and made it one of our great strengths.', 
+						img: 'testimonial__02', 
+						name: 'Alan Park', 
+						company: 'Founder of FluentU'
+					})
+
+				div.testimonial-list__item
+					+testimonial({
+						text: 'Not only is&nbsp;Tim a&nbsp;great designer but also an analyst and project manager who examines your business and clients, and then delivers outstanding results.', 
+						img: 'testimonial__03', 
+						name: 'Ivan Kuznetsov', 
+						company: 'CEO @ Investex'
+					})
+
+				div.testimonial-list__item
+					+testimonial({
+						text: 'Simply amazing. <br>Seriously.', 
+						img: 'testimonial__04', 
+						name: 'Chad Perry', 
+						company: 'WealthCounsel'
+					})
+
+				div.testimonial-list__item
+					+testimonial({
+						text: 'Simply amazing. <br>Seriously.', 
+						img: 'testimonial__04', 
+						name: 'Chad Perry', 
+						company: 'WealthCounsel'
+					})
+
+			include ../blocks/companies/companies.pug
+
+			include ../blocks/bottom/bottom.pug
 
 		include include/script.pug

@@ -9,7 +9,7 @@
 	height: 100vh;
 
 	/* 4 Visual */ 
-	background-color: $color-white;
+	background-color: #ffffff;
 	opacity: 0;
 	z-index: -1;	
 
@@ -49,7 +49,7 @@
 }
 .menu-mobile__item--active {
 	/* 4 Visual */ 
-	background-color: $color-sun-yellow;
+	background-color: #000000;
 }
 .menu-mobile a {  
 	/* 1 Positioning */ 
@@ -63,7 +63,7 @@
 	font-size: 19px;
   font-weight: 300;
   line-height: 60px;
-  color: $color-black;
+  color: #000000;
   text-decoration: none;
   text-align: center; 
 }

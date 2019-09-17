@@ -1,10 +1,24 @@
-.footer__copy {
-	font-size: 13px;
-	line-height: 1.5em;
-	color: $color-black;
-	opacity: 0.4;
+.footer {
+	font-size: 12px;
+	line-height: 1.6;
+	color: $color-gray--lite;
 }
-.footer__copy a {
-  color: #000000;
-  margin-left: 5px;
+.footer p {
+	margin: 0;
+}
+.footer a {
+  color: $color-gray--lite;
+  text-decoration: underline;
+}
+.footer a:hover {
+	text-decoration: none;
+}
+.footer__menu {
+	margin: 0;
+	padding: 2px 0 0 0;
+	list-style: none;
+}
+.footer__menu li {
+	padding-right: 15px;
+	display: inline-block;
 }
