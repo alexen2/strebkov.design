@@ -25,6 +25,21 @@ body {
 
   /* 6 Misc */
 }
+.overflow-hidden {
+  overflow: hidden;
+}
+.scrolled .in-top {
+  width: 100%;
+  overflow: hidden;
+  padding-top: 70px;
+
+  @media(min-width: 768px) {
+    padding-top: 80px;
+  }
+  @media(min-width: 1200px) {
+    padding-top: 100px;
+  }
+}
 .container {
   padding: 0 20px;
   margin: 0 auto;
@@ -105,11 +120,13 @@ body {
 .icon-text-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding-bottom: 40px;
 
   @media(min-width: 768px) {
     flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 40px;
+    justify-content: space-between; 
+    align-items: flex-start;   
   }
   @media(min-width: 1200px) {
     justify-content: flex-start;

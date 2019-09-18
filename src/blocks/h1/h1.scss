@@ -4,17 +4,25 @@
 
 	/* 2 Block model */
 	margin: 0;
-	padding-bottom: 20px;
-	margin-bottom: 30px;
+	padding-top: 67px;
+	margin-bottom: 38px;
+	max-width: 650px;
 
 	/* 3 Typography */
 	font-family: $font-main;
 	font-size: 30px;
-	line-height: 1.4;
+	line-height: 1.2;
 	font-weight: bold;
 	color: #000000;
+	letter-spacing: 0.3px;
 
 	@media(min-width: 768px) {
 		font-size: 80px;
+		letter-spacing: -0.3px;
+		line-height: 1;
+	}
+	@media(min-width: 1200px) {
+		padding-top: 74px;
+		padding-bottom: 0;
 	}
 }

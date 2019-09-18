@@ -1,6 +1,6 @@
 .header {
 	width: 100%;
-	border-bottom: 1px solid #000000;
+	//border-bottom: 1px solid #000000;
 
 	@media(min-width: 768px) {
 		border-bottom: 1px solid transparent;
@@ -30,13 +30,10 @@
 
 	@media(min-width: 768px) {
 		display: block;
-		padding-left: 8px;
 	}
 	@media(min-width: 992px) {
-		padding-left: 12px;
 	}
 	@media(min-width: 1200px) {
-		padding-left: 24px;
 	}
 }
 .header .logo,
@@ -49,13 +46,18 @@
 		height: 55px;
 	}
 }
+.header .logo {
+	@media(min-width: 1200px) {
+		padding-right: 100px;
+	}
+}
 .header .hamburger{
 	@media(min-width: 768px) {
 		display: none;
 	}
 }
 
-.header--scrolled {
+.scrolled .header {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -64,7 +66,7 @@
 	z-index: 99999;
 	transition: all 0.3s;
 }
-.header--scrolled .header__in {
+.scrolled .header__in {
 	height: 50px;
 
 	@media(min-width: 768px) {
@@ -77,10 +79,10 @@
 .header__btn {
 	display: none;
 }
-.header--scrolled .header__logo {
+.scrolled .header__logo {
 	display: none;
 }
-.header--scrolled .header__btn {
+.scrolled .header__btn {
 	display: block;
 	flex: 0 0 110px;
 

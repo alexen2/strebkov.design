@@ -9,11 +9,13 @@
 }
 .menu a {
 	/* 3 Typography */
-	font-family: $font-third;
-	color: #000000;
-	text-decoration: none;	
+	/* 3 Typography */
+	font-family: $font-second;
+	font-weight: 500;
 	font-size: 14px;
-  font-weight: 300;
+	line-height: 16px;
+	color: #000000;
+	text-decoration: none;
   line-height: 39px;
 }
 .menu a:hover {
@@ -47,7 +49,7 @@
 
 	/* 2 Block model */ 
 	display: block;
-	width: 36px;
+	width: 20px;
 	height: 39px;
 
 	/* 3 Typography */
@@ -56,7 +58,7 @@
 .menu__item:first-child a::before {
 	position: absolute;
 	top: 12px;
-	left: 11px;
+	left: 5px;
 
 	/* 2 Block model */ 
 	display: block;

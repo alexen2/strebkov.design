@@ -1,1 +1,82 @@
-.home-top {}
+.home-top {
+	padding-bottom: 50px;
+	position: relative;
+
+	@media(min-width: 992px) {
+		padding-left: 70px;
+	}
+	@media(min-width: 1200px) {
+		padding-left: 100px;
+		padding-bottom: 200px;
+	}
+}
+.home-top * {
+	position: relative;
+	z-index: 2;
+}
+.home-top__icon {
+	position: absolute;
+	display: none;
+	z-index: 1;
+
+	@media(min-width: 1200px) {
+		display: block;
+	}
+}
+.home-top__icon-01,
+.home-top__icon-03,
+.home-top__icon-05 {
+	display: block;
+}
+.home-top__icon-01 {
+	top: 140px;
+	left: -80px;
+
+	@media(min-width: 768px) {
+		top: 250px;
+	}
+	@media(min-width: 1200px) {
+		top: 110px;
+		left: -195px;
+	}
+}
+.home-top__icon-02 {
+	@media(min-width: 1200px) {
+		top: 455px;
+    left: 335px;
+	}    
+}
+.home-top__icon-03 {
+  top: -10px;
+  right: -75px;
+
+  @media(min-width: 1200px) {
+		top: -35px;
+    right: 260px;
+	} 
+}
+.home-top__icon-04 {
+  @media(min-width: 1200px) {
+		top: 30px;
+    right: 10px;
+	} 
+}
+.home-top__icon-05 {
+  top: 235px;
+  right: -15px;
+
+  @media(min-width: 768px) {
+		top: 350px;
+		right: 70px;
+	}
+	@media(min-width: 1200px) {
+		top: 210px;
+    right: 315px;
+	} 
+}
+.home-top__icon-06 {
+  @media(min-width: 1200px) {
+		top: 380px;
+    right: 70px;
+	} 
+}
