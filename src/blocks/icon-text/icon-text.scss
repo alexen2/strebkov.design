@@ -1,5 +1,7 @@
 .icon-text {
-	max-width: 280px;
+	@media(min-width: 768px) {
+		max-width: 280px;
+	}	
 }
 .icon-text__title {
 	font-family: $font-second;

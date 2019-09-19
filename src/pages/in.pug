@@ -1,0 +1,59 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Home - Strebkov Design')
+
+	body
+		div.in-top
+			
+		div.in
+			div.container-small
+				header.in__header
+					include ../blocks/logo/logo.pug
+
+				div.row.in__top
+					div.col-50
+						div.in__text
+							h1 Attention Fintech Founders, CEOs and CTOs! Building a&nbsp;Mobile or&nbsp;Web Application?
+
+							p Not only will this toolkit help you be&nbsp;more successful with your app, but we&nbsp;also include a&nbsp;complimentary 1&nbsp;on 1&nbsp;app blueprinting session with each download!
+
+					div.col-50
+						div.in__form
+							include ../blocks/get-toolkit/get-toolkit.pug
+
+			div.bottom
+				div.container-small
+					div.row.in__images
+						div.col-50
+							img.img-block(
+								src="images/in1.png", 
+								srcset="images/in1@2x.png 2x", 
+								alt="img"
+							)
+
+						div.col-50
+							img.img-block.in__images-border(
+								src="images/in1.png", 
+								srcset="images/in1@2x.png 2x", 
+								alt="img"
+							)
+
+					div.row.in__images
+						div.col-50
+							img.img-block.in__images-border(
+								src="images/in1.png", 
+								srcset="images/in1@2x.png 2x", 
+								alt="img"
+							)
+
+						div.col-50
+							img.img-block.in__images-border(
+								src="images/in1.png", 
+								srcset="images/in1@2x.png 2x", 
+								alt="img"
+							)
+
+					footer.in__footer 2019&nbsp;&copy; Strebkov Design. All rights reserved.
+
+		include include/script.pug

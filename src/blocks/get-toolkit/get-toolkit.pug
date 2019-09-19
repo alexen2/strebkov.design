@@ -1,0 +1,17 @@
+div.get-toolkit
+	h3.get-toolkit__title Get Your Toolkit
+
+	form(action="/" method="post")
+		div.get-toolkit__item
+			include ../input/input.pug
+			+input({type: 'text', name: 'name', placeholder: 'Name'})
+
+		div.get-toolkit__item
+			+input({type: 'text', name: 'email', placeholder: 'Your e-mail'})
+
+		div.get-toolkit__item
+			+input({type: 'text', name: 'company', placeholder: 'Company'})
+
+		div.get-toolkit__item
+			include ../btn/btn.pug
+			+btn({text: 'Get Your Toolkit Now', type: 'submit'})

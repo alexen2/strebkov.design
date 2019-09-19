@@ -1,0 +1,56 @@
+.get-toolkit {
+	background-color: #000000;
+	border-radius: 10px;
+	padding: 30px 20px 100px 20px;
+
+	@media(min-width: 992px) {
+		padding: 30px 50px 100px 50px;
+	}
+}
+.get-toolkit__title {
+	 /* 1 Positioning */ 
+  
+  /* 2 Block model */ 
+  margin: 0 0 26px 0;
+
+  /* 3 Typography */ 
+  font-family: $font-main;
+  font-weight: 900;
+  font-size: 31px;
+  line-height: 1.4;
+  color: #ffffff;
+  letter-spacing: -0.19px;
+
+  /* 4 Visual */ 
+  
+  /* 5 Animation*/ 
+  
+  /* 6 Misc */  
+
+  @media(min-width: 1200px) {
+
+    letter-spacing: -0.24px;
+    font-size: 39px;
+  }
+}
+.get-toolkit .input {
+	width: 100%;
+}
+.get-toolkit .input input {
+	max-width: 100%;
+	color: #000000;
+	font-family: $font-third;
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 26px;
+	text-align: left;
+	padding: 14px 25px 11px 24px;
+	margin-bottom: 10px;
+}
+.get-toolkit .input input::placeholder {
+	color: $color-gray--lite;
+}
+.get-toolkit .btn {
+	max-width: 100%;
+	margin: 10px 0 0 0;
+}

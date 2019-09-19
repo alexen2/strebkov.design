@@ -80,3 +80,16 @@
     right: 70px;
 	} 
 }
+.home-top__scroll {
+	display: none;
+	position: absolute;
+	bottom: 100px;
+	left: 100px;
+	background-image: url(../images/home-top__scroll.svg);
+	width: 42px;
+	height: 50px;
+
+	@media(min-width: 1200px) {
+		display: block;
+	}
+}
