@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden; 
+}
 * {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -190,13 +193,10 @@ body {
   line-height: 1.2;
   letter-spacing: -1.5px;
   max-width: 450px;
-  margin: 0 0 60px 0;
+  margin: 0 0 40px 0;
 
-  @media(min-width: 580px) {
-     margin: 0 0 140px 0;
-  }
   @media(min-width: 992px) {
-     margin: 0 0 200px 0;
+     margin: 0 0 50px 0;
     font-size: 39px;
   }
 }
@@ -208,6 +208,13 @@ body {
   letter-spacing: -0.1px;
   max-width: 440px;
   margin: 0;
+}
+.in__text p.in__text-small {  
+  font-family: $font-third;
+  font-weight: 300;
+  font-size: 16px;
+  max-width: 440px;
+  margin: 0 0 20px 0;
 }
 .in__images img {
   border-radius: 10px;
