@@ -193,10 +193,11 @@ body {
   line-height: 1.2;
   letter-spacing: -1.5px;
   max-width: 450px;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
+  color: #000000;
 
   @media(min-width: 992px) {
-     margin: 0 0 50px 0;
+     margin: 0 0 30px 0;
     font-size: 39px;
   }
 }
@@ -208,13 +209,21 @@ body {
   letter-spacing: -0.1px;
   max-width: 440px;
   margin: 0;
+  color: #000000;
 }
 .in__text p.in__text-small {  
   font-family: $font-third;
   font-weight: 300;
   font-size: 16px;
   max-width: 440px;
-  margin: 0 0 20px 0;
+  margin: 0 0 15px 0;
+}
+.in__text p:last-child {
+  padding-top: 15px;
+
+  @media(min-width: 768px) {
+    padding-top: 20px;
+  }
 }
 .in__images img {
   border-radius: 10px;
@@ -249,4 +258,20 @@ body {
   @media(min-width: 768px){
     padding: 38px 0 0 0;
   }
+}
+
+.done {
+  max-width: 580px;
+  margin: auto;
+  padding-top: 56px;
+
+  @media(min-width: 992px) {
+    padding-top: 90px;   
+  } 
+}
+.done p {
+  margin-bottom: 60px;
+}
+.center {
+  text-align: center;
 }
