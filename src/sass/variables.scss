@@ -19,14 +19,6 @@ $color-white: #FFFFFF;
  *
  */
 
-$grid-breakpoints: (
-	xs: 0,
-	sm: 576px,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px
-);
-
 $container-max-widths: (
 	sm: 540px,
 	md: 720px,
@@ -34,14 +26,7 @@ $container-max-widths: (
 	xl: 1200px
 );
 
-$breakpoints: (
-	xs: 0,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px,
-	xxl: 1600px,
-	xxxl: 2500px
-);
+$grid-gutter-width: 20px;
 
 /*
  * Animation Speed
