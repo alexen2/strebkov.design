@@ -1,0 +1,43 @@
+.cat {
+	/* 2 Block model */
+	padding-top: 50px;
+	padding-bottom: 64px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 96px;
+		padding-bottom: 140px;
+	}
+}
+.cat__item {
+	/* 2 Block model */
+	width: 100%;
+	max-width: 360px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	@media (min-width: 360px) {
+		/* 2 Block model */
+		overflow: hidden;
+
+		/* 4 Visual */
+		border-radius: 10px;
+	}
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		box-sizing: border-box;
+		max-width: 100%;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
