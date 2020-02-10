@@ -12,14 +12,30 @@ body {
 	color: #000000;
 	letter-spacing: -0.0941176px;
 }
-.container {
+p,
+ul {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+}
+.container--mob {
 	@media (max-width: 767px) {
-		padding: 0 20px;
+		/* 2 Block model */
+		max-width: 100%;
+		padding: 0;
 	}
 }
 .mr-mb10 {
 	/* 2 Block model */
 	margin-bottom: 15px;
+}
+.gray {
+	/* 4 Visual */
+	background-color: #FAFAFA;
+}
+.gray-dark {
+	/* 4 Visual */
+	background-color: #FBFBFB;
 }
 .color-1 {
 	/* 3 Typography */

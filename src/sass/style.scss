@@ -1,6 +1,6 @@
 @import 'fonts';
-@import 'grid/bootstrap-grid';
 @import 'variables';
+@import 'grid/bootstrap-grid';
 @import 'mixins';
 @import 'base';
 
@@ -44,6 +44,7 @@
 // Main Blocks
 
 @import '../blocks/header/header';
+@import '../blocks/main-services/main-services';
 @import '../blocks/lets-talk/lets-talk';
 @import '../blocks/footer/footer';
 @import '../blocks/main/main';
