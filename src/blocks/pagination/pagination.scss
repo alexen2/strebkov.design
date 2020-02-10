@@ -1,0 +1,38 @@
+.pagination {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.pagination__item span,
+.pagination__item a {
+	/* 2 Block model */
+	display: block;
+	padding: 15px 20px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 14px;
+	color: #000000;
+	text-decoration: none;
+
+	/* 4 Visual */
+	background-color: #FFFFFF;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.pagination__item--active a {
+	/* 4 Visual */
+	background-color: darkturquoise;
+}
+.pagination__item a:hover {
+	/* 4 Visual */
+	background-color: #CCCCCC;
+}

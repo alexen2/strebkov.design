@@ -3,20 +3,21 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
-const cleanCSS = require('gulp-clean-css');
-const uglify = require('gulp-uglify');
-const del = require('del');
-const browserSync = require('browser-sync').create();
+const sass = require('gulp-sass');
+const minify = require('gulp-minify');
+const	del = require('del');
+const	browserSync = require('browser-sync').create();
 const notify = require('gulp-notify');
 const plumber = require('gulp-plumber');
-const sass = require('gulp-sass');
 const pug = require('gulp-pug');
+const flatten = require('gulp-flatten');
 const svgstore = require('gulp-svgstore');
 const svgmin = require('gulp-svgmin');
-const imagemin = require('gulp-imagemin');
-const rename = require("gulp-rename");
+const path2 = require('path');
+const reload = browserSync.reload;
+const gulpStylelint = require('gulp-stylelint');
 
-let path = {
+var path = {
   build: {
     html: 'build/',
     js: 'build/js/',
@@ -29,23 +30,21 @@ let path = {
     pug: 'src/pages/*.pug',
     img: 'src/blocks/**/*.{png,jpg,jpeg,svg,gif}',
     js: 'src/blocks/**/*.js',
-    resources_img: 'src/resources/images/**/*.*',
+    resources_img: 'src/resources/images/*.{png,jpg,jpeg,svg,gif}',
     resources_js: 'src/resources/js/*.js',
-    resources_fonts: 'src/resources/fonts/*.{eot,svg,ttf,woff,woff2,otf}',
-    resources_css: 'src/resources/css/*.css',
-    icon: 'src/resources/icons/*.svg'
+    svg: 'src/resources/icons/*.svg'
   },
   watch: {
     style: 'src/**/*.scss',
     pug: 'src/**/*.pug',
-    js: 'src/**/*.js',
     img: 'src/blocks/**/*.{png,jpg,jpeg,svg,gif}',
-    icon: 'src/resources/icons/*.svg'  
+    svg: 'src/resources/icons/*.svg',
+    js: 'src/blocks/**/*.js'
   },
   clean: './build'
 };
 
-let plumberCfg = {
+var plumberCfg = {
   errorHandler: notify.onError(function(err) {
     return {
       message: err.message 
@@ -53,131 +52,135 @@ let plumberCfg = {
   })
 };
 
-function style() {
+gulp.task('sass', function(){
 	return gulp.src(path.src.style)
     .pipe(plumber(plumberCfg))
     .pipe(sass())
     .pipe(autoprefixer({
-        overrideBrowserslist: ['last 2 versions'],
-        cascade: false
-    	}))     
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))	     
     .pipe(gulp.dest(path.build.css))  
 		.pipe(sass({outputStyle: 'compressed'}))
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest(path.build.css))
-}
+});
 
-function html() {
+gulp.task('lintcss', function(){
+  return gulp
+    .src(['src/sass/*.scss', 'src/blocks/**/*.scss'])
+    .pipe(gulpStylelint({
+      reporters: [
+        {
+          formatter: 'string', 
+          console: true
+        }
+      ]
+    }));
+});
+
+gulp.task('pug', function(){
   return gulp.src(path.src.pug)
     .pipe(plumber(plumberCfg))
     .pipe(pug({
       pretty: true
     }))
     .pipe(gulp.dest(path.build.html));
-}
+});
 
-function js() {
+gulp.task('svg', function () {
+return gulp
+  .src(path.src.svg)
+   .pipe(svgmin({
+            plugins: [ {removeViewBox: false} ]
+        }))
+  /*.pipe(svgmin(function (file) {
+    var prefix = path2.basename(file.relative, path2.extname(file.relative));
+    
+    return {
+      plugins: [{
+        cleanupIDs: {
+          prefix: prefix + '-',
+          minify: true,
+          removeViewBox: false
+        }
+      }]
+    }
+  }))*/
+  .pipe(svgstore())
+  .pipe(gulp.dest(path.build.img));
+});
+
+gulp.task('images', function(){
+  return gulp.src(path.src.img)
+    .pipe(flatten())
+    //.pipe(imagemin())
+    .pipe(gulp.dest(path.build.img))
+});
+
+gulp.task('js', function(){
   return gulp.src(path.src.js)
   .pipe(plumber(plumberCfg))
   .pipe(concat('script.js'))
+  .pipe(minify())
   .pipe(gulp.dest(path.build.js))
-}
+  .pipe(reload({stream: true}));
+});
 
-function images() {
-  return gulp.src(path.src.img)
-    .pipe(rename({dirname: ''}))
-    .pipe(gulp.dest(path.build.img))
-}
-
-function icon() {
-	return gulp
-	  .src(path.src.icon)
-	   .pipe(svgmin({
-            //plugins: [ {removeViewBox: false} ]
-        }))
-  	/*.pipe(svgmin(function (file) {
-	    var prefix = path2.basename(file.relative, path2.extname(file.relative));
-	    
-	    return {
-	      plugins: [{
-	        cleanupIDs: {
-	          prefix: prefix + '-',
-	          minify: true,
-	          removeViewBox: false
-	        }
-	      }]
-	    }
-	  }))*/
-  .pipe(svgstore())
-  .pipe(gulp.dest(path.build.img));
-}
-
-function resources_images() {
+gulp.task('resources_images', function(){
   return gulp.src(path.src.resources_img)
+    .pipe(flatten())
+    //.pipe(imagemin())
     .pipe(gulp.dest(path.build.img))
-}
+});
 
-function resources_js() {
+gulp.task('resources_js', function(){
   return gulp.src(path.src.resources_js)
     .pipe(gulp.dest(path.build.js))
-}
+});
 
-function resources_fonts() {
-  return gulp.src(path.src.resources_fonts)
-    .pipe(gulp.dest(path.build.fonts))
-}
+gulp.task('clean', function(){
+	return del('build/**/*');
+});
 
-function resources_css() {
-  return gulp.src(path.src.resources_css)
-    .pipe(gulp.dest(path.build.css))
-}
+gulp.task('watch', function(){
+  gulp.watch(path.watch.style, gulp.series('sass'));
+  gulp.watch(path.watch.pug, gulp.series('pug'));
+  gulp.watch(path.watch.img, gulp.series('images'));
+  gulp.watch(path.watch.js, gulp.series('js'));
+  gulp.watch(path.watch.svg, gulp.series('svg'));
+});
 
-function watch() {
-	gulp.watch(path.watch.style, style);
-  gulp.watch(path.watch.pug, html);
-  gulp.watch(path.watch.img, images);
-  gulp.watch(path.watch.icon, icon);
-  gulp.watch(path.watch.js, js);
-}
-
-function server() {
+gulp.task('server', function(){
 	browserSync.init({
 		server: path.build.html
 	});
 
 	browserSync.watch(path.build.html+'/**/*.*').on('change', browserSync.reload);
-}
-
-function clean() {
-	return del([path.build.html + '/*']);
-}
+});
 
 gulp.task('default', gulp.series(
-	clean,  
-	style,
-	html,
-  images,
-  icon,
-  js,
-  resources_images,
-  resources_js,
-  resources_fonts,
-  resources_css,
+	'clean',
+  'sass',
+	'pug',
+  'images',
+  'svg',
+  'js',
+  'resources_images',
+  'resources_js',
 	gulp.parallel(
-		watch,
-		server   
+		'watch',
+		'server'    
 	)	
 ));
-
 gulp.task('build', gulp.series(
-  clean,
-  style,
-	html,
-  images,
-  icon,
-  js,
-  resources_images,
-  resources_js,
-  resources_fonts,
-  resources_css
+  'clean',
+  'lintcss',
+  'sass',
+  'pug',
+  'images',
+  'svg',
+  'js',
+  'resources_images',
+  'resources_js'
 ));

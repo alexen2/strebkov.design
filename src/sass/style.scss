@@ -3,52 +3,42 @@
 @import 'mixins';
 @import 'base';
 
-/*
- * Blocks BEM library
- *
- */
+// Atom-mixins
 
+@import '../blocks/icon/icon';
+@import '../blocks/btn/btn';
+@import '../blocks/hamburger/hamburger';
+@import '../blocks/breadcrumbs/breadcrumbs';
+@import '../blocks/icon-text/icon-text';
+@import '../blocks/menu/menu';
+@import '../blocks/menu-vertical/menu-vertical';
+@import '../blocks/list/list';
+@import '../blocks/logo/logo';
+@import '../blocks/picture/picture';
+@import '../blocks/input/input';
+@import '../blocks/textarea/textarea';
+@import '../blocks/checkbox/checkbox';
+@import '../blocks/select/select';
+@import '../blocks/radio/radio';
+@import '../blocks/search/search';
+
+// Atom-blocks
+
+@import '../blocks/pagination/pagination';
 @import '../blocks/h1/h1';
 @import '../blocks/h2/h2';
 @import '../blocks/h3/h3';
 @import '../blocks/h4/h4';
-@import '../blocks/text/text';
-@import '../blocks/margin/margin';
+@import '../blocks/h5/h5';
+@import '../blocks/h6/h6';
 @import '../blocks/lead/lead';
-@import '../blocks/btn/btn';
-@import '../blocks/input/input';
-@import '../blocks/icon/icon';
-@import '../blocks/link-bg/link-bg';
-@import '../blocks/hamburger/hamburger';
-@import '../blocks/icon-text/icon-text';
+@import '../blocks/link/link';
+@import '../blocks/page-text/page-text';
+@import '../blocks/img/img';
+@import '../blocks/form/form';
 
+// Main Blocks
 
-/*
- * Blocks
- *
- */
-
-@import '../blocks/testimonial/testimonial';
-@import '../blocks/address/address';
-@import '../blocks/list/list';
-@import '../blocks/cat-item/cat-item';
-@import '../blocks/lets-talk/lets-talk';
-@import '../blocks/menu/menu';
-@import '../blocks/article-img/article-img';
-@import '../blocks/menu-mobile/menu-mobile';
-
-
-/*
- * Sections
- *
- */
-
-@import '../blocks/get-toolkit/get-toolkit';
 @import '../blocks/header/header';
-@import '../blocks/home-top/home-top';
-@import '../blocks/main-services/main-services';
-@import '../blocks/cat/cat';
-@import '../blocks/companies/companies';
-@import '../blocks/page/page';
-@import '../blocks/bottom/bottom';
 @import '../blocks/footer/footer';
+@import '../blocks/main/main';

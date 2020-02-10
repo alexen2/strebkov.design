@@ -1,0 +1,27 @@
+.form__title {
+	/* 2 Block model */
+	margin-bottom: 10px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 24px;
+}
+.form__group {
+	/* 2 Block model */
+	padding-bottom: 20px;
+}
+.form__vertical-align-center {
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
+}
+.form__check-text {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-size: 14px;
+	line-height: 16px;
+}

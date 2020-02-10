@@ -1,0 +1,5 @@
+mixin menu-vertical(data)
+	ul.menu-vertical&attributes(attributes)
+		- for (var i = 0; i < data.items.length; i++)
+			li.menu-vertical__item
+				a.menu-vertical__link(href="#")= data.items[i]

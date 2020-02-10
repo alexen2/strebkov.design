@@ -1,0 +1,15 @@
+.link {
+	/* 3 Typography */
+	color: blue;
+	text-decoration: none;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.link:hover {
+	/* 3 Typography */
+	text-decoration: underline;
+
+	/* 4 Visual */
+	opacity: 0.7;
+}

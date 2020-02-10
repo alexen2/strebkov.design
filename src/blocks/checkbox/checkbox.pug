@@ -1,0 +1,8 @@
+mixin checkbox(data)
+	div.checkbox(class!=attributes.class)
+		label(for!=data.name )
+			if data.checked
+				input(type="checkbox" name=data.name id!=data.name value=data.value checked)
+			else
+				input(type="checkbox" name=data.name id!=data.name value=data.value)
+			span

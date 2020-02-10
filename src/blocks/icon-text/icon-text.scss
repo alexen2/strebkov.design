@@ -1,21 +1,43 @@
 .icon-text {
-	@media(min-width: 768px) {
-		max-width: 280px;
-	}	
+	/* 2 Block model */
+	display: flex;
+	align-items: center;
 }
-.icon-text__title {
-	font-family: $font-second;
-	font-weight: 500;
-	font-size: 36px;
-	line-height: 1.4;
-	color: #000000;
-	padding-bottom: 4px;
+.icon-text .icon {
+	/* 2 Block model */
+	margin-right: 13px;
 
-	@media(min-width: 992px) {
-		font-size: 60px;
-	}
+	/* 3 Typography */
+	color: #000000;
+
+	/* 4 Visual */
+	fill: #000000;
 }
+.icon-text__link,
 .icon-text__text {
+	/* 2 Block model */
+	display: flex;
+
+	/* 3 Typography */
+	font-family: $font-main;
 	font-size: 16px;
-	line-height: 1.4;
+	font-weight: normal;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+}
+.icon-text__link:hover {
+	/* 3 Typography */
+	color: blue;
+}
+.icon-text--underline .icon-text__link {
+	/* 3 Typography */
+	text-decoration: underline;
+}
+.icon-text--no-center {
+	/* 2 Block model */
+	align-items: flex-start;
 }

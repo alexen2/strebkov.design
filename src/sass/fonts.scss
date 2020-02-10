@@ -1,24 +1,6 @@
 @font-face {
-  font-family: 'RealHeadOT';
-  src: url('../fonts/RealHeadOT-Black.woff2') format('woff2'),
-      url('../fonts/RealHeadOT-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
+	font-family: "FuturaBookC";
+	src: url("../fonts/FuturaBookC.woff2") format("woff2"), url("../fonts/FuturaBookC.woff") format("woff");
+	font-style: normal;
+	font-weight: normal;
 }
-
-@font-face {
-  font-family: 'RealTextOT-Semilight';
-  src: url('../fonts/RealTextOT-Semilight.woff2') format('woff2'),
-      url('../fonts/RealTextOT-Semilight.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Real Head Pro';
-  src: url('../fonts/RealHeadPro-Medium.woff2') format('woff2'),
-      url('../fonts/RealHeadPro-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-

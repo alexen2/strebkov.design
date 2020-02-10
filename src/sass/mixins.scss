@@ -7,12 +7,10 @@
 	color: nth($value, 1);
 	background-color: nth($value, 2);
 	border-color: nth($value, 3);
-
 	&:hover {
 		background-color: nth($value, 4);
 		border-color: nth($value, 5);
 	}
-
 	.icon {
 		@if nth($value, 6) == null {
 			fill: nth($value, 1);
@@ -47,12 +45,12 @@
 }
 
 // Utility function for mixin font-size
+
 @mixin make-font-size($fs-font-size) {
 	// If $fs-font-size is a list, include
 	// both font-size and line-height
 	@if type-of($fs-font-size) == "list" {
 		font-size: nth($fs-font-size, 1);
-
 		@if (length($fs-font-size) > 1) {
 			line-height: nth($fs-font-size, 2);
 		}
@@ -81,14 +79,11 @@
 			}
 		}
 	}
-} 
-
+}
 @mixin make-width-height($width-height) {
 	width: nth($width-height, 1);
 	height: nth($width-height, 2);
 }
-
-
 @mixin margin($margin, $margin-side, $w-breakpoints: $breakpoints) {
 	@each $w-breakpoint, $margin-value in $margin {
 		@if $w-breakpoint == null {
@@ -113,8 +108,7 @@
 			}
 		}
 	}
-} 
-
+}
 @mixin margin-left($margin-left) {
 	margin-left: $margin-left;
 }

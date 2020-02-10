@@ -1,15 +1,1 @@
 header.header
-	div.container
-		div.header__in
-			include ../hamburger/hamburger.pug
-			+hamburger(id="hamburger")
-			
-			include ../menu/--in/--in.pug
-			include ../menu-mobile/menu-mobile.pug
-
-			div.header__logo
-				include ../logo/logo.pug
-
-			div.header__btn
-				include ../btn/btn.pug
-				+btn({text: 'Book free call', type: 'link', url: 'https://calendly.com/strebkovdesign/introcall', target: 'blank'})(id="lets_talk_btn")

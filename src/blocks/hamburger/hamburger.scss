@@ -1,90 +1,121 @@
 .hamburger {
-  padding: 1px 0 0 0;
-  display: block;
-  cursor: pointer;
-  transition-property: opacity, filter;
-  transition-duration: 0.15s;
-  transition-timing-function: linear;
-  font: inherit;
-  color: inherit;
-  text-transform: none;
-  background-color: transparent;
-  border: 0;
-  margin: 0;
-  overflow: visible; 
-  outline: none;
-  height: 19px;
-  z-index: 2000;
-  position: relative;
+	/* 2 Block model */
+	display: inline-block;
+	padding: 1px 0 0 0;
+	margin: 0;
+	overflow: visible;
+
+	/* 3 Typography */
+	font: inherit;
+	color: inherit;
+	text-transform: none;
+
+	/* 4 Visual */
+	cursor: pointer;
+	background-color: transparent;
+	border: 0;
+	outline: none;
+
+	/* 5 Animation */
+	transition-timing-function: linear;
+	transition-duration: 0.15s;
+	transition-property: opacity, filter;
 }
 .hamburger:hover {
-  opacity: 1;
+	/* 4 Visual */
+	opacity: 0.7;
 }
 .hamburger-box {
-  width: 18px;
-  height: 15px;
-  margin-bottom: 8px;
-  margin-left: 3px;
-  display: inline-block;
-  position: relative; 
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-block;
+	width: 30px;
+	height: 27px;
 }
 .hamburger-inner {
-  display: block;
-  top: 50%;
-  margin-top: -2px;
+	/* 1 Positioning */
+	top: 50%;
+
+	/* 2 Block model */
+	display: block;
+	margin-top: -2px;
 }
-.hamburger-inner, 
-.hamburger-inner::before, 
+.hamburger-inner,
+.hamburger-inner::before,
 .hamburger-inner::after {
-  width: 18px;
-  height: 2px;
-  border-radius: 1px;
-  background-color: #000000;
-  position: absolute;  
-  transition-property: transform;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
+	/* 1 Positioning */
+	position: absolute;
+
+	/* 2 Block model */
+	width: 30px;
+	height: 4px;
+
+	/* 4 Visual */
+	background-color: red;
+
+	/* 5 Animation */
+	transition-timing-function: ease;
+	transition-duration: 0.15s;
+	transition-property: transform;
 }
-.hamburger-inner {
-  width: 18px;
-}
-.hamburger-inner::before, 
+.hamburger-inner::before,
 .hamburger-inner::after {
-  content: "";
-  display: block;
+	/* 2 Block model */
+	display: block;
+
+	/* 4 Visual */
+	content: "";
 }
 .hamburger-inner::before {
-  top: -8px;
-  content: none;
+	/* 1 Positioning */
+	top: -8px;
 }
 .hamburger-inner::after {
-  bottom: -4px;
+	/* 1 Positioning */
+	bottom: -8px;
 }
 .hamburger--spin .hamburger-inner {
-  transition-duration: 0.22s;
-  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);  
+	/* 5 Animation */
+	transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	transition-duration: 0.22s;
 }
 .hamburger--spin .hamburger-inner::before {
-  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+	/* 5 Animation */
+	transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
 }
 .hamburger--spin .hamburger-inner::after {
-  transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+	/* 5 Animation */
+	transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .hamburger--spin.is-active .hamburger-inner {
-  transform: rotate(225deg);
-  transition-delay: 0.12s;
-  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  background-color: #000000;
-  width: 18px;
+	/* 4 Visual */
+	background-color: red;
+
+	/* 5 Animation */
+	transition-delay: 0.12s;
+	transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+	transform: rotate(225deg);
 }
 .hamburger--spin.is-active .hamburger-inner::before {
-  top: 0;
-  opacity: 0;
-  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+	/* 1 Positioning */
+	top: 0;
+
+	/* 4 Visual */
+	opacity: 0;
+
+	/* 5 Animation */
+	transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
 }
 .hamburger--spin.is-active .hamburger-inner::after {
-  bottom: 0;
-  transform: rotate(-90deg);
-  transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-  background-color: #000000;
+	/* 1 Positioning */
+	bottom: 0;
+
+	/* 4 Visual */
+	background-color: red;
+
+	/* 5 Animation */
+	transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+	transform: rotate(-90deg);
 }

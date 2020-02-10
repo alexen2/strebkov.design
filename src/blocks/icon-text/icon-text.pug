@@ -1,5 +1,15 @@
 mixin icon-text(data)
-	div.icon-text
-		div.icon-text__title!=data.title
+  div.icon-text(class!=attributes.class)
+    +icon(data.icon)
 
-		div.icon-text__text!=data.text
+    if data.link
+      a.icon-text__link(href=data.url)!=data.text
+
+    else if data.tel
+      a.icon-text__link(href="tel:" + data.url)!=data.text
+
+    else if data.mailto
+      a.icon-text__link(href="mailto:" + data.text)!=data.text
+
+    else
+      span.icon-text__text!=data.text

@@ -1,11 +1,10 @@
-nav.menu
-	ul.menu__list
-		li.menu__item.menu__item--active
-			a(href="/")
-				img.menu__home(src="images/menu__home.svg", alt="")
-
-		li.menu__item
-			a(href="about.html") About
-
-		li.menu__item
-			a(href="price.html") Plans & Pricing
+mixin menu(...items)
+	nav.menu&attributes(attributes)
+		ul.menu__list
+			- for (var i = 0; i < items.length; i++)
+				if i == 0
+					li.menu__item.menu__item--active
+						a.menu__link(href="")= items[i]
+				else
+					li.menu__item
+						a.menu__link(href="")= items[i]

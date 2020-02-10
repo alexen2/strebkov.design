@@ -1,0 +1,77 @@
+.textarea {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	background-color: #FFFFFF;
+	border: 0;
+}
+.textarea label {
+	/* 2 Block model */
+	display: block;
+	margin-bottom: 5px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #000000;
+}
+.textarea textarea {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 10;
+
+	/* 2 Block model */
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	padding: 5px 10px;
+	overflow: hidden;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #000000;
+
+	/* 4 Visual */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	resize: none;
+	background: none;
+	border: 2px solid #000000;
+	appearance: none;
+}
+.textarea textarea::-webkit-input-placeholder {
+	/* 3 Typography */
+	color: red;
+}
+.textarea textarea::-moz-placeholder {
+	/* 3 Typography */
+	color: red;
+
+	/* 4 Visual */
+	opacity: 1;
+}
+.textarea textarea:-moz-placeholder {
+	/* 3 Typography */
+	color: red;
+
+	/* 4 Visual */
+	opacity: 1;
+}
+.textarea textarea:-ms-input-placeholder {
+	/* 3 Typography */
+	color: red;
+}
+.textarea textarea:focus {
+	/* 4 Visual */
+	outline: none;
+}

@@ -1,11 +1,36 @@
 .h4 {
-	/* 2 Block model */ 
-  margin-top: 20px;
-  margin-bottom: 5px;
+	/* 2 Block model */
+	margin: 0;
 
 	/* 3 Typography */
-	font-family: $font-third; 
-	font-size: 16px;
-  font-weight: 400;
-  line-height: 1.6;
+	font-family: $font-main;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 32px;
+	color: #000000;
+	@media (min-width: 768px) {
+		/* 3 Typography */
+		font-size: 34px;
+		line-height: 40px;
+	}
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 38px;
+		line-height: 46px;
+	}
+	@media (min-width: 1200px) {
+		/* 3 Typography */
+		font-size: 50px;
+		line-height: 58px;
+	}
+	@media (min-width: 1400px) {
+		/* 3 Typography */
+		font-size: 54px;
+		line-height: 60px;
+	}
+	@media (min-width: 1920px) {
+		/* 3 Typography */
+		font-size: 58px;
+		line-height: 64px;
+	}
 }

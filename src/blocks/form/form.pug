@@ -1,0 +1,26 @@
+div.form
+	form.form__form(action="#" method="post")
+		p.form__title Form
+		div.form__group
+			+input({label_text: 'Ваше Имя', type: 'text', name: 'name_2', placeholder: 'Как Вас зовут ?', value: 'Алексей'})
+		div.form__group
+			+input({label_text: 'Компания', type: 'text', name: 'company_2', placeholder: 'Название компании'})
+		div.form__group
+			+input({label_text: 'Email', type: 'email', name: 'email_2', placeholder: 'Ваша электронная почта'})
+		div.form__group
+			+input({label_text: 'Телефон', type: 'tel', name: 'tel_2', placeholder: 'Ваш номер телефона', error: 'Укажите номер телефона'})
+
+		div.form__group
+			+textarea({name: 'message', rows: '10', placeholder: 'Кратко опишите задачу, и мы обязательно с Вами свяжемся!'})
+
+		div.form__group.form__vertical-align-center
+			+checkbox({name: 'accept_2'})(label_class='visually-hidden')
+			p.form__check-text Я принимаю  Условия использования
+
+		div.form__group
+			+radio({name: 'radio_2', text: 'Disabled'})
+			+radio({name: 'radio_2', text: 'Disabled'})
+			+radio({name: 'radio_2', text: 'Disabled'})
+
+		div.form__group
+			+btn({text: 'ОТПРАВИТЬ', type: 'submit'})

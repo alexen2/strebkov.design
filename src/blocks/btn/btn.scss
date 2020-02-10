@@ -1,57 +1,78 @@
 .btn {
-	padding: 0;
-	border: none;
-	border-radius: 4px;
-	display: inline-block;
-	font-weight: 500;
-	font-family: $font-second;
-	box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.1);
-	box-sizing: border-box;
-	text-decoration: none;
-	width: 100%;
-	max-width: 300px;
+	/* 1 Positioning */
 	position: relative;
+
+	/* 2 Block model */
+	box-sizing: border-box;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 10px 20px;
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 16px;
+	color: #FFFFFF;
+	text-decoration: none;
+	vertical-align: middle;
+
+	/* 4 Visual */
+	cursor: pointer;
+	user-select: none;
+	background-color: #000000;
+	border: 2px solid #000000;
+	border-radius: 4px;
 	outline: none;
-	text-align: center;
-	background-color: $colot-primary;
+
+	/* 5 Animation */
+	transition: all 0.4s;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-webkit-tap-highlight-color: transparent;
 }
 .btn:hover {
-	cursor: pointer;
+	/* 3 Typography */
+	color: #000000;
+
+	/* 4 Visual */
+	background-color: #FFFFFF;
 }
-.btn:hover::after {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	display: block;
-	content: "";
-	background-color: rgba(255, 255, 255, 0.15);
+.btn .icon {
+	/* 2 Block model */
+	box-sizing: inherit;
+	flex-shrink: 0;
+	width: 15px;
+	height: 15px;
+
+	/* 4 Visual */
+	fill: #FFFFFF;
+
+	/* 5 Animation */
+	transition: all 0.4s;
 }
-.btn:active {
-	color: #856f0d;
-	box-shadow: inset 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+.btn:hover .icon {
+	/* 4 Visual */
+	fill: #000000;
 }
-.btn__text {
-	font-size: 19px;
-  line-height: 60px;
-  text-align: center; 
-  color: #000000;
+.btn .icon:first-child:not(:last-child) {
+	/* 2 Block model */
+	margin-right: 15px;
 }
-.btn:disabled,
-.btn[disabled] {
-	background-color: #ffe67b;
-	box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.05);
+.btn .icon:last-child:not(:first-child) {
+	/* 2 Block model */
+	margin-left: 15px;
 }
-.btn:disabled .btn__text,
-.btn[disabled] .btn__text {
-	color: #ccb34c;
-}
-.btn:disabled:hover::after,
-.btn[disabled]:hover::after {
-	content: none;
-}
-.btn--small .btn__text {
-	line-height: 40px;
-	font-size: 15px;
-}
+
+/* -------------------------------------------- */
+
+/*
+ * Modifiers
+ *
+ */
+
+@import '--block/--block';
+@import '--outline/--outline';
+@import '--flat/--flat';

@@ -3,27 +3,25 @@
  *
  */
 
-$font-main: 'RealHeadOT';
-$font-second: 'Real Head Pro';
-$font-third: 'RealTextOT-Semilight';
+$font-main: Arial, Helvetica, sans-serif;
 
 /*
  * Colors
  *
  */
- 
-$colot-primary: #FFD933;
-
-$color-gray--dark: #000000;
-$color-gray: #4a4a4a;
-$color-gray--lite: #999999;
-$color-gray--xlite: #fbfbfb;
+$color-black: #000000;
+$color-white: #FFFFFF;
 
 /*
- * Grid system
+ * Grid
  *
  */
-
+$breakpoints: (
+	sm: 480px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px
+);
 
 /*
  * Animation Speed
@@ -40,6 +38,6 @@ $animation-speed: 0.4s;
 
 /* 4 Visual */
 
-/* 5 Animation*/
+/* 5 Animation */
 
 /* 6 Misc */

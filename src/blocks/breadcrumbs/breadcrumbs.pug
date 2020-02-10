@@ -1,0 +1,9 @@
+mixin breadcrumbs(data)
+	div.breadcrumbs
+		ul.breadcrumbs__list
+			- for (var i = 0; i < data.items.length; i++)
+					li.breadcrumbs__item
+						if i + 1 < data.items.length
+							a.breadcrumbs__link(href="")= data.items[i]
+						else
+							span= data.items[i]

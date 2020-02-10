@@ -1,10 +1,5 @@
-div.list
-	ul
-		li.list__item Design your digital product from scratch and help the development team build&nbsp;it
-
-		li.list__item Improve your digital product UX/UI and help implement these changes
-		
-		li.list__item Build design team and processes at&nbsp;your company
-
-	div.list__address
-		include ../address/address.pug
+mixin list(data)
+	ul.list&attributes(attributes)
+		- for (var i = 0; i < data.items.length; i++)
+			li.list__item
+				p.list__text= data.items[i]

@@ -1,0 +1,22 @@
+.btn--outline {
+	/* 3 Typography */
+	color: #000000;
+
+	/* 4 Visual */
+	background-color: #FFFFFF;
+}
+.btn--outline:hover {
+	/* 3 Typography */
+	color: #FFFFFF;
+
+	/* 4 Visual */
+	background-color: #000000;
+}
+.btn--outline .icon {
+	/* 4 Visual */
+	fill: #000000;
+}
+.btn--outline:hover .icon {
+	/* 4 Visual */
+	fill: #FFFFFF;
+}

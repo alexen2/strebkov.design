@@ -1,0 +1,9 @@
+mixin select(data)
+	div.select(class!=attributes.class)
+		select(name=data.name multiple=data.multiple size=data.size)
+			if data.items
+				- for (var i = 0; i < data.items.length; i++)
+					if i == 0
+						option(selected, value=data.value[i])= data.items[i]
+					else
+						option(value=data.value[i])= data.items[i]
