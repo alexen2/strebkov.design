@@ -7,14 +7,44 @@ html(lang="ru")
 		include ../blocks/mixins.pug
 		
 		div.container
-			div.mr-mb10
-				+btn({text: 'Запустить'})
+			div.row
+				div.col-12
+					div.mr-mb10
+						h1.h0 Text 0
+						h1.h1 Text 1
+						h2.h2 Text 2
+						h3.h3 Text 3
+						p.lead Lead
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic vel eligendi eos labore expedita quas consequuntur numquam nulla quo molestiae obcaecati laborum ipsum, incidunt doloremque, fuga atque! Cupiditate, sit.
+						p.text-lg Text Lg
+						p.image-description Imgae description
 
-				+btn({text: 'Запустить', icon_l: 'icon--cart'})
+					div.mr-mb10
+						p Colors
+						p.color-1 Color 1 - #000000
+						p.color-2 Color 2 - #FFFFFF
+						p.color-3 Color 3 - #FFD933
+						p.color-4 Color 4 - #4A4A4A
+						p.color-5 Color 5 - #969696
+						p.color-6 Color 6 - #FAFAFA
+						p.color-7 Color 7 - #FBFBFB
+						p.color-8 Color 8 - #999999
+						p.color-9 Color 9 - #7ED321
+						
 
-				+btn({text: 'Запустить', icon_r: 'icon--cart'})
-			div.mr-mb10
-				+btn({text: 'Запустить', icon_r: 'icon--cart'})(class="btn--block")
+
+			div.row 
+				div.col-6
+					div.mr-mb10
+						+btn({text: 'Запустить'})
+
+						+btn({text: 'Запустить', icon_l: 'icon--cart'})
+
+						+btn({text: 'Запустить', icon_r: 'icon--cart'})
+				div.col-6
+					div.mr-mb10
+						+btn({text: 'Запустить', icon_r: 'icon--cart'})(class="btn--block")
+			
 			div.mr-mb10
 				+btn({text: 'Запустить', icon_r: 'icon--cart'})(class="btn--flat") 
 				+btn({text: 'Запустить'})(class="btn--outline")
@@ -25,13 +55,6 @@ html(lang="ru")
 				+breadcrumbs({items:['Главная','Проукция', 'Контакты', 'Адрес']})
 			div.mr-mb10
 				include ../blocks/pagination/pagination.pug
-			div.mr-mb10
-				h1.h1 Text 1
-				h2.h2 Text 2
-				h3.h3 Text 3
-				h4.h4 Text 4
-				h5.h5 Text 5
-				h6.h6 Text 6
 			div.mr-mb10
 				p.lead Lead
 			div.mr-mb10.pd-t10

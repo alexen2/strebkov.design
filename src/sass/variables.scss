@@ -3,7 +3,9 @@
  *
  */
 
-$font-main: Arial, Helvetica, sans-serif;
+$font-main:  'RealTextOT-Semilight';
+$font-second: 'Real Head Pro';
+$font-third: 'RealHeadOT';
 
 /*
  * Colors
@@ -13,14 +15,32 @@ $color-black: #000000;
 $color-white: #FFFFFF;
 
 /*
- * Grid
+ * Grid system
  *
  */
-$breakpoints: (
-	sm: 480px,
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
 	md: 768px,
 	lg: 992px,
 	xl: 1200px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px
+);
+
+$breakpoints: (
+	xs: 0,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1600px,
+	xxxl: 2500px
 );
 
 /*

@@ -1,0 +1,18 @@
+.text-lg {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 25px;
+	color: #4A4A4A;
+	letter-spacing: -0.1px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 20px;
+		line-height: 30px;
+		letter-spacing: -0.117647px;
+	}
+}

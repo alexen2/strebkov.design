@@ -3,34 +3,16 @@
 	margin: 0;
 
 	/* 3 Typography */
-	font-family: $font-main;
-	font-size: 28px;
-	font-weight: 700;
-	line-height: 34px;
+	font-family: $font-second;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
 	color: #000000;
-	@media (min-width: 768px) {
-		/* 3 Typography */
-		font-size: 36px;
-		line-height: 42px;
-	}
+	letter-spacing: -0.123077px;
 	@media (min-width: 992px) {
 		/* 3 Typography */
-		font-size: 40px;
-		line-height: 48px;
-	}
-	@media (min-width: 1200px) {
-		/* 3 Typography */
-		font-size: 52px;
-		line-height: 60px;
-	}
-	@media (min-width: 1400px) {
-		/* 3 Typography */
-		font-size: 58px;
-		line-height: 64px;
-	}
-	@media (min-width: 1920px) {
-		/* 3 Typography */
-		font-size: 60px;
-		line-height: 66px;
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: -0.147692px;
 	}
 }

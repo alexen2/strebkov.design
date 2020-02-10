@@ -1,18 +1,18 @@
-.h2 {
+.h0 {
 	/* 2 Block model */
 	margin: 0;
 
 	/* 3 Typography */
 	font-family: $font-second;
-	font-size: 30px;
+	font-size: 36px;
 	font-weight: 500;
-	line-height: 34px;
+	line-height: 46px;
 	color: #000000;
-	letter-spacing: -0.184615px;
+	letter-spacing: -0.221538px;
 	@media (min-width: 992px) {
 		/* 3 Typography */
-		font-size: 40px;
-		line-height: 46px;
-		letter-spacing: -0.246154px;
+		font-size: 60px;
+		line-height: 70px;
+		letter-spacing: -0.369231px;
 	}
 }

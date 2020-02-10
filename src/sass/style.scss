@@ -1,4 +1,5 @@
 @import 'fonts';
+@import 'grid/bootstrap-grid';
 @import 'variables';
 @import 'mixins';
 @import 'base';
@@ -25,6 +26,7 @@
 // Atom-blocks
 
 @import '../blocks/pagination/pagination';
+@import '../blocks/h0/h0';
 @import '../blocks/h1/h1';
 @import '../blocks/h2/h2';
 @import '../blocks/h3/h3';
@@ -32,13 +34,16 @@
 @import '../blocks/h5/h5';
 @import '../blocks/h6/h6';
 @import '../blocks/lead/lead';
+@import '../blocks/text-lg/text-lg';
+@import '../blocks/image-description/image-description';
 @import '../blocks/link/link';
-@import '../blocks/page-text/page-text';
+@import '../blocks/page/page';
 @import '../blocks/img/img';
 @import '../blocks/form/form';
 
 // Main Blocks
 
 @import '../blocks/header/header';
+@import '../blocks/lets-talk/lets-talk';
 @import '../blocks/footer/footer';
 @import '../blocks/main/main';
