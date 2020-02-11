@@ -29,15 +29,11 @@
 		margin-bottom: 20px;
 	}
 }
-
-/* 1 Positioning */
-
-/* 2 Block model */
-
-/* 3 Typography */
-
-/* 4 Visual */
-
-/* 5 Animation */
-
-/* 6 Misc */
+.cat .col-12 {
+	/* 2 Block model */
+	padding: 0;
+	@media (min-width: 540px) {
+		/* 2 Block model */
+		padding: 0 10px;
+	}
+}

@@ -43,4 +43,38 @@ html(lang="ru")
 
 		include ../blocks/cat/cat.pug
 
+		div.container
+			div.row
+				div.col-12.col-md-6.col-lg-3
+					+testimonial({
+						text: '... our user interface was really one of the major weaknesses of our site. Tim came in, and made it one of our great strengths.', 
+						img: 'testimonial__02', 
+						name: 'Alan Park', 
+						company: 'Founder of FluentU'
+					})
+
+				div.col-12.col-md-6.col-lg-3
+					+testimonial({
+						text: 'Not only is&nbsp;Tim a&nbsp;great designer but also an analyst and project manager who examines your business and clients, and then delivers outstanding results.', 
+						img: 'testimonial__03', 
+						name: 'Ivan Kuznetsov', 
+						company: 'CEO @ Investex'
+					})
+
+				div.col-12.col-md-6.col-lg-3
+					+testimonial({
+						text: 'Simply amazing. <br>Seriously.', 
+						img: 'testimonial__04', 
+						name: 'Chad Perry', 
+						company: 'WealthCounsel'
+					})
+
+				div.col-12.col-md-6.col-lg-3
+					+testimonial({
+						text: 'Simply amazing. <br>Seriously.', 
+						img: 'testimonial__04', 
+						name: 'Chad Perry', 
+						company: 'WealthCounsel'
+					})
+
 		include include/script.pug
