@@ -1,5 +1,118 @@
 .lets-talk {
 	/* 2 Block model */
-	padding-top: 10px;
-	padding-bottom: 10px;
+	width: 100%;
+	padding: 25px 30px 47px 30px;
+	margin-bottom: 40px;
+
+	/* 4 Visual */
+	background-color: #000000;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05);
+	@media (min-width: 520px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+
+		/* 4 Visual */
+		border-radius: 10px;
+	}
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		max-width: 320px;
+		padding: 35px 30px 51px 30px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-width: none;
+		padding: 33px 40px 54px 40px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding: 33px 40px 44px 40px;
+	}
+}
+.lets-talk__title {
+	/* 2 Block model */
+	margin: 0 0 14px 0;
+
+	/* 3 Typography */
+	font-family: $font-third;
+	font-size: 31px;
+	font-weight: 900;
+	line-height: 1.4;
+	color: #FFFFFF;
+	letter-spacing: -0.19px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin: 0 0 10px 0;
+
+		/* 3 Typography */
+		font-size: 39px;
+		letter-spacing: -0.24px;
+	}
+}
+.lets-talk__desc {
+	/* 2 Block model */
+	margin-top: 0;
+	margin-bottom: 31px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 21px;
+	color: #999999;
+	letter-spacing: -0.08px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 22px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 26px;
+	}
+}
+.lets-talk__form {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 24px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		flex-direction: row;
+		align-items: flex-start;
+	}
+}
+.lets-talk__form .input {
+	/* 2 Block model */
+	margin-bottom: 9px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		flex: 0 0 230px;
+		margin-right: 8px;
+		margin-bottom: 0;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		flex: 0 0 290px;
+		margin-right: 10px;
+	}
+}
+.lets-talk .btn {
+	/* 2 Block model */
+	max-width: 258px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		max-width: none;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-width: 228px;
+	}
+}
+.lets-talk .col-12 {
+	/* 2 Block model */
+	padding: 0;
+	@media (min-width: 540px) {
+		/* 2 Block model */
+		padding: 0 10px;
+	}
 }
