@@ -1,5 +1,38 @@
 .footer {
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 12px;
+	line-height: 1.25;
+	color: #999999;
+}
+.footer p {
 	/* 2 Block model */
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin: 0;
+	margin-bottom: 5px;
+}
+.footer p:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.footer a {
+	/* 3 Typography */
+	color: #999999;
+	text-decoration: underline;
+}
+.footer a:hover {
+	/* 3 Typography */
+	text-decoration: none;
+}
+.footer__menu {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.footer__menu li {
+	/* 2 Block model */
+	display: inline-block;
+	padding-right: 15px;
 }
