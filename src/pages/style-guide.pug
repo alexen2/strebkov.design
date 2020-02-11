@@ -76,19 +76,61 @@ html(lang="ru")
 						name: 'Chad Perry', 
 						company: 'WealthCounsel'
 					})
+
+			div.row
+				div.col-12
+					br
+					br
+					hr
+					br
+					br
+					
 			div.row
 				div.col-12 
 					+btn({text: 'Book free call', type: 'link', url: 'https://calendly.com/strebkovdesign/introcall', target: '_blank'})
 					+btn({text: 'Choose', type: 'link', url: '#', target: '_blank'})(class="btn--sm")
+			div.row
+				div.col-12
+					br
+					br
+					hr
+					br
+					br
 
 			div.row.align-items-center
 				div.col-12.col-md-6.offset-lg-1
 					include ../blocks/lets-talk/lets-talk.pug
 				div.col-12.col-md-6.col-lg-5
 					include ../blocks/list-services-sm/list-services-sm.pug
+			div.row
+				div.col-12
+					br
+					br
+					hr
+					br
+					br
 
 			div.row
 				div.col-12.col-lg-7-6.offset-lg-1
 					include ../blocks/footer/footer.pug
+			div.row
+				div.col-12
+					br
+					br
+					hr
+					br
+					br
+
+			div.row
+				div.col-6
+					+input({label_text: 'email', type: 'email', name: 'email_1', placeholder: 'Your e-mail'})
+
+			div.row
+				div.col-12
+					br
+					br
+					hr
+					br
+					br
 			
 		include include/script.pug

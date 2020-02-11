@@ -11,62 +11,77 @@
 	/* 3 Typography */
 	font-family: $font-main;
 	font-size: 14px;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 16px;
-	color: black;
+	color: #000000;
 }
-.input input {
+.input__input {
 	/* 2 Block model */
-	padding: 5px 10px;
+	padding: 13px 25px 12px 22px;
 	margin: 0;
 
 	/* 3 Typography */
 	font-family: $font-main;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 16px;
-	color: black;
+	font-size: 19px;
+	font-weight: 300;
+	line-height: 19px;
+	color: #000000;
 
-	/* 4 Visual */
-	border: 2px solid black;
-}
-.input input::-webkit-input-placeholder {
-	/* 3 Typography */
-	color: red;
-}
-.input input::-moz-placeholder {
-	/* 3 Typography */
-	color: red;
-	text-overflow: ellipsis;
-
-	/* 4 Visual */
-	opacity: 1;
-}
-.input input:-moz-placeholder {
-	/* 3 Typography */
-	color: red;
-	text-overflow: ellipsis;
-
-	/* 4 Visual */
-	opacity: 1;
-}
-.input input:-ms-input-placeholder {
-	/* 3 Typography */
-	color: red;
-	text-overflow: ellipsis;
-}
-.input input[placeholder] {
-	/* 3 Typography */
-	text-overflow: ellipsis;
-}
-.input input:hover {
 	/* 4 Visual */
 	cursor: pointer;
-	opacity: 0.7;
+	background-color: #F6F6F6;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	outline: none;
 }
-// .input input:focus {
+.input__input--filled {
+	/* 4 Visual */
+	background-color: #FFFFFF;
+	border: 2px solid #FFD933;
+}
+.input__input::-webkit-input-placeholder {
+	/* 3 Typography */
+	color: #000000;
+	text-align: left;
 
-// }
-// .input input:active {
+	/* 4 Visual */
+	opacity: 0.3;
+}
+.input__input::-moz-placeholder {
+	/* 3 Typography */
+	color: #000000;
 
-// }
+	/* 4 Visual */
+	opacity: 0.3;
+}
+.input__input:-moz-placeholder {
+	/* 3 Typography */
+	color: #000000;
+	text-overflow: ellipsis;
+
+	/* 4 Visual */
+	opacity: 0.3;
+}
+.input__input:-ms-input-placeholder {
+	/* 3 Typography */
+	color: #000000;
+	text-overflow: ellipsis;
+}
+.input__input[placeholder] {
+	/* 3 Typography */
+	text-overflow: ellipsis;
+}
+.input__input:hover {
+	/* 4 Visual */
+	background-color: #F8F8F8;
+}
+.input__input:focus {
+	/* 4 Visual */
+	background-color: #FFFFFF;
+	border: 2px solid #FFD933;
+}
+.input__input:active {
+	/* 4 Visual */
+	background-color: #FFFFFF;
+	border: 2px solid #FFD933;
+}

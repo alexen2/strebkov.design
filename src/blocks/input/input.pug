@@ -2,4 +2,4 @@ mixin input(data)
 	div.input(class!=attributes.class)
 		if data.label_text
 			label(for!=data.name class!=attributes.label_class)!=data.label_text
-		input(type=data.type name=data.name id!=data.name value=data.value placeholder=data.placeholder)
+		input.input__input(type=data.type name=data.name id!=data.name value=data.value placeholder=data.placeholder)
