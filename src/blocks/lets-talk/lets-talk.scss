@@ -98,14 +98,13 @@
 }
 .lets-talk .btn {
 	/* 2 Block model */
-	max-width: 258px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		max-width: none;
+		width: 100%;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		max-width: 228px;
+		width: auto;
 	}
 }
 .lets-talk .col-12 {
