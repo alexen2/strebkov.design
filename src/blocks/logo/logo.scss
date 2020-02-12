@@ -1,11 +1,4 @@
 .logo {
 	/* 2 Block model */
-	display: block;
-	width: 100%;
-	max-width: 100px;
-}
-.logo img {
-	/* 2 Block model */
-	display: block;
-	width: 100%;
+	display: flex;
 }

@@ -1,6 +1,11 @@
 .hamburger {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 2000;
+
 	/* 2 Block model */
-	display: inline-block;
+	display: block;
+	height: 19px;
 	padding: 1px 0 0 0;
 	margin: 0;
 	overflow: visible;
@@ -23,7 +28,7 @@
 }
 .hamburger:hover {
 	/* 4 Visual */
-	opacity: 0.7;
+	opacity: 1;
 }
 .hamburger-box {
 	/* 1 Positioning */
@@ -31,8 +36,10 @@
 
 	/* 2 Block model */
 	display: inline-block;
-	width: 30px;
-	height: 27px;
+	width: 18px;
+	height: 15px;
+	margin-bottom: 8px;
+	margin-left: 3px;
 }
 .hamburger-inner {
 	/* 1 Positioning */
@@ -40,6 +47,7 @@
 
 	/* 2 Block model */
 	display: block;
+	width: 18px;
 	margin-top: -2px;
 }
 .hamburger-inner,
@@ -49,11 +57,12 @@
 	position: absolute;
 
 	/* 2 Block model */
-	width: 30px;
-	height: 4px;
+	width: 18px;
+	height: 2px;
 
 	/* 4 Visual */
-	background-color: red;
+	background-color: #000000;
+	border-radius: 1px;
 
 	/* 5 Animation */
 	transition-timing-function: ease;
@@ -71,10 +80,13 @@
 .hamburger-inner::before {
 	/* 1 Positioning */
 	top: -8px;
+
+	/* 4 Visual */
+	content: none;
 }
 .hamburger-inner::after {
 	/* 1 Positioning */
-	bottom: -8px;
+	bottom: -4px;
 }
 .hamburger--spin .hamburger-inner {
 	/* 5 Animation */
@@ -90,8 +102,11 @@
 	transition: bottom 0.1s 0.25s ease-in, transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 .hamburger--spin.is-active .hamburger-inner {
+	/* 2 Block model */
+	width: 18px;
+
 	/* 4 Visual */
-	background-color: red;
+	background-color: #000000;
 
 	/* 5 Animation */
 	transition-delay: 0.12s;
@@ -113,7 +128,7 @@
 	bottom: 0;
 
 	/* 4 Visual */
-	background-color: red;
+	background-color: #000000;
 
 	/* 5 Animation */
 	transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);

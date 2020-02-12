@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>home-white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Home-White" transform="translate(-5.000000, -5.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M17,17 L17,11.9870707 L12,7.66281825 L7,11.9870707 L7,17 L17,17 Z M18,19 L6,19 C5.44771525,19 5,18.5522847 5,18 L5,11.5298144 C5,11.2394354 5.12622068,10.9633961 5.34585428,10.7734459 L11.3458543,5.5843429 C11.721459,5.25950097 12.278541,5.25950097 12.6541457,5.5843429 L18.6541457,10.7734459 C18.8737793,10.9633961 19,11.2394354 19,11.5298144 L19,18 C19,18.5522847 18.5522847,19 18,19 Z" id="home-white"></path>
+        </g>
+    </g>
+</svg>

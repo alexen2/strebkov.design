@@ -4,6 +4,20 @@ if (hamburgers.length > 0) {
   forEach(hamburgers, function(hamburger) {
     hamburger.addEventListener("click", function() {
       this.classList.toggle("is-active");
+      
+			var this_but = this;
+
+			function fixed_but() {
+			  this_but.style.position = this_but.style.position === 'fixed' ? '' : 'fixed';
+			  this_but.style.top = this_but.style.top === '26px' ? '' : '26px';
+			}
+
+			if(this.classList.contains("is-active")) {
+				setTimeout(fixed_but, 500);
+			} else {
+				this_but.style.position = this_but.style.position === 'fixed' ? '' : 'fixed';
+				this_but.style.top = this_but.style.top === '26px' ? '' : '26px';
+			}			
     }, false);
   });
 }
