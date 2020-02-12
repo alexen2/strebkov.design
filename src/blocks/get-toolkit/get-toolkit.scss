@@ -1,0 +1,57 @@
+.get-toolkit {
+	/* 2 Block model */
+	padding: 30px 20px 74px 20px;
+
+	/* 4 Visual */
+	background-color: #000000;
+	border-radius: 10px;
+	@media (min-width: 992px) {
+		padding: 30px 50px 74px 50px;
+	}
+}
+.get-toolkit__title {
+	/* 2 Block model */
+	margin: 0 0 26px 0;
+
+	/* 3 Typography */
+	font-family: $font-third;
+	font-size: 31px;
+	font-weight: 900;
+	line-height: 1.4;
+	color: #FFFFFF;
+	letter-spacing: -0.19px;
+	@media (min-width: 1200px) {
+		/* 3 Typography */
+		font-size: 39px;
+		letter-spacing: -0.24px;
+	}
+}
+.get-toolkit .input {
+	/* 2 Block model */
+	width: 100%;
+}
+.get-toolkit .input input {
+	/* 2 Block model */
+	margin-bottom: 10px;
+}
+.get-toolkit .btn {
+	/* 2 Block model */
+	width: 100%;
+	margin: 10px 0 0 0;
+
+	/* 4 Visual */
+	border-color: #FFD933;
+}
+.get-toolkit__response {
+	/* 2 Block model */
+	padding-top: 20px;
+
+	/* 3 Typography */
+	font-size: 14px;
+	color: #FFFFFF;
+}
+.get-toolkit__response a {
+	/* 3 Typography */
+	color: #FFFFFF;
+	text-decoration: underline;
+}
