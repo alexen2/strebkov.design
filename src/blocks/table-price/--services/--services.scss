@@ -1,0 +1,72 @@
+.table-price--services {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	padding-bottom: 20px;
+
+	/* 4 Visual */
+	background: none;
+}
+.table-price--services__in {
+	/* 1 Positioning */
+	position: relative;
+}
+.table-price--services__bg {
+	/* 1 Positioning */
+	position: absolute;
+	top: 15px;
+	right: 10px;
+	bottom: -10px;
+	z-index: 1;
+
+	/* 2 Block model */
+	display: none;
+
+	/* 4 Visual */
+	background-color: #FFFFFF;
+	border-radius: 10px;
+	box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+	@media (min-width: 992px) {
+		/* 1 Positioning */
+		left: 210px;
+
+		/* 2 Block model */
+		display: block;
+	}
+	@media (min-width: 1200px) {
+		/* 1 Positioning */
+		left: 290px;
+	}
+}
+.table-price--services table {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 2;
+}
+.table-price--services tr:last-child {
+	/* 4 Visual */
+	border-bottom: none;
+}
+.table-price--services th:first-child {
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-right: 48px;
+		padding-left: 0;
+	}
+}
+.table-price--services th b {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.table-price--services td:first-child {
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-right: 52px;
+		padding-left: 0;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		min-width: 206px;
+	}
+}
