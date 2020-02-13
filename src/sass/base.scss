@@ -31,6 +31,26 @@ ul {
 		padding: 0;
 	}
 }
+.container-top {
+	/* 2 Block model */
+	max-width: 480px;
+	padding: 0 20px;
+	margin: 0 auto;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		width: 700px;
+		max-width: none;
+		padding: 0;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 940px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		width: 1180px;
+	}
+}
 .mr-mb10 {
 	/* 2 Block model */
 	margin-bottom: 15px;

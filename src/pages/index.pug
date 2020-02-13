@@ -1,10 +1,17 @@
 doctype html
 html(lang="ru")
 	include include/head.pug
-	+head()
+	+head('Home - Strebkov Design')
 
 	body
 		include ../blocks/mixins.pug
+
+		include ../blocks/header/header.pug
+
+		div.container-top
+			include ../blocks/home-top/home-top.pug
+		
+		include ../blocks/main-services/main-services.pug
 		
 		
 
