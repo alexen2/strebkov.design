@@ -1,11 +1,20 @@
 .main-services {
 	/* 2 Block model */
-	padding-bottom: 80px;
+	padding-top: 44px;
+	margin-bottom: 34px;
 	overflow: hidden;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 188px;
+	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		padding-top: 9px;
-		padding-bottom: 150px;
+		padding-top: 35px;
+		margin-bottom: 119px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-top: 46px;
 	}
 }
 .main-services * {
@@ -26,6 +35,9 @@
 	/* 4 Visual */
 	background-color: #000000;
 	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+
 		/* 4 Visual */
 		border-radius: 10px;
 	}

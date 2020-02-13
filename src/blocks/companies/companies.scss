@@ -1,0 +1,93 @@
+.companies {
+	/* 2 Block model */
+	box-sizing: border-box;
+	width: 100%;
+	max-width: 310px;
+	padding: 0 15px;
+	margin: 0 auto;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		max-width: none;
+		padding: 0 0 40px 0;
+	}
+}
+.companies__list {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.companies__item {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100px;
+	height: 58px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		width: 160px;
+		height: 90px;
+		margin-right: 50px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 190px;
+		height: 92px;
+		margin-right: 70px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		width: 160px;
+		height: 116px;
+	}
+}
+.companies__item:nth-child(5n) {
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-right: 0;
+	}
+}
+.companies__icon {
+	/* 2 Block model */
+	width: 100px;
+	height: 28px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		width: 160px;
+		height: 45px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 190px;
+		height: 54px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		width: 160px;
+		height: 45px;
+	}
+}
+.companies__item img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

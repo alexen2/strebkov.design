@@ -1,6 +1,11 @@
 .testimonial {
 	/* 2 Block model */
 	padding-bottom: 37px;
+	margin-bottom: 20px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
 }
 .testimonial__body {
 	/* 1 Positioning */

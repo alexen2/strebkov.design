@@ -1,0 +1,28 @@
+.desc-services {
+	/* 2 Block model */
+	margin-bottom: 17px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 40px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 96px;
+	}
+}
+.desc-services__item {
+	/* 2 Block model */
+	margin-bottom: 20px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+}
+.desc-services .h2 {
+	/* 2 Block model */
+	margin-bottom: 18px;
+}
+.desc-services p {
+	/* 2 Block model */
+	max-width: 280px;
+}

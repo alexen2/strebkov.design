@@ -2,10 +2,18 @@
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		max-width: 285px;
+		margin-top: 72px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-top: 63px;
+		margin-left: 20px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
 		max-width: 340px;
+		margin-top: 47px;
+		margin-left: 40px;
 	}
 }
 .list-services-sm ul {

@@ -1,12 +1,10 @@
 .cat {
 	/* 2 Block model */
-	padding-top: 50px;
-	padding-bottom: 64px;
+	margin-bottom: 35px;
 	overflow: hidden;
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		padding-top: 96px;
-		padding-bottom: 140px;
+		margin-bottom: 91px;
 	}
 }
 .cat__item {
