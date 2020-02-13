@@ -1,0 +1,32 @@
+.article-img {
+	/* 2 Block model */
+	margin-bottom: 56px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 66px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 89px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 101px;
+	}
+}
+.article-img img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+
+	/* 4 Visual */
+	border-radius: 4px;
+}
+.article-img .col-12 {
+	/* 2 Block model */
+	padding: 0;
+	@media (min-width: 540px) {
+		/* 2 Block model */
+		padding: 0 10px;
+	}
+}

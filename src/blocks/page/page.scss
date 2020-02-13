@@ -1,7 +1,11 @@
 .page h1 {
 	/* 2 Block model */
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 12px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 30px;
+	}
 }
 .page h2 {
 	/* 2 Block model */
@@ -9,8 +13,13 @@
 	margin-bottom: 26px;
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		margin-bottom: 45px;
+		margin-top: 64px;
+		margin-bottom: 30px;
 	}
+}
+.page h2:first-child {
+	/* 2 Block model */
+	margin-top: 0;
 }
 .page h3 {
 	/* 2 Block model */
@@ -35,7 +44,7 @@
 .page p {
 	/* 2 Block model */
 	margin: 0;
-	margin-bottom: 18px;
+	margin-bottom: 10px;
 }
 .page ul {
 	/* 2 Block model */
