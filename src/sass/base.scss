@@ -18,6 +18,11 @@ ul {
 	padding: 0;
 	margin: 0;
 }
+.wrapper {
+	/* 2 Block model */
+	width: 100%;
+	overflow-x: hidden;
+}
 .container .col-12 {
 	@media (max-width: 767px) {
 		/* 2 Block model */
@@ -95,7 +100,7 @@ ul {
 		margin-bottom: 94px;
 	}
 }
-.gray-dark .pd-mobile {
+.bottom .pd-mobile {
 	/* 2 Block model */
 	padding: 0;
 	@media (min-width: 768px) {
@@ -131,6 +136,9 @@ ul {
 	background-color: #FAFAFA;
 }
 .gray-dark {
+	/* 2 Block model */
+	overflow: hidden;
+
 	/* 4 Visual */
 	background-color: #FBFBFB;
 }
