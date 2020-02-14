@@ -106,3 +106,31 @@
 		line-height: 15px;
 	}
 }
+.header--in-header .header__logo {
+	/* 2 Block model */
+	display: flex;
+	justify-content: flex-end;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 40px;
+		padding-bottom: 37px;
+	}
+}
+.header--in-header .logo {
+	/* 2 Block model */
+	width: auto;
+	height: auto;
+}
+.header--in-header .icon--logo {
+	/* 2 Block model */
+	width: 120px;
+	height: 55px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 200px;
+		height: 100px;
+	}
+}

@@ -1,0 +1,74 @@
+.case-updown {
+	/* 2 Block model */
+	display: block;
+}
+.case-updown__header {
+	/* 2 Block model */
+	padding-top: 34px;
+
+	/* 4 Visual */
+	background-image: url(../images/case-updown__header-bg.png);
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 105px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 77px;
+	}
+}
+.case-updown__header .case__info {
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 14px;
+	}
+}
+.case-updown__header .case__date {
+	/* 3 Typography */
+	color: #FFD933;
+}
+.case-updown__header .h1 {
+	/* 3 Typography */
+	color: #FFFFFF;
+}
+.case-updown__header-img {
+	/* 2 Block model */
+	padding-top: 105px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 0;
+	}
+}
+.case-updown__header-img img {
+	/* 2 Block model */
+	display: block;
+	width: 830px;
+	margin-left: -100px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		width: 950px;
+		margin-left: -100px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 1200px;
+		margin-left: -120px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		width: 1470px;
+		margin-left: -157px;
+	}
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */

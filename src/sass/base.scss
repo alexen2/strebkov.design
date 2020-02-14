@@ -69,6 +69,14 @@ ul {
 		margin-bottom: 43px;
 	}
 }
+.mr-mb45 {
+	/* 2 Block model */
+	margin-bottom: 30px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 45px;
+	}
+}
 .mr-mb54 {
 	/* 2 Block model */
 	margin-bottom: 34px;
@@ -76,6 +84,18 @@ ul {
 		/* 2 Block model */
 		margin-bottom: 54px;
 	}
+}
+.mr-mb60 {
+	/* 2 Block model */
+	margin-bottom: 60px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+}
+.mr-mb60:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
 }
 .mr-mb64 {
 	/* 2 Block model */
@@ -183,6 +203,14 @@ ul {
 	@media (min-width: 1200px) {
 		/* 2 Block model */
 		margin-bottom: 96px;
+	}
+}
+.mr-mb148 {
+	/* 2 Block model */
+	margin-bottom: 80px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 148px;
 	}
 }
 .pd-pt100 {

@@ -1,0 +1,15 @@
+doctype html
+html(lang="ru")
+	include include/head.pug
+	+head('Home - Strebkov Design')
+
+	body
+		div.wrapper
+			include ../blocks/mixins.pug
+
+			include ../blocks/header/--in-header.pug
+
+			include ../blocks/uxdesigntoolkit/uxdesigntoolkit.pug
+
+			
+		include include/script.pug
