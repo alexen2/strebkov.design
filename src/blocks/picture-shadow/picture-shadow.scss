@@ -1,0 +1,43 @@
+.picture-shadow {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	width: 100%;
+	max-width: 200px;
+	margin: 0 auto;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		max-width: 220px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-width: 317px;
+	}
+}
+.picture-shadow::before {
+	/* 1 Positioning */
+	position: absolute;
+	top: -8%;
+	right: -8%;
+	bottom: -10%;
+	z-index: 1;
+
+	/* 2 Block model */
+	display: block;
+	width: 144%;
+
+	/* 4 Visual */
+	content: '';
+	background-image: url(../images/shadow.png);
+	background-size: cover;
+}
+.picture-shadow img {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 2;
+
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+}

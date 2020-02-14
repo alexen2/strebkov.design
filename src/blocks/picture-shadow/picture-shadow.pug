@@ -1,0 +1,6 @@
+mixin picture-shadow(data)
+  div.picture-shadow(class!=attributes.class)
+    picture
+      source(srcset="images/"+data.img+"-992.png, images/"+data.img+"-992@2x.png 2x" media="(min-width: 992px)")
+      source(srcset="images/"+data.img+".png, images/"+data.img+"@2x.png 2x")
+      img(src="images/"+data.img+"-992.png" srcset="images/"+data.img+"-992@2x.png 2x", alt=data.alt)

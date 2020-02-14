@@ -1,6 +1,8 @@
 .image-description {
 	/* 2 Block model */
-	margin: 0;
+	width: 100%;
+	max-width: 565px;
+	margin: 0 auto;
 
 	/* 3 Typography */
 	font-family: $font-main;
@@ -8,5 +10,10 @@
 	font-weight: 300;
 	line-height: 21px;
 	color: #969696;
+	text-align: center;
 	letter-spacing: -0.0882353px;
+}
+.image-description--w-420 {
+	/* 2 Block model */
+	max-width: 420px;
 }

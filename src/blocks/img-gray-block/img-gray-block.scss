@@ -1,21 +1,26 @@
 .img-gray-block {
 	/* 2 Block model */
-	padding-top: 100px;
-	padding-bottom: 90px;
+	padding-top: 30px;
+	padding-bottom: 40px;
 	margin-bottom: 30px;
 
 	/* 4 Visual */
 	background-color: #FAFAFA;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 80px;
+		padding-bottom: 77px;
+	}
 }
-
-/* 1 Positioning */
-
-/* 2 Block model */
-
-/* 3 Typography */
-
-/* 4 Visual */
-
-/* 5 Animation */
-
-/* 6 Misc */
+.img-gray-block--lg {
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 107px;
+		padding-bottom: 82px;
+	}
+}
