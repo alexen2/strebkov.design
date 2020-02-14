@@ -1,6 +1,9 @@
 .header {
 	/* 2 Block model */
 	width: 100%;
+
+	/* 4 Visual */
+	border-bottom: 1px solid #ECECEC;
 	@media (min-width: 768px) {
 		/* 4 Visual */
 		border-bottom: 1px solid transparent;
