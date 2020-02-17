@@ -9,14 +9,14 @@ if (hamburgers.length > 0) {
 
 			function fixed_but() {
 			  this_but.style.position = this_but.style.position === 'fixed' ? '' : 'fixed';
-			  this_but.style.top = this_but.style.top === '26px' ? '' : '26px';
+			  this_but.style.top = this_but.style.top === '25px' ? '' : '25px';
 			}
 
 			if(this.classList.contains("is-active")) {
 				setTimeout(fixed_but, 500);
 			} else {
 				this_but.style.position = this_but.style.position === 'fixed' ? '' : 'fixed';
-				this_but.style.top = this_but.style.top === '26px' ? '' : '26px';
+				this_but.style.top = this_but.style.top === '25px' ? '' : '25px';
 			}			
     }, false);
   });
