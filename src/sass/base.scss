@@ -161,6 +161,22 @@ ul {
 		margin-bottom: 85px;
 	}
 }
+.mr-mb86 {
+	/* 2 Block model */
+	margin-bottom: 45px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 44px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 84px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 86px;
+	}
+}
 .mr-mb92 {
 	/* 2 Block model */
 	margin-bottom: 56px;
@@ -207,6 +223,14 @@ ul {
 	@media (min-width: 1200px) {
 		/* 2 Block model */
 		margin-bottom: 96px;
+	}
+}
+.mr-mb127 {
+	/* 2 Block model */
+	margin-bottom: 64px;
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 127px;
 	}
 }
 .mr-mb148 {
