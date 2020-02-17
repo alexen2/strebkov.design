@@ -69,14 +69,6 @@ ul {
 		margin-bottom: 43px;
 	}
 }
-.mr-mb45 {
-	/* 2 Block model */
-	margin-bottom: 30px;
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		margin-bottom: 45px;
-	}
-}
 .mr-mb54 {
 	/* 2 Block model */
 	margin-bottom: 34px;
@@ -107,6 +99,18 @@ ul {
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-bottom: 70px;
+	}
+}
+.mr-mb63 {
+	/* 2 Block model */
+	margin-bottom: 48px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 63px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 0;
 	}
 }
 .mr-mb81 {
