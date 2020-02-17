@@ -13,7 +13,7 @@
 		/* 2 Block model */
 		width: 940px;
 		padding-top: 130px;
-		margin: -68px auto 100px auto;
+		margin: -20px auto 155px auto;
 
 		/* 4 Visual */
 		border-radius: 10px;
@@ -21,6 +21,7 @@
 	@media (min-width: 1200px) {
 		/* 2 Block model */
 		width: 100%;
+		margin: -68px auto 155px auto;
 	}
 }
 .table-price table {
@@ -190,23 +191,7 @@ span.table-price__decs {
 }
 .table-price .col-12 {
 	/* 2 Block model */
-	padding: 0;
-	@media (min-width: 540px) {
-		/* 2 Block model */
-		padding: 0 10px;
-	}
+	padding: 0 10px;
 }
 
 @import '--services/--services';
-
-/* 1 Positioning */
-
-/* 2 Block model */
-
-/* 3 Typography */
-
-/* 4 Visual */
-
-/* 5 Animation */
-
-/* 6 Misc */

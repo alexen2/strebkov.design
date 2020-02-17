@@ -16,3 +16,13 @@
 		letter-spacing: -0.307692px;
 	}
 }
+.h1__border {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	display: inline-block;
+
+	/* 4 Visual */
+	border-bottom: 8px solid #FFD933;
+}
