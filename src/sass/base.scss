@@ -307,6 +307,18 @@ ul {
 	/* 4 Visual */
 	background-color: #FBFBFB;
 }
+.scrolled {
+	/* 2 Block model */
+	padding-top: 70px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 80px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-top: 101px;
+	}
+}
 .scrolled .in-top {
 	/* 2 Block model */
 	width: 100%;
