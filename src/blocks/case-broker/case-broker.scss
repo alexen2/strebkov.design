@@ -1,0 +1,134 @@
+.case-broker__header {
+	/* 2 Block model */
+	padding-top: 34px;
+	padding-bottom: 30px;
+	margin-bottom: 50px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 22px;
+		margin-bottom: 65px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 75px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 97px;
+	}
+}
+.case-broker__header .case__date {
+	/* 3 Typography */
+	color: #000000;
+}
+.case-broker__header .h1 {
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 45px;
+	}
+}
+.case-broker__header .text-lg {
+	/* 3 Typography */
+	color: #4A4A4A;
+}
+.case-broker__header-img img {
+	/* 1 Positioning */
+	position: relative;
+	left: 50%;
+
+	/* 2 Block model */
+	width: 337px;
+
+	/* 4 Visual */
+	transform: translate(-55%, 0);
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		left: 0;
+
+		/* 2 Block model */
+		transform: translateX(0);
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 470px;
+		margin-left: 0;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		width: 526px;
+		margin-left: -99px;
+	}
+}
+.case-broker__body-img .img-gray-block {
+	/* 2 Block model */
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.case-broker__body-img img {
+	/* 1 Positioning */
+	position: relative;
+	left: 35px;
+
+	/* 2 Block model */
+	display: block;
+	width: 830px;
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		left: 100px;
+
+		/* 2 Block model */
+		width: 1000px;
+	}
+	@media (min-width: 992px) {
+		/* 1 Positioning */
+		left: 315px;
+
+		/* 2 Block model */
+		width: 1189px;
+	}
+}
+.case-broker__bottom-img {
+	/* 2 Block model */
+	margin-bottom: 40px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 57px;
+	}
+}
+.case-broker__bottom-img img {
+	/* 1 Positioning */
+	position: relative;
+	left: 40px;
+
+	/* 2 Block model */
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		left: 0;
+
+		/* 2 Block model */
+		width: 600px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 800px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		width: 1006px;
+	}
+}
+
+/* 1 Positioning */
+
+/* 2 Block model */
+
+/* 3 Typography */
+
+/* 4 Visual */
+
+/* 5 Animation */
+
+/* 6 Misc */
