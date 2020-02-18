@@ -153,7 +153,7 @@
 }
 .case-updown--mobile .case-updown__header-img img {
 	/* 2 Block model */
-	width: 530px;
+	width: 614px;
 	margin-left: 15px;
 	@media (min-width: 480px) {
 		/* 2 Block model */
@@ -161,34 +161,17 @@
 	}
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		margin-top: 200px;
+		width: 793px;
+		margin-top: 90px;
 		margin-left: 57px;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		width: 793px;
 		margin-top: 107px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
-	}
-	@media (min-width: 1440px) {
-		/* 2 Block model */
+		width: 954px;
 		margin-left: 16px;
 	}
-	@media (min-width: 1600px) {
-		/* 2 Block model */
-		margin-left: 257px;
-	}
 }
-/* 1 Positioning */
-
-/* 2 Block model */
-
-/* 3 Typography */
-
-/* 4 Visual */
-
-/* 5 Animation */
-
-/* 6 Misc */

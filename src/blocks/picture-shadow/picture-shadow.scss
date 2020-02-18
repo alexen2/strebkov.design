@@ -29,7 +29,7 @@
 
 	/* 4 Visual */
 	content: '';
-	background-image: url(../images/shadow.png);
+	background-image: url(../images/picture-shadow__bg.png);
 	background-size: cover;
 }
 .picture-shadow img {
@@ -40,4 +40,16 @@
 	/* 2 Block model */
 	display: block;
 	width: 100%;
+}
+.picture-shadow--big::before {
+	/* 1 Positioning */
+	top: -3%;
+	right: -4%;
+	bottom: -15%;
+
+	/* 2 Block model */
+	width: 140%;
+
+	/* 4 Visual */
+	background-image: url(../images/picture-shadow__bg--big.png);
 }
