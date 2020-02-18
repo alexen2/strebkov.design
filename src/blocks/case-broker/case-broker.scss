@@ -59,6 +59,22 @@
 		margin-left: -99px;
 	}
 }
+.case-broker__slider .img-gray-block {
+	/* 2 Block model */
+	margin-bottom: 30px;
+
+	/* 4 Visual */
+	background-color: #FAFAFA;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-bottom: 10px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 30px;
+		padding-bottom: 27px;
+	}
+}
 .case-broker__body-img .img-gray-block {
 	/* 2 Block model */
 	padding-top: 0;
