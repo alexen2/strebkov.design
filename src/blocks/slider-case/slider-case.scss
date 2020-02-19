@@ -4,17 +4,26 @@
 }
 .slider-case__item {
 	/* 2 Block model */
-	widows: 100px;
+	width: 100%;
 	max-width: 400px;
 	padding: 50px 0;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-right: 30px;
+	padding-left: 30px;
 
 	/* 4 Visual */
 	outline: none;
 	@media (min-width: 768px) {
+		/* 2 Block model */
 		padding-right: 10px;
 		padding-left: 10px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-width: 470px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		max-width: 400px;
 	}
 }
 

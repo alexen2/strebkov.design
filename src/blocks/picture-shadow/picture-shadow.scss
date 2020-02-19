@@ -18,14 +18,14 @@
 .picture-shadow::before {
 	/* 1 Positioning */
 	position: absolute;
-	top: -8%;
-	right: -8%;
-	bottom: -10%;
+	top: 0;
+	right: 6%;
+	bottom: -8%;
 	z-index: 1;
 
 	/* 2 Block model */
 	display: block;
-	width: 144%;
+	width: 110%;
 
 	/* 4 Visual */
 	content: '';
