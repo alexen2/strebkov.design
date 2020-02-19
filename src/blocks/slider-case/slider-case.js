@@ -1,8 +1,8 @@
 $('.slider-case').slick({
   slidesToShow: 3,
   slidesToScroll: 3,
-  // autoplay: true,
-  // autoplaySpeed: 2000,
+  autoplay: true,
+  autoplaySpeed: 2000,
   dots: false,
   arrows: false,
   responsive: [
