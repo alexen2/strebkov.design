@@ -119,6 +119,8 @@
 }
 .header--in-header .logo {
 	/* 2 Block model */
+	align-items: center;
+	justify-content: flex-end;
 	width: auto;
 	height: auto;
 }

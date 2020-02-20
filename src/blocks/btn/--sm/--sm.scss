@@ -4,6 +4,10 @@
 
 	/* 3 Typography */
 	white-space: nowrap;
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS styles go here */
+		padding: 12px 23px 7px 23px;
+	}
 }
 .btn--sm .btn__text {
 	/* 3 Typography */

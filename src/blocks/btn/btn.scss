@@ -33,6 +33,10 @@
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-webkit-tap-highlight-color: transparent;
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS styles go here */
+		padding: 20px 55px 14px 56px;
+	}
 }
 .btn:hover::after {
 	/* 1 Positioning */

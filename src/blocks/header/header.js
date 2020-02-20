@@ -17,9 +17,9 @@ jQuery(document).ready(function() {
 			 	st = $this.scrollTop();
 
 		if(st > 285){
-			$('body').addClass('scrolled');
+			$('.wrapper').addClass('scrolled');
 		}else{
-			$('body').removeClass('scrolled');
+			$('.wrapper').removeClass('scrolled');
 		}
 	});	
 });
