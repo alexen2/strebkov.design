@@ -93,11 +93,6 @@
 .scrolled .header__btn {
 	/* 2 Block model */
 	display: block;
-	flex: 0 0 110px;
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		flex: 0 0 139px;
-	}
 }
 .header__btn .btn__text {
 	/* 3 Typography */
