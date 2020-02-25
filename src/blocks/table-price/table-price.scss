@@ -1,19 +1,19 @@
 .table-price {
 	/* 2 Block model */
-	margin: 60px auto 80px auto;
+	margin: 60px auto 50px auto;
 	overflow-x: auto;
 
 	/* 4 Visual */
 	background-color: $color-white;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		margin: 80px auto 100px auto;
+		margin: 80px auto 30px auto;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		width: 960px;
 		padding-top: 130px;
-		margin: -20px auto 155px auto;
+		margin: -20px auto 30px auto;
 
 		/* 4 Visual */
 		border-radius: 10px;
@@ -21,7 +21,7 @@
 	@media (min-width: 1200px) {
 		/* 2 Block model */
 		width: 100%;
-		margin: -68px auto 155px auto;
+		margin: -68px auto 30px auto;
 	}
 }
 .table-price table {
