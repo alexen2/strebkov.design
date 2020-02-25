@@ -96,6 +96,17 @@
 		transform: translate(-53%, 0);
 	}
 }
+.mvp-design__table {
+	/* 2 Block model */
+	padding-top: 50px;
+
+	/* 4 Visual */
+	background-color: #FBFBFB;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 80px;
+	}
+}
 .mvp-desing--outsource {
 	@media (min-width: 992px) {
 		/* 2 Block model */

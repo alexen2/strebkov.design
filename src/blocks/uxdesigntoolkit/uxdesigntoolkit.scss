@@ -1,3 +1,11 @@
+.uxdesigntoolkit__top {
+	/* 2 Block model */
+	margin-bottom: 60px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 50px;
+	}
+}
 .uxdesigntoolkit__text {
 	/* 2 Block model */
 	width: 100%;
@@ -22,12 +30,32 @@
 }
 .uxdesigntoolkit__img {
 	/* 2 Block model */
-	margin-bottom: 21px;
+	margin-bottom: 20px;
+
+	/* 4 Visual */
+	border-radius: 10px;
+	box-shadow: 0 1px 20px rgba(0, 0, 0, 0.1);
+}
+.uxdesigntoolkit__img img {
+	/* 4 Visual */
+	border-radius: 10px;
 }
 .uxdesigntoolkit__bottom {
 	/* 2 Block model */
 	padding-top: 80px;
-	padding-bottom: 67px;
+	padding-bottom: 30px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-bottom: 65px;
+	}
+}
+.uxdesigntoolkit__bottom .footer {
+	/* 2 Block model */
+	padding-top: 20px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 38px;
+	}
 }
 
 /* 1 Positioning */

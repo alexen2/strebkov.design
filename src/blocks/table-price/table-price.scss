@@ -11,7 +11,7 @@
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		width: 940px;
+		width: 960px;
 		padding-top: 130px;
 		margin: -20px auto 155px auto;
 
@@ -59,10 +59,8 @@
 	}
 }
 .table-price th:first-child {
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		padding-left: 0;
-	}
+	/* 2 Block model */
+	padding-left: 0;
 }
 .table-price tr {
 	/* 4 Visual */
@@ -90,6 +88,7 @@
 .table-price td:first-child {
 	/* 2 Block model */
 	min-width: 150px;
+	padding-left: 0;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		min-width: 250px;
@@ -98,7 +97,6 @@
 		/* 2 Block model */
 		min-width: auto;
 		padding-right: 10px;
-		padding-left: 0;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */

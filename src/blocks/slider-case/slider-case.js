@@ -1,9 +1,11 @@
 $('.slider-case').slick({
+  dots: true,
+  dotsClass: 'slider-case__dots',
   slidesToShow: 3,
   slidesToScroll: 3,
   autoplay: true,
   autoplaySpeed: 2000,
-  dots: false,
+  pauseOnFocus: false,
   arrows: false,
   responsive: [
     {
@@ -16,6 +18,7 @@ $('.slider-case').slick({
     {
       breakpoint: 480,
       settings: {
+        dots: false,
         slidesToShow: 1,
         slidesToScroll: 1
       }
