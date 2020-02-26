@@ -57,20 +57,25 @@
 
 	/* 2 Block model */
 	display: inline-block;
-	width: 18px;
-	height: 18px;
+	width: 14px;
+	height: 14px;
 	padding: 0;
 	margin: 0 6px;
 
 	/* 4 Visual */
 	cursor: pointer;
 	border-radius: 50%;
+	@media (min-width: 480px) {
+		/* 2 Block model */
+		width: 18px;
+		height: 18px;
+	}
 }
 .slider-case__dots li button {
 	/* 2 Block model */
 	display: block;
-	width: 18px;
-	height: 18px;
+	width: 14px;
+	height: 14px;
 	padding: 5px;
 
 	/* 3 Typography */
@@ -84,6 +89,11 @@
 	border: 0;
 	border-radius: 50%;
 	outline: none;
+	@media (min-width: 480px) {
+		/* 2 Block model */
+		width: 18px;
+		height: 18px;
+	}
 }
 .slider-case__dots .slick-active button {
 	/* 4 Visual */
