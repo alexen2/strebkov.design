@@ -44,7 +44,7 @@
 	position: relative;
 	z-index: 2;
 }
-.table-price--services tr:last-child {
+.table-price--services .table-price__body tr:last-child {
 	/* 4 Visual */
 	border-bottom: none;
 }
