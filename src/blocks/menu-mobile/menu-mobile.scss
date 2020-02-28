@@ -39,22 +39,23 @@
 	/* 4 Visual */
 	list-style: none;
 }
-.menu-mobile__item {
+.menu-mobile li.menu-mobile__item {
 	/* 4 Visual */
 	border-bottom: 1px solid #F4F4F4;
 
 	/* 5 Animation */
 	transition: all 0.4s;
 }
-.menu-mobile__item:last-child {
+.menu-mobile li.menu-mobile__item:last-child {
 	/* 4 Visual */
 	border: none;
 }
-.menu-mobile__item--active {
+.menu-mobile li.menu-mobile__item--active,
+.current_page_item {
 	/* 4 Visual */
-	background-color: #000000;
+	background-color: #FFD933;
 }
-.menu-mobile__item:hover {
+.menu-mobile li.menu-mobile__item:hover {
 	/* 4 Visual */
 	background-color: #FFD933;
 }
