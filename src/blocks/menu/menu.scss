@@ -63,11 +63,12 @@
 	content: "";
 	background-image: url(../images/menu__home--in.svg);
 }
-.menu__list li.menu__item--active {
+.menu__list .menu__item--active,
+li.current_page_item {
 	/* 1 Positioning */
 	position: relative;
 }
-.menu__list li.menu__item--active,
+.menu__list .menu__item--active::before,
 li.current_page_item::before {
 	/* 1 Positioning */
 	position: absolute;
@@ -81,7 +82,10 @@ li.current_page_item::before {
 
 	/* 4 Visual */
 	content: "";
-	background-color: #FFD933;
+	@media (min-width: 768px) {
+		/* 4 Visual */
+		background-color: #FFD933;
+	}
 }
 .menu__list li img {
 	/* 2 Block model */
