@@ -4,75 +4,76 @@ html(lang="en")
 	+head('Case-updown - Strebkov Design')
 
 	body
-		div.case-updown.wrapper
+		div.wrapper
 			include ../blocks/mixins.pug
 
 			include ../blocks/header/header.pug
 
-			section.case-updown__header
-				div.container
+			div.case-updown
+				section.case-updown__header
+					div.container
+						div.row
+							div.col-12.col-md-4.offset-xl-1
+								div.case__info
+									span.case__date Undisclosed client, 2015&ndash;2016
+									h1.h1 Web- and mobile trading apps design for binary options broker
+
+							div.col-12.col-md-6
+								div.case-updown__header-img
+									picture
+										source(srcset="images/case-updown__header.png, images/case-updown__header@2x.png 2x", media="(max-width: 991px)")
+										source(srcset="images/case-updown__header-992.png, images/case-updown__header-992@2x.png 2x", media="(min-width: 992px)")
+										img(src="images/case-updown__header-992.png" srcset="images/case-updown__header-992@2x.png 2x" alt="Mobile app design concept for a cryptocurrency exchange")
+
+				div.container.page.mr-mb86
 					div.row
-						div.col-12.col-md-4.offset-xl-1
-							div.case__info
-								span.case__date Undisclosed client, 2015&ndash;2016
-								h1.h1 Web- and mobile trading apps design for binary options broker
+						div.col-12.col-md-10.col-xl-8.offset-md-1.offset-xl-2
+							h2.h2 The Opportunity
+							p FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc. &mdash;&nbsp;in&nbsp;the target language.
+							p All videos have subtitles in&nbsp;both English and the target language, and there is&nbsp;detailed vocabulary information available for each word. After watching the video, the user completes a&nbsp;short quiz. The system tracks learned words and supplies content that includes newly learned vocabulary.
 
-						div.col-12.col-md-6
-							div.case-updown__header-img
-								picture
-									source(srcset="images/case-updown__header.png, images/case-updown__header@2x.png 2x", media="(max-width: 991px)")
-									source(srcset="images/case-updown__header-992.png, images/case-updown__header-992@2x.png 2x", media="(min-width: 992px)")
-									img(src="images/case-updown__header-992.png" srcset="images/case-updown__header-992@2x.png 2x" alt="Mobile app design concept for a cryptocurrency exchange")
+							h2.h2 Our Approach
+							p FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc. &mdash;&nbsp;in&nbsp;the target language.
+							p All videos have subtitles in&nbsp;both English and the target language, and there is&nbsp;detailed vocabulary information available for each word. After watching the video, the user completes a&nbsp;short quiz. The system tracks learned words and supplies content that includes newly learned vocabulary.
 
-			div.container.page.mr-mb86
-				div.row
-					div.col-12.col-md-10.col-xl-8.offset-md-1.offset-xl-2
-						h2.h2 The Opportunity
-						p FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc. &mdash;&nbsp;in&nbsp;the target language.
-						p All videos have subtitles in&nbsp;both English and the target language, and there is&nbsp;detailed vocabulary information available for each word. After watching the video, the user completes a&nbsp;short quiz. The system tracks learned words and supplies content that includes newly learned vocabulary.
+				div.case-updown__body-img
+					div.img-gray-block
+						picture
+							img(src="images/case-updown__body-img.png" srcset="images/case-updown__body-img@2x.png 2x" alt="img")
 
-						h2.h2 Our Approach
-						p FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc. &mdash;&nbsp;in&nbsp;the target language.
-						p All videos have subtitles in&nbsp;both English and the target language, and there is&nbsp;detailed vocabulary information available for each word. After watching the video, the user completes a&nbsp;short quiz. The system tracks learned words and supplies content that includes newly learned vocabulary.
+				div.container.mr-mb85
+					div.row
+						div.col-12
+							p.image-description FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc.
 
-			div.case-updown__body-img
-				div.img-gray-block
-					picture
-						img(src="images/case-updown__body-img.png" srcset="images/case-updown__body-img@2x.png 2x" alt="img")
+				div.case-updown__bottom-img
+					div.img-gray-block
+						picture
+							img(src="images/case-updown__bottom-img.jpg" srcset="images/case-updown__bottom-img@2x.jpg 2x" alt="img")
 
-			div.container.mr-mb85
-				div.row
-					div.col-12
-						p.image-description FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc.
+				div.container.mr-mb127
+					div.row.mr-mb79
+						div.col-12
+							p.image-description FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc.
 
-			div.case-updown__bottom-img
-				div.img-gray-block
-					picture
-						img(src="images/case-updown__bottom-img.jpg" srcset="images/case-updown__bottom-img@2x.jpg 2x" alt="img")
+					div.row.page
+						div.col-12.col-md-10.col-xl-8.offset-md-1.offset-xl-2
+							h2.h2 The Outcome
+							p FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc. &mdash;&nbsp;in&nbsp;the target language.
+							p All videos have subtitles in&nbsp;both English and the target language, and there is&nbsp;detailed vocabulary information available for each word. After watching the video, the user completes a&nbsp;short quiz. The system tracks learned words and supplies content that includes newly learned vocabulary.
+				
+				div.bottom.gray-dark
+					div.container
+						div.row.pd-pt100.mr-mb94
+							div.col-12.col-md-6.offset-lg-1.pd-mobile
+								include ../blocks/lets-talk/lets-talk.pug
+							div.col-12.col-md-6.col-lg-5
+								include ../blocks/list-services-sm/list-services-sm.pug
 
-			div.container.mr-mb127
-				div.row.mr-mb79
-					div.col-12
-						p.image-description FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc.
-
-				div.row.page
-					div.col-12.col-md-10.col-xl-8.offset-md-1.offset-xl-2
-						h2.h2 The Outcome
-						p FluentU is&nbsp;an&nbsp;application that helps teach foreign language skills using real-world videos. Originally an&nbsp;educational resource for Chinese language learners, FluentU soon expanded to&nbsp;other languages. The program helps users learn vocabulary by&nbsp;watching video content&nbsp;&mdash; commercials, music videos, news, etc. &mdash;&nbsp;in&nbsp;the target language.
-						p All videos have subtitles in&nbsp;both English and the target language, and there is&nbsp;detailed vocabulary information available for each word. After watching the video, the user completes a&nbsp;short quiz. The system tracks learned words and supplies content that includes newly learned vocabulary.
-			
-			div.bottom.gray-dark
-				div.container
-					div.row.pd-pt100.mr-mb94
-						div.col-12.col-md-6.offset-lg-1.pd-mobile
-							include ../blocks/lets-talk/lets-talk.pug
-						div.col-12.col-md-6.col-lg-5
-							include ../blocks/list-services-sm/list-services-sm.pug
-
-			div.gray-dark
-				div.container
-					div.row.pd-pb62
-						div.col-12.col-lg-7-6.offset-lg-1
-							include ../blocks/footer/footer.pug
+				div.gray-dark
+					div.container
+						div.row.pd-pb62
+							div.col-12.col-lg-7-6.offset-lg-1
+								include ../blocks/footer/footer.pug
 
 		include include/script.pug

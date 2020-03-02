@@ -4,111 +4,112 @@ html(lang="en")
 	+head('Case-cryptology - Strebkov Design')
 
 	body
-		div.case-cryptology.wrapper
+		div.wrapper
 			include ../blocks/mixins.pug
 
 			include ../blocks/header/header.pug
 
-			section.case-cryptology__header.gray
+			div.case-cryptology
+				section.case-cryptology__header.gray
+					div.container
+						div.row
+							div.col-12.col-md-5.offset-md-1
+								div.case__info
+									span.case__date Cryptology, Nov—Dec 2017
+									h1.h1 Mobile app design concept for a&nbsp;cryptocurrency exchange
+									p.text-lg Cryptology is&nbsp;a&nbsp;Singapore-based crypto startup offering simple margin trading and easy withdrawals deposits with bank cards.
+
+							div.col-12.col-md-6
+								div.case-cryptologye__header-img
+									picture
+										source(srcset="images/case-cryptology__img-2-header.png, images/case-cryptology__img-2-header@2x.png 2x", media="(max-width: 991px)")
+										source(srcset="images/case-cryptology__img-2-header-1200.png, images/case-cryptology__img-2-header-1200@2x.png 2x", media="(min-width: 992px)")
+										img(src="images/case-cryptology__img-2-header-1200.png" srcset="images/case-cryptology__img-2-header-1200@2x.png 2x" alt="Mobile app design concept for a cryptocurrency exchange")
+
+				div.container.page.mr-mb79
+					div.row
+						div.col-12.col-md-8.offset-md-2
+							h2.h2 The Opportunity
+							p The client, a&nbsp;Singapore-based fintech company approached&nbsp;us to&nbsp;help them launch an&nbsp;MVP of&nbsp;the cryptocurrency exchange with margin trading capabilities. This was back in&nbsp;October 2017, 2&nbsp;months prior to&nbsp;Bitcoin reaching $17,000.
+							p The product was supposed to&nbsp;solve 2&nbsp;key tasks:
+							ul
+								li Provide non-professional investors an&nbsp;easy on-the-go entry to&nbsp;the crypto market, basically allowing them to&nbsp;convert their fiat money to&nbsp;most popular cryptocurrencies and vice versa, store it&nbsp;on&nbsp;the site, and easily deposit/withdraw to&nbsp;a&nbsp;bank account or&nbsp;a&nbsp;credit card.
+								li Introduce them to&nbsp;the world of&nbsp;CFD trading, making it&nbsp;as&nbsp;uncomplicated as&nbsp;possible for people with little or&nbsp;no&nbsp;trading experience.
+
+							h2.h2 Our Approach
+							p During our work, we&nbsp;followed our proven process for designing an&nbsp;MVP. The discovery stage was really a&nbsp;breeze as&nbsp;we&rsquo;ve been designing trading platforms for multiple clients for years and had lots of&nbsp;experience in&nbsp;the field. After the initial market research, we&nbsp;also had a&nbsp;kick-off brainstorming session in&nbsp;the client&rsquo;s office.
+							p One of&nbsp;the key findings for&nbsp;us was that the potential target user might struggle with understanding even some very basic concepts of&nbsp;trading, like stop-loss orders or&nbsp;leverage. This brought&nbsp;us to&nbsp;an&nbsp;idea of&nbsp;simplifying them to&nbsp;really basic concepts.
+							p The next stage was creating user flows and information architecture, followed by&nbsp;creating the first set of&nbsp;low fidelity wireframes. The visual style of&nbsp;the app was basically dictated by&nbsp;the client&rsquo;s corporate identity&nbsp;&mdash; black and dark grey fills with bright yellow accents. After experimenting with the style on&nbsp;several key screens we&nbsp;applied it&nbsp;to&nbsp;the wireframes and finalized user scenarios and micro-interactions.
+							p After about one month since we&nbsp;started our work, we&nbsp;began to&nbsp;actively collaborate with the development team, preparing the assets and making design adjustments along with designing the new functionality.
+							
 				div.container
 					div.row
-						div.col-12.col-md-5.offset-md-1
-							div.case__info
-								span.case__date Cryptology, Nov—Dec 2017
-								h1.h1 Mobile app design concept for a&nbsp;cryptocurrency exchange
-								p.text-lg Cryptology is&nbsp;a&nbsp;Singapore-based crypto startup offering simple margin trading and easy withdrawals deposits with bank cards.
+						div.col-12.col-md-6.mr-mb43
+							div.img-gray-block
+								+picture-shadow({img: 'case-cryptology__img-1', alt: 'Live quotes'})
 
-						div.col-12.col-md-6
-							div.case-cryptologye__header-img
-								picture
-									source(srcset="images/case-cryptology__img-2-header.png, images/case-cryptology__img-2-header@2x.png 2x", media="(max-width: 991px)")
-									source(srcset="images/case-cryptology__img-2-header-1200.png, images/case-cryptology__img-2-header-1200@2x.png 2x", media="(min-width: 992px)")
-									img(src="images/case-cryptology__img-2-header-1200.png" srcset="images/case-cryptology__img-2-header-1200@2x.png 2x" alt="Mobile app design concept for a cryptocurrency exchange")
+							p.image-description.image-description--w-420 Live quotes screen shows the quotes for all crypto and fiat pairs available in&nbsp;the app
 
-			div.container.page.mr-mb79
-				div.row
-					div.col-12.col-md-8.offset-md-2
-						h2.h2 The Opportunity
-						p The client, a&nbsp;Singapore-based fintech company approached&nbsp;us to&nbsp;help them launch an&nbsp;MVP of&nbsp;the cryptocurrency exchange with margin trading capabilities. This was back in&nbsp;October 2017, 2&nbsp;months prior to&nbsp;Bitcoin reaching $17,000.
-						p The product was supposed to&nbsp;solve 2&nbsp;key tasks:
-						ul
-							li Provide non-professional investors an&nbsp;easy on-the-go entry to&nbsp;the crypto market, basically allowing them to&nbsp;convert their fiat money to&nbsp;most popular cryptocurrencies and vice versa, store it&nbsp;on&nbsp;the site, and easily deposit/withdraw to&nbsp;a&nbsp;bank account or&nbsp;a&nbsp;credit card.
-							li Introduce them to&nbsp;the world of&nbsp;CFD trading, making it&nbsp;as&nbsp;uncomplicated as&nbsp;possible for people with little or&nbsp;no&nbsp;trading experience.
+						div.col-12.col-md-6.mr-mb43
+							div.img-gray-block
+								+picture-shadow({img: 'case-cryptology__img-2', alt: 'Exchange'})
+			
+							p.image-description.image-description--w-420 The user can easily exchange fiat to&nbsp;crypto and vice versa as&nbsp;well as&nbsp;crypto to&nbsp;crypto
 
-						h2.h2 Our Approach
-						p During our work, we&nbsp;followed our proven process for designing an&nbsp;MVP. The discovery stage was really a&nbsp;breeze as&nbsp;we&rsquo;ve been designing trading platforms for multiple clients for years and had lots of&nbsp;experience in&nbsp;the field. After the initial market research, we&nbsp;also had a&nbsp;kick-off brainstorming session in&nbsp;the client&rsquo;s office.
-						p One of&nbsp;the key findings for&nbsp;us was that the potential target user might struggle with understanding even some very basic concepts of&nbsp;trading, like stop-loss orders or&nbsp;leverage. This brought&nbsp;us to&nbsp;an&nbsp;idea of&nbsp;simplifying them to&nbsp;really basic concepts.
-						p The next stage was creating user flows and information architecture, followed by&nbsp;creating the first set of&nbsp;low fidelity wireframes. The visual style of&nbsp;the app was basically dictated by&nbsp;the client&rsquo;s corporate identity&nbsp;&mdash; black and dark grey fills with bright yellow accents. After experimenting with the style on&nbsp;several key screens we&nbsp;applied it&nbsp;to&nbsp;the wireframes and finalized user scenarios and micro-interactions.
-						p After about one month since we&nbsp;started our work, we&nbsp;began to&nbsp;actively collaborate with the development team, preparing the assets and making design adjustments along with designing the new functionality.
-						
-			div.container
-				div.row
-					div.col-12.col-md-6.mr-mb43
-						div.img-gray-block
-							+picture-shadow({img: 'case-cryptology__img-1', alt: 'Live quotes'})
+				div.img-gray-block.img-gray-block--lg
+					div.container
+						div.row
+							div.col-12.col-md-4.mr-mb60
+								+picture-shadow({img: 'case-cryptology__img-3', alt: 'Trading Quotes'})
 
-						p.image-description.image-description--w-420 Live quotes screen shows the quotes for all crypto and fiat pairs available in&nbsp;the app
+							div.col-12.col-md-4.mr-mb60
+								+picture-shadow({img: 'case-cryptology__img-4', alt: 'Market Depth'})
+				
+							div.col-12.col-md-4.mr-mb60
+								+picture-shadow({img: 'case-cryptology__img-5', alt: 'Placing an Order'})
 
-					div.col-12.col-md-6.mr-mb43
-						div.img-gray-block
-							+picture-shadow({img: 'case-cryptology__img-2', alt: 'Exchange'})
-		
-						p.image-description.image-description--w-420 The user can easily exchange fiat to&nbsp;crypto and vice versa as&nbsp;well as&nbsp;crypto to&nbsp;crypto
-
-			div.img-gray-block.img-gray-block--lg
-				div.container
+				div.container.mr-mb96
 					div.row
-						div.col-12.col-md-4.mr-mb60
-							+picture-shadow({img: 'case-cryptology__img-3', alt: 'Trading Quotes'})
+						div.col-12
+							p.image-description Margin trading section of&nbsp;the app also features live quotes with bid/ask prices and spread, and simplified trading screen with both price chart and market depth chart
 
-						div.col-12.col-md-4.mr-mb60
-							+picture-shadow({img: 'case-cryptology__img-4', alt: 'Market Depth'})
-			
-						div.col-12.col-md-4.mr-mb60
-							+picture-shadow({img: 'case-cryptology__img-5', alt: 'Placing an Order'})
+				div.img-gray-block.img-gray-block--lg
+					div.container
+						div.row
+							div.col-12.col-md-4.mr-mb60
+								+picture-shadow({img: 'case-cryptology__img-6', alt: 'Selecting a document from a gallery'})
 
-			div.container.mr-mb96
-				div.row
-					div.col-12
-						p.image-description Margin trading section of&nbsp;the app also features live quotes with bid/ask prices and spread, and simplified trading screen with both price chart and market depth chart
+							div.col-12.col-md-4.mr-mb60
+								+picture-shadow({img: 'case-cryptology__img-7', alt: 'Taking a picture of an ID'})
+				
+							div.col-12.col-md-4.mr-mb60
+								+picture-shadow({img: 'case-cryptology__img-8', alt: 'KYC Questionnaire'})
 
-			div.img-gray-block.img-gray-block--lg
-				div.container
+				div.container.mr-mb96
 					div.row
-						div.col-12.col-md-4.mr-mb60
-							+picture-shadow({img: 'case-cryptology__img-6', alt: 'Selecting a document from a gallery'})
-
-						div.col-12.col-md-4.mr-mb60
-							+picture-shadow({img: 'case-cryptology__img-7', alt: 'Taking a picture of an ID'})
+						div.col-12
+							p.image-description To&nbsp;access some functions (e.&nbsp;g. trading) the user has to&nbsp;go&nbsp;through a&nbsp;KYC process, which requires uploading the documents and answering a&nbsp;questionnaire
 			
-						div.col-12.col-md-4.mr-mb60
-							+picture-shadow({img: 'case-cryptology__img-8', alt: 'KYC Questionnaire'})
 
-			div.container.mr-mb96
-				div.row
-					div.col-12
-						p.image-description To&nbsp;access some functions (e.&nbsp;g. trading) the user has to&nbsp;go&nbsp;through a&nbsp;KYC process, which requires uploading the documents and answering a&nbsp;questionnaire
-		
+				div.container.page.mr-mb64
+					div.row
+						div.col-12.col-md-8.offset-md-2
+							h2.h2 The Outcome
+							p With our help, the client was able to&nbsp;go&nbsp;from just an&nbsp;idea to&nbsp;the ready-to-implement designs. The development team was able to&nbsp;start the implementation in&nbsp;just 1&nbsp;month after we&nbsp;started our work. After 2&nbsp;months we&nbsp;passed the concept to&nbsp;the in-house design team and then they had the ball.
 
-			div.container.page.mr-mb64
-				div.row
-					div.col-12.col-md-8.offset-md-2
-						h2.h2 The Outcome
-						p With our help, the client was able to&nbsp;go&nbsp;from just an&nbsp;idea to&nbsp;the ready-to-implement designs. The development team was able to&nbsp;start the implementation in&nbsp;just 1&nbsp;month after we&nbsp;started our work. After 2&nbsp;months we&nbsp;passed the concept to&nbsp;the in-house design team and then they had the ball.
+				
+				div.bottom.gray-dark
+					div.container
+						div.row.pd-pt100.mr-mb94
+							div.col-12.col-md-6.offset-lg-1.pd-mobile
+								include ../blocks/lets-talk/lets-talk.pug
+							div.col-12.col-md-6.col-lg-5
+								include ../blocks/list-services-sm/list-services-sm.pug
 
-			
-			div.bottom.gray-dark
-				div.container
-					div.row.pd-pt100.mr-mb94
-						div.col-12.col-md-6.offset-lg-1.pd-mobile
-							include ../blocks/lets-talk/lets-talk.pug
-						div.col-12.col-md-6.col-lg-5
-							include ../blocks/list-services-sm/list-services-sm.pug
-
-			div.gray-dark
-				div.container
-					div.row.pd-pb62
-						div.col-12.col-lg-7-6.offset-lg-1
-							include ../blocks/footer/footer.pug
+				div.gray-dark
+					div.container
+						div.row.pd-pb62
+							div.col-12.col-lg-7-6.offset-lg-1
+								include ../blocks/footer/footer.pug
 
 		include include/script.pug
