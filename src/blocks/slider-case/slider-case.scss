@@ -57,8 +57,8 @@
 
 	/* 2 Block model */
 	display: inline-block;
-	width: 14px;
-	height: 14px;
+	width: 10px;
+	height: 10px;
 	padding: 0;
 	margin: 0 6px;
 
@@ -67,15 +67,15 @@
 	border-radius: 50%;
 	@media (min-width: 480px) {
 		/* 2 Block model */
-		width: 18px;
-		height: 18px;
+		width: 12px;
+		height: 12px;
 	}
 }
 .slider-case__dots li button {
 	/* 2 Block model */
 	display: block;
-	width: 14px;
-	height: 14px;
+	width: 10px;
+	height: 10px;
 	padding: 5px;
 
 	/* 3 Typography */
@@ -91,11 +91,11 @@
 	outline: none;
 	@media (min-width: 480px) {
 		/* 2 Block model */
-		width: 18px;
-		height: 18px;
+		width: 12px;
+		height: 12px;
 	}
 }
 .slider-case__dots .slick-active button {
 	/* 4 Visual */
-	background-color: #000000;
+	background-color: #B8B8B8;
 }
