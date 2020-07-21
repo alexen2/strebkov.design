@@ -64,7 +64,7 @@
 }
 .table-price tr {
 	/* 4 Visual */
-	border-bottom: solid 1px #F2F2F2;
+	border-bottom: solid 1px #f2f2f2;
 }
 .table-price td {
 	/* 2 Block model */
@@ -154,7 +154,7 @@ span.table-price__decs {
 	height: 138px;
 
 	/* 4 Visual */
-	content: '';
+	content: "";
 	@media (min-width: 992px) {
 		/* 1 Positioning */
 		top: -118px;
@@ -192,4 +192,4 @@ span.table-price__decs {
 	padding: 0 10px;
 }
 
-@import '--services/--services';
+@import "--services/--services";

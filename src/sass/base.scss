@@ -18,6 +18,10 @@ ul {
 	padding: 0;
 	margin: 0;
 }
+.overflow-hidden {
+	/* 2 Block model */
+	overflow: hidden;
+}
 .wrapper {
 	/* 2 Block model */
 	width: 100%;
@@ -26,8 +30,8 @@ ul {
 .container .col-12 {
 	@media (max-width: 767px) {
 		/* 2 Block model */
-		padding-right: 20px;
-		padding-left: 20px;
+		padding-right: 30px;
+		padding-left: 30px;
 	}
 }
 .container--mob {
@@ -350,14 +354,14 @@ ul {
 }
 .gray {
 	/* 4 Visual */
-	background-color: #FAFAFA;
+	background-color: #fafafa;
 }
 .gray-dark {
 	/* 2 Block model */
 	overflow: hidden;
 
 	/* 4 Visual */
-	background-color: #FBFBFB;
+	background-color: #fbfbfb;
 }
 .scrolled {
 	/* 2 Block model */
@@ -391,16 +395,16 @@ ul {
 }
 .color-2 {
 	/* 3 Typography */
-	color: #FFFFFF;
+	color: #ffffff;
 	background-color: bisque;
 }
 .color-3 {
 	/* 3 Typography */
-	color: #FFD933;
+	color: #ffd933;
 }
 .color-4 {
 	/* 3 Typography */
-	color: #4A4A4A;
+	color: #4a4a4a;
 	background-color: bisque;
 }
 .color-5 {
@@ -409,12 +413,12 @@ ul {
 }
 .color-6 {
 	/* 3 Typography */
-	color: #FAFAFA;
+	color: #fafafa;
 	background-color: bisque;
 }
 .color-7 {
 	/* 3 Typography */
-	color: #FBFBFB;
+	color: #fbfbfb;
 	background-color: bisque;
 }
 .color-8 {
@@ -423,7 +427,7 @@ ul {
 }
 .color-9 {
 	/* 3 Typography */
-	color: #7ED321;
+	color: #7ed321;
 }
 .intro-page {
 	/* 2 Block model */
@@ -432,7 +436,7 @@ ul {
 	padding-bottom: 40px;
 
 	/* 4 Visual */
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 }
 .intro-page__top {
 	/* 2 Block model */
@@ -481,7 +485,7 @@ ul {
 }
 .intro-page__item a:hover {
 	/* 3 Typography */
-	color: #FFFFFF;
+	color: #ffffff;
 
 	/* 4 Visual */
 	cursor: pointer;

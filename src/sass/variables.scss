@@ -3,16 +3,16 @@
  *
  */
 
-$font-main:  'RealTextOT-Semilight';
-$font-second: 'Real Head Pro';
-$font-third: 'RealHeadOT';
+$font-main: "RealTextOT-Semilight";
+$font-second: "Real Head Pro";
+$font-third: "RealHeadOT";
 
 /*
  * Colors
  *
  */
 $color-black: #000000;
-$color-white: #FFFFFF;
+$color-white: #ffffff;
 
 /*
  * Grid system
@@ -23,7 +23,7 @@ $container-max-widths: (
 	sm: 540px,
 	md: 720px,
 	lg: 960px,
-	xl: 1200px
+	xl: 1200px,
 );
 
 $grid-gutter-width: 20px;

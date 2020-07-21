@@ -29,7 +29,7 @@
 
 	/* 4 Visual */
 	cursor: pointer;
-	background-color: #F6F6F6;
+	background-color: #f6f6f6;
 	border: 2px solid transparent;
 	border-radius: 4px;
 	outline: none;
@@ -40,8 +40,8 @@
 }
 .input__input--filled {
 	/* 4 Visual */
-	background-color: #FFFFFF;
-	border: 2px solid #FFD933;
+	background-color: #ffffff;
+	border: 2px solid #ffd933;
 }
 .input__input::-webkit-input-placeholder {
 	/* 3 Typography */
@@ -77,17 +77,17 @@
 }
 .input__input:hover {
 	/* 4 Visual */
-	background-color: #F8F8F8;
+	background-color: #f8f8f8;
 }
 .input__input:focus {
 	/* 4 Visual */
-	background-color: #FFFFFF;
-	border: 2px solid #FFD933;
+	background-color: #ffffff;
+	border: 2px solid #ffd933;
 }
 .input__input:active {
 	/* 4 Visual */
-	background-color: #FFFFFF;
-	border: 2px solid #FFD933;
+	background-color: #ffffff;
+	border: 2px solid #ffd933;
 }
 .input__input::-ms-clear {
 	/* 2 Block model */
