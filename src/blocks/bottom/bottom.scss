@@ -1,0 +1,16 @@
+.bottom {
+	/* 2 Block model */
+	margin-bottom: 30px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 33px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 74px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 64px;
+	}
+}

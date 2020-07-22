@@ -3,36 +3,104 @@ div.cat
 		div.row
 			div.col-12.col-md-6
 				div.cat__item
-					+cat-item({
-					img: 'cat-item--01',
-					company: 'Investment company',
-					title: 'Web-based and mobile trading platforms for investments broker',
-					link: '/case-broker/'
-					})
+					article.cat-item
+						a.cat-item__link(href="/case-broker/")
+							div.cat-item__content
+								h3.h3.cat-item__title Web-based and mobile trading platforms for investments broker
+							picture.cat-item__bg
+								source(
+									srcset="images/cat-item--01.png, images/cat-item--01@2x.png 2x",
+									media="(max-width: 767px)"
+								)
+								source(
+									srcset="images/cat-item--01-992.png, images/cat-item--01-992@2x.png 2x",
+									media="(min-width: 992px)"
+								)
+								source(
+									srcset="images/cat-item--01-768.png, images/cat-item--01-768@2x.png2x",
+									media="(min-width: 768px)"
+								)
+								img(
+									src="images/cat-item--01-992.png.png", 
+									srcset="images/cat-item--01-992@2x.png 2x", 
+									alt="Investment company"
+								)
 
 			div.col-12.col-md-6
 				div.cat__item
-					+cat-item({
-					img: 'cat-item--02',
-					company: 'UpDown.Club',
-					title: 'Web Interface for UpDown.Club',
-					link: '/case-updown/'
-					})(class="cat-item--white")
-
+					article.cat-item.cat-item--white
+						a.cat-item__link(href="/case-updown/")
+							div.cat-item__content
+								h3.h3.cat-item__title Web Interface for UpDown.Club
+							picture.cat-item__bg
+								source(
+									srcset="images/cat-item--02.png, images/cat-item--02@2x.png 2x",
+									media="(max-width: 767px)"
+								)
+								source(
+									srcset="images/cat-item--02-992.png, images/cat-item--02-992@2x.png 2x",
+									media="(min-width: 992px)"
+								)
+								source(
+									srcset="images/cat-item--02-768.png, images/cat-item--02-768@2x.png2x",
+									media="(min-width: 768px)"
+								)
+								img(
+									src="images/cat-item--02-992.png.png", 
+									srcset="images/cat-item--02-992@2x.png 2x", 
+									alt="UpDown.Club"
+								)
 			div.col-12.col-md-6
 				div.cat__item
-					+cat-item({
-					img: 'cat-item--03',
-					company: 'UpDown.Club',
-					title: 'UpDown.Club <br>Mobile App',
-					link: '/case-updown/'
-					})(class="cat-item--white")
-
+					article.cat-item.cat-item--white
+						a.cat-item__link(href="/case-updown/")
+							div.cat-item__content
+								h3.h3.cat-item__title UpDown.Club
+									br
+									|Mobile App
+							picture.cat-item__bg
+								source(
+									srcset="images/cat-item--03.png, images/cat-item--03@2x.png 2x",
+									media="(max-width: 767px)"
+								)
+								source(
+									srcset="images/cat-item--03-1200.png, images/cat-item--03-1200@2x.png 2x",
+									media="(min-width: 1200px)"
+								)
+								source(
+									srcset="images/cat-item--03-992.png, images/cat-item--03-992@2x.png 2x",
+									media="(min-width: 992px)"
+								)
+								source(
+									srcset="images/cat-item--03-768.png, images/cat-item--03-768@2x.png2x",
+									media="(min-width: 768px)"
+								)
+								img(
+									src="images/cat-item--03-1200.png.png", 
+									srcset="images/cat-item--03-1200@2x.png 2x", 
+									alt="UpDown.Club"
+								)
 			div.col-12.col-md-6
 				div.cat__item
-					+cat-item({
-					img: 'cat-item--04',
-					company: 'Crypto',
-					title: 'Mobile app design concept for a&nbsp;cryptocurrency exchange',
-					link: '/case-cryptology/'
-					})(class="cat-item--white")
+					article.cat-item.cat-item--white
+						a.cat-item__link(href="/case-cryptology/")
+							div.cat-item__content
+								h3.h3.cat-item__title Mobile app design concept for a&nbsp;cryptocurrency exchange
+							picture.cat-item__bg
+								source(
+									srcset="images/cat-item--04.png, images/cat-item--04@2x.png 2x",
+									media="(max-width: 767px)"
+								)
+								source(
+									srcset="images/cat-item--04-992.png, images/cat-item--04-992@2x.png 2x",
+									media="(min-width: 992px)"
+								)
+								source(
+									srcset="images/cat-item--04-768.png, images/cat-item--04-768@2x.png2x",
+									media="(min-width: 768px)"
+								)
+								img(
+									src="images/cat-item--04-992.png.png", 
+									srcset="images/cat-item--04-992@2x.png 2x", 
+									alt="Crypto"
+								)

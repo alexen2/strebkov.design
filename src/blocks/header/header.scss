@@ -22,11 +22,9 @@
 	align-items: center;
 	justify-content: space-between;
 	height: 70px;
-	margin: 0 -10px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		height: 80px;
-		margin: 0;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */

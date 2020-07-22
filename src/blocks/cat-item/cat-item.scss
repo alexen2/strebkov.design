@@ -64,6 +64,15 @@
 	/* 2 Block model */
 	display: block;
 	width: 100%;
+	height: 420px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		height: 378px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		height: 520px;
+	}
 }
 .cat-item:hover .cat-item__bg {
 	/* 5 Animation */

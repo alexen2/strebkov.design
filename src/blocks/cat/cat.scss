@@ -1,7 +1,11 @@
 .cat {
 	/* 2 Block model */
-	margin-bottom: 35px;
+	margin-bottom: 50px;
 	overflow: hidden;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 35px;
+	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-bottom: 91px;
@@ -10,15 +14,12 @@
 .cat__item {
 	/* 2 Block model */
 	width: 100%;
-	max-width: 360px;
+	max-width: 375px;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	@media (min-width: 360px) {
 		/* 2 Block model */
 		overflow: hidden;
-
-		/* 4 Visual */
-		border-radius: 10px;
 	}
 	@media (min-width: 768px) {
 		/* 2 Block model */
@@ -26,6 +27,10 @@
 		max-width: 100%;
 		margin: 0;
 		margin-bottom: 20px;
+	}
+	@media (min-width: 992px) {
+		/* 4 Visual */
+		border-radius: 10px;
 	}
 }
 .cat .col-12 {

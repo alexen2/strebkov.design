@@ -6,10 +6,7 @@
 	padding-bottom: 50px;
 	@media (min-width: 992px) {
 		/* 2 Block model */
-	}
-	@media (min-width: 1200px) {
-		/* 2 Block model */
-		padding-bottom: 200px;
+		padding-bottom: 110px;
 	}
 }
 .home-top * {
@@ -60,8 +57,8 @@
 	display: none;
 	@media (min-width: 992px) {
 		/* 1 Positioning */
-		bottom: -48px;
-		left: -37px;
+		bottom: 11px;
+		left: -35px;
 
 		/* 2 Block model */
 		display: block;

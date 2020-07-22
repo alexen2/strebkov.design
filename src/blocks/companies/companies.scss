@@ -2,13 +2,23 @@
 	/* 2 Block model */
 	box-sizing: border-box;
 	width: 100%;
-	max-width: 310px;
-	padding: 0 15px;
+	max-width: 315px;
 	margin: 0 auto;
+	margin-bottom: 30px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		max-width: none;
-		padding: 0 0 40px 0;
+		margin: 0;
+		margin-bottom: 80px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-right: 32px;
+		margin-bottom: 91px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-right: 0;
 	}
 }
 .companies__list {
@@ -16,12 +26,16 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 	padding: 0;
 	margin: 0;
 
 	/* 4 Visual */
 	list-style: none;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		justify-content: space-between;
+	}
 }
 .companies__item {
 	/* 2 Block model */
@@ -29,49 +43,61 @@
 	flex-direction: row;
 	align-items: center;
 	width: 100px;
-	height: 58px;
+	height: 25px;
+	margin-right: 7px;
+	margin-bottom: 30px;
+	margin-left: 7px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		width: 160px;
-		height: 90px;
-		margin-right: 50px;
+		width: 113px;
+		height: 28px;
+		margin: 0;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		width: 190px;
-		height: 92px;
-		margin-right: 70px;
-	}
-	@media (min-width: 1200px) {
-		/* 2 Block model */
-		width: 160px;
-		height: 116px;
+		width: 140px;
+		height: 35px;
 	}
 }
-.companies__item:nth-child(5n) {
-	@media (min-width: 992px) {
+.companies__item:nth-child(1) {
+	/* 2 Block model */
+	order: 1;
+	margin-left: 0;
+}
+.companies__item:nth-child(2) {
+	/* 2 Block model */
+	order: 2;
+	margin-right: 0;
+}
+.companies__item:nth-child(3) {
+	/* 2 Block model */
+	order: 4;
+	margin-right: 9px;
+	margin-left: 0;
+	@media (min-width: 786px) {
 		/* 2 Block model */
+		order: 3;
 		margin-right: 0;
 	}
 }
-.companies__icon {
+.companies__item:nth-child(4) {
 	/* 2 Block model */
-	width: 100px;
-	height: 28px;
+	order: 3;
+	margin-right: 0;
+	margin-left: 0;
+	@media (min-width: 786px) {
+		/* 2 Block model */
+		order: 4;
+	}
+}
+.companies__item:nth-child(5) {
+	/* 2 Block model */
+	order: 5;
+	margin-right: 0;
+	margin-left: 9px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		width: 160px;
-		height: 45px;
-	}
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		width: 190px;
-		height: 54px;
-	}
-	@media (min-width: 1200px) {
-		/* 2 Block model */
-		width: 160px;
-		height: 45px;
+		margin-left: 0;
 	}
 }
 .companies__item img {

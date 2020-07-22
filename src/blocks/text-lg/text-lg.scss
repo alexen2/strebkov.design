@@ -11,8 +11,38 @@
 	letter-spacing: -0.1px;
 	@media (min-width: 992px) {
 		/* 3 Typography */
-		font-size: 20px;
-		line-height: 30px;
-		letter-spacing: -0.117647px;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: -0.105882px;
+	}
+}
+.text-lg--md {
+	/* 3 Typography */
+	color: #000000;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 22px;
+		line-height: 32px;
+		letter-spacing: normal;
+	}
+}
+.text-lg--black {
+	/* 3 Typography */
+	color: #000000;
+}
+.text-lg--mb-lg {
+	/* 2 Block model */
+	margin-bottom: 60px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 72px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 78px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 75px;
 	}
 }

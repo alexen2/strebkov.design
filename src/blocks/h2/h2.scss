@@ -3,16 +3,20 @@
 	margin: 0;
 
 	/* 3 Typography */
-	font-family: $font-second;
+	font-family: $font-third;
 	font-size: 30px;
-	font-weight: 500;
+	font-weight: 900;
 	line-height: 34px;
 	color: #000000;
 	letter-spacing: -0.184615px;
 	@media (min-width: 992px) {
 		/* 3 Typography */
 		font-size: 40px;
-		line-height: 46px;
+		line-height: 50px;
 		letter-spacing: -0.246154px;
 	}
+}
+.h2--mb-sm {
+	/* 2 Block model */
+	margin-bottom: 30px;
 }

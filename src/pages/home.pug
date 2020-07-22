@@ -15,72 +15,28 @@ html(lang="en")
 			//- a(name="services")
 			//- include ../blocks/main-services/main-services.pug
 
-			div.container.page
-				div.row
-					div.col-12.mr-mb81
-						a(name="case_studies")
-						h2.h2 Trusted by 70+ companies
+			include ../blocks/companies/companies.pug
 
-						p.text-lg We’re always up&nbsp;to&nbsp;speed with new technologies that attract a&nbsp;younger audience, and we&nbsp;help them to&nbsp;make decisions that make them want to&nbsp;stay with you. We&nbsp;also help you anticipate what they’ll want in&nbsp;future because we’re all about helping you attract and retain them.
+			include ../blocks/experts/experts.pug
+
+			div.container
+				div.row
+					div.col-12.col-md-10.offset-md-1
+						a(name="case_studies")
+						h2.h2.h2--mb-sm Trusted by&nbsp;the financial industry
+
+						p.text-lg.text-lg--md.text-lg--mb-lg We&rsquo;re always up&nbsp;to&nbsp;speed with new technologies that attract a&nbsp;younger audience, and we&nbsp;help them to&nbsp;make decisions that make them want to&nbsp;stay with you. We&nbsp;also help you anticipate what they&rsquo;ll want in&nbsp;future because we&rsquo;re all about helping you attract and retain them.
 
 			include ../blocks/cat/cat.pug
 
-			div.container.page
-				div.row
-					div.col-12.mr-mb70
-						a(name="why_strebkov")
-						h2.h2 Why Strebkov Design
-
-						p.text-lg From data research firms to&nbsp;investment brokers to&nbsp;online education companies&nbsp;— we are trusted by&nbsp;more than 70&nbsp;companies across 12&nbsp;countries in&nbsp;Europe, Asia, and North America. Companies will stay for years once they’ve started working with&nbsp;us, so&nbsp;why not join them? Our average cooperation term is&nbsp;six years. Our most long-term client has been with&nbsp;us since 2006.
-
-
-			include ../blocks/desc-services/desc-services.pug
-
-			div.container.mr-mb74
-				div.row
-					div.col-12.col-md-6.col-lg-3
-						+testimonial({
-							text: '... our user interface was really one of&nbsp;the major weaknesses of&nbsp;our site. Tim came&nbsp;in, and made it&nbsp;one of&nbsp;our great strengths.', 
-							img: 'testimonial__img-alan', 
-							name: 'Alan Park', 
-							company: 'Founder of FluentU'
-						})
-
-					div.col-12.col-md-6.col-lg-3
-						+testimonial({
-							text: 'Not only is&nbsp;Tim a&nbsp;great designer but also an&nbsp;analyst and project manager who examines your business and clients, and then delivers outstanding results.', 
-							img: 'testimonial__img-ivan', 
-							name: 'Ivan Kuznetsov', 
-							company: 'CEO @ Investex'
-						})
-
-					div.col-12.col-md-6.col-lg-3
-						+testimonial({
-							text: 'Excellent Agency. I’m already starting up&nbsp;my&nbsp;next contract with them. Strong PM&nbsp;&amp;&nbsp;product skills.', 
-							img: 'testimonial__img-marvin', 
-							name: 'Marvin Matthew', 
-							company: 'Bitsian'
-						})
-
-					div.col-12.col-md-6.col-lg-3
-						+testimonial({
-							text: 'Tim truly loves his craft and you can feel it&nbsp;in&nbsp;every aspect of&nbsp;his work.', 
-							img: 'testimonial__img-andrey', 
-							name: 'Andrey Anisimov', 
-							company: '8base'
-						})
-
-			include ../blocks/companies/companies.pug
-
-			div.bottom.gray-dark
-				div.container
-					div.row.pd-pt100.mr-mb94
-						div.col-12.col-md-6.offset-lg-1.pd-mobile
-							include ../blocks/lets-talk/lets-talk.pug
-						div.col-12.col-md-6.col-lg-5
-							include ../blocks/list-services-sm/list-services-sm.pug
-
 			div.gray-dark
+				div.bottom
+					div.container
+						div.row.pd-pt88
+							div.col-12.col-md-6.offset-lg-1.pd-mobile
+								include ../blocks/lets-talk/lets-talk.pug
+							div.col-12.col-md-6.col-lg-5.mob-show
+								include ../blocks/list-services-sm/list-services-sm.pug
 				div.container
 					div.row.pd-pb62
 						div.col-12.col-lg-7-6.offset-lg-1
