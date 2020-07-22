@@ -22,8 +22,8 @@ html(lang="en")
 							div.col-12.col-md-6
 								div.case-cryptologye__header-img
 									picture
-										source(srcset="images/case-cryptology__img-2-header.png, images/case-cryptology__img-2-header@2x.png 2x", media="(max-width: 991px)")
-										source(srcset="images/case-cryptology__img-2-header-1200.png, images/case-cryptology__img-2-header-1200@2x.png 2x", media="(min-width: 992px)")
+										source(srcset="images/case-cryptology__img-2-header.png, images/case-cryptology__img-2-header@2x.png 2x" media="(max-width: 991px)")
+										source(srcset="images/case-cryptology__img-2-header-1200.png, images/case-cryptology__img-2-header-1200@2x.png 2x" media="(min-width: 992px)")
 										img(src="images/case-cryptology__img-2-header-1200.png" srcset="images/case-cryptology__img-2-header-1200@2x.png 2x" alt="Mobile app design concept for a cryptocurrency exchange")
 
 				div.container.page.mr-mb79
@@ -41,7 +41,7 @@ html(lang="en")
 							p One of&nbsp;the key findings for&nbsp;us was that the potential target user might struggle with understanding even some very basic concepts of&nbsp;trading, like stop-loss orders or&nbsp;leverage. This brought&nbsp;us to&nbsp;an&nbsp;idea of&nbsp;simplifying them to&nbsp;really basic concepts.
 							p The next stage was creating user flows and information architecture, followed by&nbsp;creating the first set of&nbsp;low fidelity wireframes. The visual style of&nbsp;the app was basically dictated by&nbsp;the client&rsquo;s corporate identity&nbsp;&mdash; black and dark grey fills with bright yellow accents. After experimenting with the style on&nbsp;several key screens we&nbsp;applied it&nbsp;to&nbsp;the wireframes and finalized user scenarios and micro-interactions.
 							p After about one month since we&nbsp;started our work, we&nbsp;began to&nbsp;actively collaborate with the development team, preparing the assets and making design adjustments along with designing the new functionality.
-							
+
 				div.container
 					div.row
 						div.col-12.col-md-6.mr-mb43
@@ -53,7 +53,7 @@ html(lang="en")
 						div.col-12.col-md-6.mr-mb43
 							div.img-gray-block
 								+picture-shadow({img: 'case-cryptology__img-2', alt: 'Exchange'})
-			
+
 							p.image-description.image-description--w-420 The user can easily exchange fiat to&nbsp;crypto and vice versa as&nbsp;well as&nbsp;crypto to&nbsp;crypto
 
 				div.img-gray-block.img-gray-block--lg
@@ -64,7 +64,7 @@ html(lang="en")
 
 							div.col-12.col-md-4.mr-mb60
 								+picture-shadow({img: 'case-cryptology__img-4', alt: 'Market Depth'})
-				
+
 							div.col-12.col-md-4.mr-mb60
 								+picture-shadow({img: 'case-cryptology__img-5', alt: 'Placing an Order'})
 
@@ -81,7 +81,7 @@ html(lang="en")
 
 							div.col-12.col-md-4.mr-mb60
 								+picture-shadow({img: 'case-cryptology__img-7', alt: 'Taking a picture of an ID'})
-				
+
 							div.col-12.col-md-4.mr-mb60
 								+picture-shadow({img: 'case-cryptology__img-8', alt: 'KYC Questionnaire'})
 
@@ -89,7 +89,7 @@ html(lang="en")
 					div.row
 						div.col-12
 							p.image-description To&nbsp;access some functions (e.&nbsp;g. trading) the user has to&nbsp;go&nbsp;through a&nbsp;KYC process, which requires uploading the documents and answering a&nbsp;questionnaire
-			
+
 
 				div.container.page.mr-mb64
 					div.row
@@ -97,15 +97,14 @@ html(lang="en")
 							h2.h2 The Outcome
 							p With our help, the client was able to&nbsp;go&nbsp;from just an&nbsp;idea to&nbsp;the ready-to-implement designs. The development team was able to&nbsp;start the implementation in&nbsp;just 1&nbsp;month after we&nbsp;started our work. After 2&nbsp;months we&nbsp;passed the concept to&nbsp;the in-house design team and then they had the ball.
 
-			div.bottom.gray-dark
-				div.container
-					div.row.pd-pt100.mr-mb94
-						div.col-12.col-md-6.offset-lg-1.pd-mobile
-							include ../blocks/lets-talk/lets-talk.pug
-						div.col-12.col-md-6.col-lg-5
-							include ../blocks/list-services-sm/list-services-sm.pug
-
 			div.gray-dark
+				div.bottom
+					div.container
+						div.row.pd-pt88
+							div.col-12.col-md-6.offset-lg-1.pd-mobile
+								include ../blocks/lets-talk/lets-talk.pug
+							div.col-12.col-md-6.col-lg-5.mob-show
+								include ../blocks/list-services-sm/list-services-sm.pug
 				div.container
 					div.row.pd-pb62
 						div.col-12.col-lg-7-6.offset-lg-1

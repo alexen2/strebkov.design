@@ -34,6 +34,24 @@
 		letter-spacing: -0.105882px;
 	}
 }
+.text-lg-thre {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 25px;
+	color: #000000;
+	letter-spacing: -0.117647px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 22px;
+		line-height: 32px;
+		letter-spacing: normal;
+	}
+}
 .text-lg-bold {
 	/* 2 Block model */
 	margin: 0;

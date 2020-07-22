@@ -1,39 +1,48 @@
 section.uxdesigntoolkit
-  div.uxdesigntoolkit__top
-    div.container
-      div.row
-        div.col-12.col-md-5.offset-md-1
-          div.uxdesigntoolkit__text
-            h1.h1 Attention Fintech Founders, CEOs and CTOs! Building a&nbsp;Mobile or&nbsp;Web Application?
-            p Not sure where to&nbsp;start?
-            p Download our UX&nbsp;Design Toolkit to&nbsp;help you plan and build a&nbsp;better fintech app.
-            p Includes templates for User Personas, Feature Matrix, POV Statements, How Might&nbsp;We.
-            p.text-lg
-              b Not only will this toolkit help you be&nbsp;more successful with your app, but we&nbsp;also include a&nbsp;complimentary 1&nbsp;on 1&nbsp;app blueprinting session with each download!
+	div.uxdesigntoolkit__top
+		div.container
+			div.row
+				div.col-12.col-md-6.col-lg-5.col-xl-5.offset-xl-1
+					div.uxdesigntoolkit__text
+						h1.h0 The Strebkov Design UX Toolkit™
+						p.text-lg-thre Attention fintech founders, CEOs and CTOs! Building a&nbsp;mobile or&nbsp;web app?
+						p.text-lg-two Not sure where to&nbsp;start? Download our Fintech Product Design Toolkit to&nbsp;help you plan and build a&nbsp;better app. Includes templates for user personas, empathy maps, feature matrix, POV statements, How Might&nbsp;We.
 
-        div.col-12.col-md-5
-          include ../get-toolkit/get-toolkit.pug
+				div.col-12.col-md-6.col-xl-5.offset-lg-1.offset-xl-0
+					include ../get-toolkit/get-toolkit.pug
 
-  div.uxdesigntoolkit__bottom.gray-dark
-    div.container
-      div.row.mr-mb45
-        div.col-12.col-md-5.offset-md-1
-          div.uxdesigntoolkit__img
-            img.img(src="images/uxdesigntoolkit__img-1.jpg", srcset="images/uxdesigntoolkit__img-1@2x.jpg 2x", alt="img")
+	div.uxdesigntoolkit__body
+		div.container
+			div.row
+				div.col-12.col-lg-12.col-xl-11
+					div.uxdesigntoolkit__img
+						picture
+							source(
+								srcset="images/uxdesigntoolkit__img-320.png, images/uxdesigntoolkit__img-320@2x.png 2x",
+								media="(max-width: 767px)"
+							)
+							source(
+								srcset="images/uxdesigntoolkit__img-1200.png, images/uxdesigntoolkit__img-1200@2x.png 2x",
+								media="(min-width: 1200px)"
+							)
+							source(
+								srcset="images/uxdesigntoolkit__img-992.png, images/uxdesigntoolkit__img-992@2x.png 2x",
+								media="(min-width: 992px)"
+							)
+							source(
+								srcset="images/uxdesigntoolkit__img-768.png, images/uxdesigntoolkit__img-768@2x.png 2x",
+								media="(min-width: 768px)"
+							)
+							img(
+								src="images/uxdesigntoolkit__img-1200.png", 
+								srcset="images/uxdesigntoolkit__img-1200@2x.png 2x", 
+								alt="UpDown.Club"
+							)
 
-        div.col-12.col-md-5
-          div.uxdesigntoolkit__img
-            img.img(src="images/uxdesigntoolkit__img-2.jpg", srcset="images/uxdesigntoolkit__img-2@2x.jpg 2x", alt="img")
 
-        div.col-12.col-md-5.offset-md-1
-          div.uxdesigntoolkit__img
-            img.img(src="images/uxdesigntoolkit__img-3.jpg", srcset="images/uxdesigntoolkit__img-3@2x.jpg 2x", alt="img")
-
-        div.col-12.col-md-5
-          div.uxdesigntoolkit__img
-            img.img(src="images/uxdesigntoolkit__img-4.jpg", srcset="images/uxdesigntoolkit__img-4@2x.jpg 2x", alt="img")
-      
-      div.row
-        div.col-12.col-md-5.offset-md-1
-          footer.footer
-            p 2019&nbsp;&copy; Strebkov Design. All rights reserved.
+	div.uxdesigntoolkit__bottom
+		div.container
+			div.row
+				div.col-12.col-md-5.offset-md-1
+					footer.footer
+						p 2019&nbsp;&copy; Strebkov Design. All rights reserved.
