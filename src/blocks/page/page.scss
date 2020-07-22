@@ -1,7 +1,11 @@
 .page h1 {
 	/* 2 Block model */
 	margin: 0;
-	margin-bottom: 12px;
+	margin-bottom: 24px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 24px;
+	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-bottom: 30px;

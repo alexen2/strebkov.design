@@ -16,6 +16,42 @@
 		letter-spacing: -0.105882px;
 	}
 }
+.text-lg-two {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #000000;
+	letter-spacing: -0.0941177px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: -0.105882px;
+	}
+}
+.text-lg-bold {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #000000;
+	letter-spacing: -0.0984615px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 20px;
+		line-height: 28px;
+		letter-spacing: -0.123077px;
+	}
+}
 .text-lg--md {
 	/* 3 Typography */
 	color: #000000;

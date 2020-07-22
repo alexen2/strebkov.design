@@ -1,6 +1,51 @@
+.about {
+	/* 2 Block model */
+	padding-top: 51px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 40px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 71px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-top: 52px;
+	}
+}
+.about__content {
+	/* 2 Block model */
+	margin-bottom: 60px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 25px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 100px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 97px;
+	}
+}
 .about__aside .testimonial {
 	/* 2 Block model */
-	margin-bottom: 28px;
+	margin-bottom: 18px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 20px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 32px;
+		margin-left: 20px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-left: 0;
+	}
 }
 .about__aside .testimonial:last-child {
 	/* 2 Block model */

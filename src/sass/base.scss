@@ -80,6 +80,18 @@ ul {
 	/* 2 Block model */
 	margin-bottom: 15px;
 }
+.mr-mb39 {
+	/* 2 Block model */
+	margin-bottom: 39px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 41px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 39px;
+	}
+}
 .mr-mb43 {
 	/* 2 Block model */
 	margin-bottom: 35px;
@@ -122,10 +134,10 @@ ul {
 }
 .mr-mb63 {
 	/* 2 Block model */
-	margin-bottom: 48px;
+	margin-bottom: 30px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		margin-bottom: 63px;
+		margin-bottom: 32px;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */

@@ -1,0 +1,24 @@
+.about-article {
+	/* 2 Block model */
+}
+.about-article p {
+	/* 2 Block model */
+	margin-bottom: 10px;
+}
+.about-article ul {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+	margin-top: 40px;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.about-article ul > li {
+	/* 2 Block model */
+	margin-bottom: 40px;
+}
+.about-article ul > li p:first-child {
+	/* 2 Block model */
+	margin-bottom: 22px;
+}
