@@ -27,6 +27,11 @@ ul {
 	width: 100%;
 	overflow-x: hidden;
 }
+.wrapper-fix {
+	/* 2 Block model */
+	width: 100%;
+	overflow-x: hidden;
+}
 .container .col-12 {
 	@media (max-width: 767px) {
 		/* 2 Block model */

@@ -17,14 +17,14 @@
 }
 .input__input {
 	/* 2 Block model */
-	padding: 13px 25px 12px 22px;
+	padding: 10px 25px 12px 22px;
 	margin: 0;
 
 	/* 3 Typography */
 	font-family: $font-main;
-	font-size: 19px;
+	font-size: 17px;
 	font-weight: 300;
-	line-height: 19px;
+	line-height: 17px;
 	color: #000000;
 
 	/* 4 Visual */
@@ -36,6 +36,14 @@
 	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
 		/* IE10+ CSS styles go here */
 		padding: 16px 25px 9px 22px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding: 13px 25px 12px 22px;
+
+		/* 3 Typography */
+		font-size: 19px;
+		line-height: 19px;
 	}
 }
 .input__input--filled {

@@ -4,11 +4,12 @@ html(lang="en")
 	+head('Uxdesigntoolkit - Strebkov Design')
 
 	body
-		include ../blocks/mixins.pug
+		div.wrapper-fix
+			include ../blocks/mixins.pug
 
-		include ../blocks/header/--in-header.pug
+			include ../blocks/header/--in-header.pug
 
-		include ../blocks/uxdesigntoolkit/uxdesigntoolkit.pug
+			include ../blocks/uxdesigntoolkit/uxdesigntoolkit.pug
 
 
 		include include/script.pug

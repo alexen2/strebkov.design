@@ -1,16 +1,24 @@
 .uxdesigntoolkit__top {
 	/* 2 Block model */
-	margin-bottom: 60px;
+	margin-bottom: 87px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		margin-bottom: 50px;
+		margin-bottom: 20px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 46px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 72px;
 	}
 }
 .uxdesigntoolkit__text {
 	/* 2 Block model */
 	width: 100%;
 	max-width: 439px;
-	margin-bottom: 60px;
+	margin-bottom: 47px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 0;
@@ -30,14 +38,6 @@
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-bottom: 29px;
-	}
-}
-.uxdesigntoolkit__text .text-lg-two {
-	/* 2 Block model */
-	margin-bottom: 50px;
-	@media (min-width: 768px) {
-		/* 2 Block model */
-		margin-bottom: 0;
 	}
 }
 .uxdesigntoolkit .get-toolkit {
@@ -66,17 +66,58 @@
 	}
 }
 .uxdesigntoolkit__img img {
+	/* 1 Positioning */
+	position: relative;
+	top: 0;
+
 	/* 2 Block model */
-	display: block;
-	width: 100%;
+	display: inline-block;
+	width: 910px;
+
+	/* 4 Visual */
+	transform: translate(-24.5%, 0);
+	@media (min-width: 500px) {
+		/* 4 Visual */
+		transform: translate(-16.5%, 0);
+	}
+	@media (min-width: 580px) {
+		/* 4 Visual */
+		transform: translate(-14.5%, 0);
+	}
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		position: static;
+
+		/* 2 Block model */
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+
+		/* 4 Visual */
+		transform: translate(0, 0);
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		max-width: 1042px;
+	}
 }
 .uxdesigntoolkit__bottom {
 	/* 2 Block model */
-	padding-top: 80px;
+	padding-top: 45px;
 	padding-bottom: 30px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 122px;
+		padding-bottom: 30px;
+	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
+		padding-top: 56px;
 		padding-bottom: 65px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-top: 106px;
 	}
 }
 .uxdesigntoolkit__bottom .footer {
