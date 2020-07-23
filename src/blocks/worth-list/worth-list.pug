@@ -1,0 +1,25 @@
+mixin worth-list(data)
+	div.worth-list(class!=attributes.class)
+		p.worth-list__title!=data.title
+		ul.worth-list__list
+			- for (var i = 0; i < data.items.length; i++)
+				li.worth-list__item
+					div.worth-list__check 
+						+icon('', '')
+					p.worth-list__text= data.items[i]
+
+
+mixin menu(data)
+	nav.menu(class!=attributes.class)
+		p.h4!=data.title
+		ul.menu__list
+			- for (var i = 0; i < data.items.length; i++)
+				li.menu__item
+					+item-menu({icon: data.items[i]['icon'], text: data.items[i]['text']})
++menu({
+	title: 'adadad', 
+	items: [
+		{icon: 'icon--web', text: 'Dashboard'},
+		{icon: 'icon--share', text: 'Order Book'}
+	]
+})

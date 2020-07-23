@@ -1,4 +1,23 @@
 mixin picture(data)
-  picture.picture
-    source(media="(min-width: 600px)" srcset="images/logo.png 1x, images/logo-white@2x.png 2x")
-    img(src="https://ak6.picdn.net/shutterstock/videos/6623246/thumb/4.jpg", alt="logo" srcset="images/logo@2x.png 2x")
+	picture.picture
+		source(
+			srcset="images/"+data.img_320+", images/"+data.img_320+" 2x", 
+			media="(max-width: 767px)"
+		)
+		source(
+			srcset="images/"+data.img_1200+", images/"+data.img_1200+" 2x",
+			media="(min-width: 1200px)"
+		)
+		source(
+			srcset="images/"+data.img_992+", images/"+data.img_992+" 2x",
+			media="(min-width: 992px)"
+		)
+		source(
+			srcset="images/"+data.img_768+", images/"+data.img_768+" 2x",
+			media="(min-width: 768px)"
+		)
+		img(
+			src="images/"+data.img, 
+			srcset="images/"+data.img+" 2x", 
+			alt=""
+		)

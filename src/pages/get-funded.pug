@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Get Funded™')
+
+	body
+		div.wrapper
+			include ../blocks/mixins.pug
+
+			include ../blocks/header/header.pug
+
+			include ../blocks/get-funded/get-funded.pug
+
+			div.gray-dark
+				div.bottom
+					div.container
+						div.row.pd-pt88
+							div.col-12.col-md-6.offset-lg-1.pd-mobile
+								include ../blocks/lets-talk/lets-talk.pug
+							div.col-12.col-md-6.col-lg-5.mob-show
+								include ../blocks/list-services-sm/list-services-sm.pug
+				div.container
+					div.row.pd-pb62
+						div.col-12.col-lg-7-6.offset-lg-1
+							include ../blocks/footer/footer.pug
+
+		include include/script.pug

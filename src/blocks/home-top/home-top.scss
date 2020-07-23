@@ -21,7 +21,6 @@
 
 	/* 2 Block model */
 	display: none;
-	padding-bottom: 200px;
 	@media (min-width: 1200px) {
 		/* 2 Block model */
 		display: block;
@@ -223,3 +222,12 @@
 		letter-spacing: -0.0823529px;
 	}
 }
+
+/* -------------------------------------------- */
+
+/*
+ * Modifiers
+ *
+ */
+
+@import "--getfunded";
