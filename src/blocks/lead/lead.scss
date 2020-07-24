@@ -16,3 +16,25 @@
 		letter-spacing: -0.105882px;
 	}
 }
+.lead-bold {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 34px;
+	color: #000000;
+	letter-spacing: -0.147692px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: -0.184615px;
+	}
+}
+.lead-bold__bg-yelow {
+	/* 4 Visual */
+	background-color: #ffec99;
+}

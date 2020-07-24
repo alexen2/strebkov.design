@@ -1,135 +1,210 @@
 section.get-funded
-	div.container
-		include ../home-top/home-top--getfunded.pug
-
-	include ../star-reviews/star-reviews.pug
-
-	div.get-funded__body-img
-		img.get-funded__icon.get-funded__icon-01(src="images/" alt="")
-		img.get-funded__icon.get-funded__icon-02(src="images/" alt="")
-		img.get-funded__icon.get-funded__icon-03(src="images/" alt="")
-		img.get-funded__icon.get-funded__icon-04(src="images/" alt="")
-		img.get-funded__icon.get-funded__icon-05(src="images/" alt="")
-		div.get-funded__block-img-1
-			+picture({img: '', img_320: '', img_992: '', img_1200: ''})
-	div.get-funded__number
+	div.get-funded__top
 		div.container
-			div.row
-				div.col-12.col-md-10.col-xl-9.offset-xl-1
-					div.get-funded__title
-						div.get-funded__title-number
-						h2.h2 
-					p.text-lg.text-lg--black.text-lg--md
-	div.get-funded__body-img
+			include ../home-top/home-top--getfunded.pug
+	div.get-funded__reviews
+		include ../star-reviews/star-reviews.pug
+	div.get-funded__email
+		div.container
+			div.get-funded__body-img
+				img.get-funded__icon.get-funded__icon-01(src="images/get-funded__icon-01.svg" alt="icon")
+				img.get-funded__icon.get-funded__icon-02(src="images/get-funded__icon-02.svg" alt="icon")
+				img.get-funded__icon.get-funded__icon-03(src="images/get-funded__icon-03.svg" alt="icon")
+				img.get-funded__icon.get-funded__icon-04(src="images/get-funded__icon-04.svg" alt="icon")
+				img.get-funded__icon.get-funded__icon-05(src="images/get-funded__icon-05.svg" alt="icon")
+				img.get-funded__icon.get-funded__icon-06(src="images/get-funded__icon-06.svg" alt="icon")
+				img.get-funded__icon.get-funded__icon-07(src="images/get-funded__icon-07.svg" alt="icon")
+				img.get-funded__icon.get-funded__icon-08(src="images/get-funded__icon-08.svg" alt="icon")
+				div.get-funded__block-img-1
+					+picture({img: 'get-funded__img-01-1200', img_320: 'get-funded__img-01-320', img_768: 'get-funded__img-01-768',  img_992: 'get-funded__img-01-992', img_1200: 'get-funded__img-01-1200'})
+	section.get-funded__mvp-scope
+		div.get-funded__number
+			div.container
+				div.row
+					div.col-12.col-md-10.col-xl-9.offset-xl-1
+						div.get-funded__top
+							div.get-funded__number-value 1
+							div.get-funded__number-body
+								h2.h2 Get full clarity on&nbsp;your MVP scope. Only focus on&nbsp;what&rsquo;s essential.
+								p.text-lg.text-lg--black.text-lg--md Start simple, get fancy later&nbsp;&mdash; because we&rsquo;ve found that works well. Using tools like user personas, storyboards, empathy maps, a&nbsp;feature matrix and a&nbsp;How Might We&nbsp;exercise, we&rsquo;ll help you clearly define the scope for the MVP, whether it&rsquo;s a&nbsp;web or&nbsp;mobile app. You&rsquo;ll get a&nbsp;professional design style for your app that you can add to&nbsp;and refine further down the road, and also a&nbsp;knockout pitch deck to&nbsp;impress potential investors even more.
 		div.get-funded__block-img-2
-			+picture({img: '', img_320: '', img_992: '', img_1200: ''})
+			+picture({img: 'get-funded__img-02-1200', img_320: 'get-funded__img-02-320', img_768: 'get-funded__img-02-768', img_992: 'get-funded__img-02-992', img_1200: 'get-funded__img-02-1200'})
 
-	div.get-funded__worth
+		div.get-funded__worth
+			div.container
+				div.row
+					div.col-12.col-md-6.col-lg-8.col-xl-7.offset-xl-1
+						div.get-funded__worth-body
+							div.get-funded__worth-item.get-funded__worth-item--fix-mr
+								+worth-list({
+									title: 'UX&nbsp;Research and Planning',
+									items: [
+										'Business requirements review',
+										'Competitor research',
+										'User personas',
+										'Feature matrix'
+									]
+								})
+							div.get-funded__worth-item
+								+worth-list({
+									title: 'UX&nbsp;Research and Planning',
+									items: [
+										'Logo, icon',
+										'Color palette',
+										'Fonts selection',
+										'Pitch deck design (up&nbsp;to&nbsp;15&nbsp;slides)',
+									]
+								})
+					div.col-12.col-md-5.col-lg-4.col-xl-4.offset-md-1.offset-lg-0
+						div.get-funded__worth-item.get-funded__worth-item--fix-mb
+							+worth-list({
+								title: 'UX&nbsp;Research and Planning',
+								items: [
+									'Simple UI&nbsp;kit',
+									'Up&nbsp;to&nbsp;10&nbsp;user scenarios',
+									'Clickable prototype',
+									'iOS or&nbsp;Android',
+									'App icon and store graphics',
+									'1&nbsp;UX/UI review'
+								]
+							})
+	section.get-funded__process
+		div.get-funded__number
+			div.container
+				div.row
+					div.col-12.col-md-10.col-xl-9.offset-xl-1
+						div.get-funded__title
+							div.get-funded__title-number
+							h2.h2 
+						p.text-lg.text-lg--black.text-lg--md
+		div.get-funded__phase
+			div.conatainer
+				div.row
+					div.col-12
+						div.get-funded__phase-item
+							div.get-funded__phase-top
+								span
+								p
+							div.get-funded__phase-body
+								p.text-lg-two
+
+						div.get-funded__phase-item
+							div.get-funded__phase-top
+								span
+								p
+							div.get-funded__phase-body
+								p.text-lg-two
+
+						div.get-funded__phase-item
+							div.get-funded__phase-top
+								span
+								p
+							div.get-funded__phase-body
+								p.text-lg-two
+	section.get-funded__experience
+		div.get-funded__number
+			div.container
+				div.row
+					div.col-12.col-md-10.col-xl-9.offset-xl-1
+						div.get-funded__title
+							div.get-funded__title-number
+							h2.h2 
+						p.text-lg.text-lg--black.text-lg--md
+		div.get-funded__worth
+			div.container
+				div.row
+					div.col-12.col-md-6.col-lg-4.col-xl-3.offset-md-1.offset-lg-0.offset-xl-1
+						div.get-funded__worth-item
+							+worth-list({
+								title: '',
+								items: [
+									''
+								]
+							})
+					div.col-12.col-md-5.col-lg-4.col-xl-4
+						div.get-funded__worth-item
+							+worth-list({
+								title: '',
+								items: [
+									''
+								]
+							})
+					div.col-12.col-md-6.col-lg-4.col-xl-4.offset-md-1.offset-lg-0
+						div.get-funded__worth-item
+							+worth-list({
+								title: '',
+								items: [
+									''
+								]
+							})
+		include ../companies/companies.pug
+	section.get-funded__workflow
+		div.get-funded__number
+			div.container
+				div.row
+					div.col-12.col-md-10.col-xl-9.offset-xl-1
+						div.get-funded__title
+							div.get-funded__title-number
+							h2.h2 
+						p.text-lg.text-lg--black.text-lg--md
+		div.get-funded__body-img
+			div.get-funded__block-img-3
+				+picture({img: '', img_320: '', img_992: '', img_1200: ''})
 		div.container
-			div.row
-				div.col-12.col-md-6.col-lg-4.col-xl-3.offset-md-1.offset-lg-0.offset-xl-1
-					div.get-funded__worth-item
-						+worth-list({
-							title: '',
-							items: [
-								''
-							]
-						})
-				div.col-12.col-md-5.col-lg-4.col-xl-4
-					div.get-funded__worth-item
-						+worth-list({
-							title: '',
-							items: [
-								''
-							]
-						})
-				div.col-12.col-md-6.col-lg-4.col-xl-4.offset-md-1.offset-lg-0
-					div.get-funded__worth-item
-						+worth-list({
-							title: '',
-							items: [
-								''
-							]
-						})
-	div.get-funded__number
-		div.container
-			div.row
-				div.col-12.col-md-10.col-xl-9.offset-xl-1
-					div.get-funded__title
-						div.get-funded__title-number
-						h2.h2 
-					p.text-lg.text-lg--black.text-lg--md
-	div.get-funded__phase
-		div.conatainer
 			div.row
 				div.col-12
-					div.get-funded__phase-item
-						div.get-funded__phase-top
-							span
-							p
-						div.get-funded__phase-body
-							p.text-lg-two
-
-					div.get-funded__phase-item
-						div.get-funded__phase-top
-							span
-							p
-						div.get-funded__phase-body
-							p.text-lg-two
-
-					div.get-funded__phase-item
-						div.get-funded__phase-top
-							span
-							p
-						div.get-funded__phase-body
-							p.text-lg-two
-	div.get-funded__number
-		div.container
-			div.row
-				div.col-12.col-md-10.col-xl-9.offset-xl-1
-					div.get-funded__title
-						div.get-funded__title-number
-						h2.h2 
 					p.text-lg.text-lg--black.text-lg--md
-	div.get-funded__worth
-		div.container
-			div.row
-				div.col-12.col-md-6.col-lg-4.col-xl-3.offset-md-1.offset-lg-0.offset-xl-1
-					div.get-funded__worth-item
-						+worth-list({
-							title: '',
-							items: [
-								''
-							]
-						})
-				div.col-12.col-md-5.col-lg-4.col-xl-4
-					div.get-funded__worth-item
-						+worth-list({
-							title: '',
-							items: [
-								''
-							]
-						})
-				div.col-12.col-md-6.col-lg-4.col-xl-4.offset-md-1.offset-lg-0
-					div.get-funded__worth-item
-						+worth-list({
-							title: '',
-							items: [
-								''
-							]
-						})
-	include ../companies/companies.pug
-	div.get-funded__number
-		div.container
-			div.row
-				div.col-12.col-md-10.col-xl-9.offset-xl-1
-					div.get-funded__title
-						div.get-funded__title-number
-						h2.h2 
-					p.text-lg.text-lg--black.text-lg--md
-	div.get-funded__body-img
-		div.get-funded__block-img-3
-			+picture({img: '', img_320: '', img_992: '', img_1200: ''})
-	div.get-funded__softs 
+		div.get-funded__softs
+			div.container
+				div.row
+					div.col-12.col-lg-10.col-lg-8.col-xl-10.offset-md-1.offset-lg-2.offset-xl-1
+						ul.get-funded__softs-list
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+							li.get-funded__softs-item
+								img(src="images/" alt="")
+	section.get-funded__deliverables
+		div.get-funded__number
+			div.container
+				div.row
+					div.col-12.col-md-10.col-xl-9.offset-xl-1
+						div.get-funded__title
+							div.get-funded__title-number
+							h2.h2 
+						p.text-lg.text-lg--black.text-lg--md
+		div.get-funded__body-img
+			div.get-funded__block-img-4
+				+picture({img: '', img_320: '', img_992: '', img_1200: ''})
+	section.get-funded__support
+		div.get-funded__number
+			div.container
+				div.row
+					div.col-12.col-md-10.col-xl-9.offset-xl-1
+						div.get-funded__title
+							div.get-funded__title-number
+							h2.h2 
+						p.text-lg.text-lg--black.text-lg--md
+	section.get-funded__investment
+		div.get-funded__body-img
+			div.get-funded__block-img-4
+				+picture({img: '', img_320: '', img_992: '', img_1200: ''})
+
+
 
 

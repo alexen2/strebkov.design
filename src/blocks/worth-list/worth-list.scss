@@ -1,8 +1,90 @@
 .worth-list {
 	/* 2 Block model */
+	width: 100%;
+	max-width: 335px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		max-width: 283px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-width: 280px;
+	}
+}
+.worth-list__title {
+	/* 2 Block model */
+	margin: 0;
+	margin-bottom: 28px;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	color: #000000;
+	letter-spacing: -0.110769px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 33px;
+
+		/* 3 Typography */
+		font-size: 20px;
+		line-height: 28px;
+		letter-spacing: -0.123077px;
+	}
+}
+.worth-list {
+	/* 2 Block model */
 	padding: 0;
 	margin: 0;
 
 	/* 4 Visual */
 	list-style: none;
+}
+.worth-list__item {
+	/* 2 Block model */
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 18px;
+}
+.worth-list__item:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.worth-list__check {
+	/* 2 Block model */
+	display: flex;
+	flex: 0 0 16px;
+	align-items: center;
+	justify-content: center;
+	width: 16px;
+	height: 16px;
+	margin-right: 16px;
+
+	/* 4 Visual */
+	background-color: #ff6600;
+	border-radius: 50%;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-right: 21px;
+	}
+}
+.worth-list__text {
+	/* 2 Block model */
+	margin: 0;
+	margin-top: -6px;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #000000;
+	letter-spacing: -0.0941177px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: -0.105882px;
+	}
 }
