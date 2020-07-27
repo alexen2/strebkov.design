@@ -1,7 +1,6 @@
 section.get-funded
-	div.get-funded__top
-		div.container
-			include ../home-top/home-top--getfunded.pug
+	div.container
+		include ../home-top/home-top--getfunded.pug
 	div.get-funded__reviews
 		include ../star-reviews/star-reviews.pug
 	div.get-funded__email
@@ -47,7 +46,7 @@ section.get-funded
 								})
 							div.get-funded__worth-item
 								+worth-list({
-									title: 'UX&nbsp;Research and Planning',
+									title: 'Product Identity',
 									items: [
 										'Logo, icon',
 										'Color palette',
@@ -58,7 +57,7 @@ section.get-funded
 					div.col-12.col-md-5.col-lg-4.col-xl-4.offset-md-1.offset-lg-0
 						div.get-funded__worth-item.get-funded__worth-item--fix-mb
 							+worth-list({
-								title: 'UX&nbsp;Research and Planning',
+								title: 'App Design',
 								items: [
 									'Simple UI&nbsp;kit',
 									'Up&nbsp;to&nbsp;10&nbsp;user scenarios',
@@ -67,7 +66,7 @@ section.get-funded
 									'App icon and store graphics',
 									'1&nbsp;UX/UI review'
 								]
-							})
+							})(class="worth-list--fix-pl")
 	section.get-funded__process
 		div.get-funded__number.get-funded__number--2
 			div.container
@@ -121,8 +120,8 @@ section.get-funded
 		div.get-funded__worth.get-funded__worth--2
 			div.container
 				div.row
-					div.col-12.col-md-6.col-lg-8.col-xl-7.offset-xl-1
-						div.get-funded__worth-body
+					div.col-12.col-md-8.col-lg-8.col-xl-7.offset-xl-1
+						div.get-funded__worth-body.get-funded__worth-body--fix
 							div.get-funded__worth-item.get-funded__worth-item--fix-mr
 								+worth-list({
 									title: 'We worked with:',
@@ -148,7 +147,7 @@ section.get-funded
 										'Marketing assets'
 									]
 								})
-					div.col-12.col-md-5.col-lg-4.col-xl-4.offset-md-1.offset-lg-0
+					div.col-12.col-md-4
 						div.get-funded__worth-item.get-funded__worth-item--fix-mb
 							+worth-list({
 								title: 'Overall:',
@@ -158,7 +157,7 @@ section.get-funded
 									'Handful of&nbsp;clients with 8+&nbsp;years working relationships',
 									'20&nbsp;years of&nbsp;experience in&nbsp;digital products design'
 								]
-							})
+							})(class="worth-list--fix-pl")
 		include ../companies/companies--getfunded.pug
 	section.get-funded__workflow
 		div.get-funded__number.get-funded__number--4
@@ -226,9 +225,19 @@ section.get-funded
 		div.get-funded__block-img-5
 			+picture({img: 'get-funded__img-05-1200', img_320: 'get-funded__img-05-320', img_768: 'get-funded__img-05-768', img_992: 'get-funded__img-05-992', img_1200: 'get-funded__img-05-1200', alt: 'Development support'})
 	section.get-funded__investment
-		div.get-funded__body-img
-			div.get-funded__block-img-4
-				+picture({img: '', img_320: '', img_992: '', img_1200: ''})
+		div.get-funded__investment-top
+			div.container
+				div.row
+					div.col-12.col-md-11.offset-md-1
+						div.get-funded__investment-info
+							h2.h2 Investment and Timeframe
+							span.get-funded__investment-price $5,995
+						div.get-funded__block-img-6
+							+picture({img: 'get-funded__img-06-1200', img_320: 'get-funded__img-06-320', img_768: 'get-funded__img-06-768', img_992: 'get-funded__img-06-992', img_1200: 'get-funded__img-06-1200', alt: 'Investment and Timeframe'})
+				div.row
+					div.col-12.col-md-11.offset-md-1
+						div.get-funded__investment-bottom
+							p.text-lg.text-lg--black A&nbsp;free 20-minute call that gets you full clarity on&nbsp;timing and budget for your project.
 
 
 
