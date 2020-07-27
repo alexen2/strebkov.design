@@ -2,6 +2,8 @@
 	/* 2 Block model */
 	display: block;
 }
+
+/* Block  get-funded__email */
 .get-funded__email {
 	/* 1 Positioning */
 	position: relative;
@@ -213,6 +215,8 @@
 	position: relative;
 	z-index: 5;
 }
+
+/* Block  get-funded__mvp-scope */
 .get-funded__mvp-scope {
 	/* 2 Block model */
 	margin-bottom: 91px;
@@ -357,6 +361,24 @@
 	@media (min-width: 1200px) {
 		/* 2 Block model */
 		margin-right: 116px;
+	}
+}
+
+/* Block  get-funded__process */
+.get-funded__process {
+	/* 2 Block model */
+	margin-bottom: 123px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 18px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 170px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 150px;
 	}
 }
 .get-funded__phase-list {
@@ -587,6 +609,52 @@
 .get-funded__phase-body .text-lg-two:last-child {
 	/* 2 Block model */
 	margin-bottom: 0;
+}
+
+/* Block  get-funded__experience */
+.get-funded__experience {
+	/* 2 Block model */
+	margin-bottom: 113px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 194px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 175px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 185px;
+	}
+}
+.get-funded__number--3 {
+	/* 2 Block model */
+	margin-bottom: 40px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 60px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 56px;
+	}
+}
+.get-funded__worth--2 {
+	/* 2 Block model */
+	margin-bottom: 30px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 83px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 84px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 114px;
+	}
 }
 .get-funded__block-img-1 img {
 	/* 2 Block model */

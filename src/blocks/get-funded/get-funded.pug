@@ -109,42 +109,57 @@ section.get-funded
 									p.text-lg-two Regular UX/UI reviews of&nbsp;the implemented layouts.
 									p.text-lg-two Tackling questions and design fixes within the initial scope.
 	section.get-funded__experience
-		div.get-funded__number
+		div.get-funded__number.get-funded__number--3
 			div.container
 				div.row
 					div.col-12.col-md-10.col-xl-9.offset-xl-1
-						div.get-funded__title
-							div.get-funded__title-number
-							h2.h2 
-						p.text-lg.text-lg--black.text-lg--md
-		div.get-funded__worth
+						div.get-funded__top
+							div.get-funded__number-value 3
+							div.get-funded__number-body
+								h2.h2 No&nbsp;need to&nbsp;educate your partner. Deep expertise and instant value.
+								p.text-lg.text-lg--black.text-lg--md Leverage our 10+&nbsp;years of&nbsp;expertise in&nbsp;financial UX/UI. We&rsquo;re a&nbsp;group of&nbsp;skilled and passionate practitioners who put ourselves in&nbsp;your users&rsquo; shoes to&nbsp;understand and enhance their journey. We&nbsp;deliver elegant and functional visual interfaces for fintech startups, wherever they may be&nbsp;in&nbsp;the world, and we&nbsp;owe our success to&nbsp;being fast, effective, and able to&nbsp;slot right into your startup team, plug-and-play style.
+		div.get-funded__worth.get-funded__worth--2
 			div.container
 				div.row
-					div.col-12.col-md-6.col-lg-4.col-xl-3.offset-md-1.offset-lg-0.offset-xl-1
-						div.get-funded__worth-item
+					div.col-12.col-md-6.col-lg-8.col-xl-7.offset-xl-1
+						div.get-funded__worth-body
+							div.get-funded__worth-item.get-funded__worth-item--fix-mr
+								+worth-list({
+									title: 'We worked with:',
+									items: [
+										'Brokers',
+										'Investment platforms',
+										'Payment systems',
+										'Digital banks',
+										'Online financial media',
+										'Crypto exchanges'
+									]
+								})
+							div.get-funded__worth-item
+								+worth-list({
+									title: 'We designed:',
+									items: [
+										'Trading platforms',
+										'Customer dashboards',
+										'Crypto exchange apps',
+										'Investment apps',
+										'Product websites',
+										'Data research tools',
+										'Marketing assets'
+									]
+								})
+					div.col-12.col-md-5.col-lg-4.col-xl-4.offset-md-1.offset-lg-0
+						div.get-funded__worth-item.get-funded__worth-item--fix-mb
 							+worth-list({
-								title: '',
+								title: 'Overall:',
 								items: [
-									''
+									'100+ completed projects for 70&nbsp;companies in&nbsp;14&nbsp;countries',
+									'Award-winning products',
+									'Handful of&nbsp;clients with 8+&nbsp;years working relationships',
+									'20&nbsp;years of&nbsp;experience in&nbsp;digital products design'
 								]
 							})
-					div.col-12.col-md-5.col-lg-4.col-xl-4
-						div.get-funded__worth-item
-							+worth-list({
-								title: '',
-								items: [
-									''
-								]
-							})
-					div.col-12.col-md-6.col-lg-4.col-xl-4.offset-md-1.offset-lg-0
-						div.get-funded__worth-item
-							+worth-list({
-								title: '',
-								items: [
-									''
-								]
-							})
-		include ../companies/companies.pug
+		include ../companies/companies--getfunded.pug
 	section.get-funded__workflow
 		div.get-funded__number
 			div.container
