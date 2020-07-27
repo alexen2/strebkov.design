@@ -16,7 +16,7 @@ section.get-funded
 				img.get-funded__icon.get-funded__icon-07(src="images/get-funded__icon-07.svg" alt="icon")
 				img.get-funded__icon.get-funded__icon-08(src="images/get-funded__icon-08.svg" alt="icon")
 				div.get-funded__block-img-1
-					+picture({img: 'get-funded__img-01-1200', img_320: 'get-funded__img-01-320', img_768: 'get-funded__img-01-768',  img_992: 'get-funded__img-01-992', img_1200: 'get-funded__img-01-1200'})
+					+picture({img: 'get-funded__img-01-1200', img_320: 'get-funded__img-01-320', img_768: 'get-funded__img-01-768',  img_992: 'get-funded__img-01-992', img_1200: 'get-funded__img-01-1200', alt: 'email'})
 	section.get-funded__mvp-scope
 		div.get-funded__number
 			div.container
@@ -28,7 +28,7 @@ section.get-funded
 								h2.h2 Get full clarity on&nbsp;your MVP scope. Only focus on&nbsp;what&rsquo;s essential.
 								p.text-lg.text-lg--black.text-lg--md Start simple, get fancy later&nbsp;&mdash; because we&rsquo;ve found that works well. Using tools like user personas, storyboards, empathy maps, a&nbsp;feature matrix and a&nbsp;How Might We&nbsp;exercise, we&rsquo;ll help you clearly define the scope for the MVP, whether it&rsquo;s a&nbsp;web or&nbsp;mobile app. You&rsquo;ll get a&nbsp;professional design style for your app that you can add to&nbsp;and refine further down the road, and also a&nbsp;knockout pitch deck to&nbsp;impress potential investors even more.
 		div.get-funded__block-img-2
-			+picture({img: 'get-funded__img-02-1200', img_320: 'get-funded__img-02-320', img_768: 'get-funded__img-02-768', img_992: 'get-funded__img-02-992', img_1200: 'get-funded__img-02-1200'})
+			+picture({img: 'get-funded__img-02-1200', img_320: 'get-funded__img-02-320', img_768: 'get-funded__img-02-768', img_992: 'get-funded__img-02-992', img_1200: 'get-funded__img-02-1200', alt: 'Get full clarity on your MVP scope'})
 
 		div.get-funded__worth
 			div.container
@@ -161,67 +161,70 @@ section.get-funded
 							})
 		include ../companies/companies--getfunded.pug
 	section.get-funded__workflow
-		div.get-funded__number
+		div.get-funded__number.get-funded__number--4
 			div.container
 				div.row
 					div.col-12.col-md-10.col-xl-9.offset-xl-1
-						div.get-funded__title
-							div.get-funded__title-number
-							h2.h2 
-						p.text-lg.text-lg--black.text-lg--md
-		div.get-funded__body-img
-			div.get-funded__block-img-3
-				+picture({img: '', img_320: '', img_992: '', img_1200: ''})
+						div.get-funded__top
+							div.get-funded__number-value 4
+							div.get-funded__number-body
+								h2.h2 Stress-free workflow. No&nbsp;surprizes, no&nbsp;micromanagement.
+								p.text-lg.text-lg--black.text-lg--md We&nbsp;use ActiveCollab for our internal task management, and we&rsquo;re super big on&nbsp;refining our templates and documenting literally every step we&nbsp;take. We&nbsp;know exactly what assets you&rsquo;ll need to&nbsp;build an&nbsp;MVP and publish it&nbsp;to&nbsp;the web or&nbsp;in&nbsp;app stores. App layouts, assets, icons, store graphics, different file formats&mdash;you don&rsquo;t have to&nbsp;worry about any of&nbsp;that, just leave it&nbsp;to&nbsp;us.
+		div.get-funded__block-img-3
+			+picture({img: 'get-funded__img-03-1200', img_320: 'get-funded__img-03-320', img_768: 'get-funded__img-03-768', img_992: 'get-funded__img-03-992', img_1200: 'get-funded__img-03-1200', alt: 'Stress-free workflow'})
 		div.container
 			div.row
-				div.col-12
-					p.text-lg.text-lg--black.text-lg--md
+				div.col-12.col-md-8.offset-md-2
+					p.text-lg.text-lg--black.text-lg--md We&nbsp;can also integrate into every collaboration software you use. We&nbsp;know exactly what assets you need to&nbsp;build an&nbsp;MVP and publish it&nbsp;on&nbsp;the web or&nbsp;in&nbsp;app stores. Icons, store graphics, different file formats- you don&rsquo;t have to&nbsp;worry, leave it&nbsp;for&nbsp;us.
 		div.get-funded__softs
 			div.container
 				div.row
-					div.col-12.col-lg-10.col-lg-8.col-xl-10.offset-md-1.offset-lg-2.offset-xl-1
+					div.col-12.col-md-10.col-lg-8.col-xl-10.offset-md-1.offset-lg-2.offset-xl-1
 						ul.get-funded__softs-list
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-01.png" srcset="images/get-funded__img-sofrs-01@2x.png 2x" alt="Basecamp" title="Basecamp")
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-02.png" srcset="images/get-funded__img-sofrs-02@2x.png 2x" alt="none" title="none")
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-03.png" srcset="images/get-funded__img-sofrs-03@2x.png 2x" alt="Trello" title="Trello")
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-04.png" srcset="images/get-funded__img-sofrs-04@2x.png 2x" alt="none" title="none")
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-05.png" srcset="images/get-funded__img-sofrs-05@2x.png 2x" alt="Monday" title="Monday")
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-06.png" srcset="images/get-funded__img-sofrs-06@2x.png 2x" alt="Slack" title="Slack")
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-07.png" srcset="images/get-funded__img-sofrs-07@2x.png 2x" alt="none" title="none")
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-mask.png" srcset="images/get-funded__img-sofrs-mask@2x.png 2x" alt="mask" title="mask")
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-mask.png" srcset="images/get-funded__img-sofrs-mask@2x.png 2x" alt="mask" title="mask")
 							li.get-funded__softs-item
-								img(src="images/" alt="")
+								img(src="images/get-funded__img-sofrs-mask.png" srcset="images/get-funded__img-sofrs-mask@2x.png 2x" alt="mask" title="mask")
 	section.get-funded__deliverables
-		div.get-funded__number
+		div.get-funded__number.get-funded__number--5
 			div.container
 				div.row
 					div.col-12.col-md-10.col-xl-9.offset-xl-1
-						div.get-funded__title
-							div.get-funded__title-number
-							h2.h2 
-						p.text-lg.text-lg--black.text-lg--md
-		div.get-funded__body-img
-			div.get-funded__block-img-4
-				+picture({img: '', img_320: '', img_992: '', img_1200: ''})
+						div.get-funded__top
+							div.get-funded__number-value 5
+							div.get-funded__number-body
+								h2.h2 A&nbsp;full package with deliverables you&rsquo;ll love.
+								p.text-lg.text-lg--black.text-lg--md Your in-house or&nbsp;outsourced development team will love our assets and guidance. We&rsquo;ll give them everything they need to&nbsp;integrate our designs and produce the high-quality end product your project deserves, one that&rsquo;s ready to&nbsp;impress investors and win over users.
+		div.get-funded__block-img-4
+			+picture({img: 'get-funded__img-04-1200', img_320: 'get-funded__img-04-320', img_768: 'get-funded__img-04-768', img_992: 'get-funded__img-04-992', img_1200: 'get-funded__img-04-1200', alt: 'A full package deliverables'})
 	section.get-funded__support
-		div.get-funded__number
+		div.get-funded__number.get-funded__number--6
 			div.container
 				div.row
 					div.col-12.col-md-10.col-xl-9.offset-xl-1
-						div.get-funded__title
-							div.get-funded__title-number
-							h2.h2 
-						p.text-lg.text-lg--black.text-lg--md
+						div.get-funded__top
+							div.get-funded__number-value 6
+							div.get-funded__number-body
+								h2.h2 30&nbsp;days of&nbsp;free development support to&nbsp;get you up&nbsp;and running
+								p.text-lg.text-lg--black.text-lg--md Your 30&nbsp;days of&nbsp;development support is&nbsp;perfect for ironing out any creases that might show up&nbsp;in&nbsp;the new design. We&nbsp;want to&nbsp;ensure everything works as&nbsp;it&nbsp;should and achieves your aims so&nbsp;we&nbsp;do&nbsp;regular UX/UI reviews of&nbsp;your new layouts. We&nbsp;also tackle your questions, and should they be&nbsp;needed, we&nbsp;take care of&nbsp;design fixes so&nbsp;long as&nbsp;they&rsquo;re within the initial scope of&nbsp;the project. Your 30&nbsp;days of&nbsp;free support will leave you with an&nbsp;MVP that&rsquo;s ready to&nbsp;soar.
+		div.get-funded__block-img-5
+			+picture({img: 'get-funded__img-05-1200', img_320: 'get-funded__img-05-320', img_768: 'get-funded__img-05-768', img_992: 'get-funded__img-05-992', img_1200: 'get-funded__img-05-1200', alt: 'Development support'})
 	section.get-funded__investment
 		div.get-funded__body-img
 			div.get-funded__block-img-4
