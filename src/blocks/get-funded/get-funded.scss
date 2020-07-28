@@ -10,7 +10,7 @@
 
 	/* 2 Block model */
 	padding-top: 22px;
-	margin-bottom: 52px;
+	margin-bottom: 48px;
 	overflow: hidden;
 
 	/* 4 Visual */
@@ -75,11 +75,12 @@
 }
 .get-funded__icon-02 {
 	/* 1 Positioning */
-	bottom: 120px;
-	left: 119px;
+	bottom: 144px;
+	left: -104px;
 
 	/* 2 Block model */
 	display: block;
+	width: 190px;
 	@media (min-width: 768px) {
 		/* 1 Positioning */
 		bottom: 61px;
@@ -117,8 +118,8 @@
 }
 .get-funded__icon-04 {
 	/* 1 Positioning */
-	top: 42px;
-	right: -54px;
+	top: -13px;
+	right: -100px;
 
 	/* 2 Block model */
 	display: block;
@@ -190,8 +191,8 @@
 }
 .get-funded__icon-07 {
 	/* 1 Positioning */
-	bottom: -100px;
-	left: 123px;
+	bottom: -93px;
+	left: 90px;
 
 	/* 2 Block model */
 	display: block;
@@ -241,7 +242,7 @@
 /* Block  get-funded__mvp-scope */
 .get-funded__mvp-scope {
 	/* 2 Block model */
-	margin-bottom: 91px;
+	margin-bottom: 83px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 148px;
@@ -421,7 +422,7 @@
 /* Block  get-funded__process */
 .get-funded__process {
 	/* 2 Block model */
-	margin-bottom: 123px;
+	margin-bottom: 83px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 146px;
@@ -671,7 +672,11 @@
 }
 .get-funded__phase-body .text-lg-two {
 	/* 2 Block model */
-	margin-bottom: 11px;
+	margin-bottom: 9px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 11px;
+	}
 }
 .get-funded__phase-body .text-lg-two:last-child {
 	/* 2 Block model */
@@ -681,7 +686,7 @@
 /* Block  get-funded__experience */
 .get-funded__experience {
 	/* 2 Block model */
-	margin-bottom: 113px;
+	margin-bottom: 83px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 194px;
@@ -697,7 +702,7 @@
 }
 .get-funded__number--3 {
 	/* 2 Block model */
-	margin-bottom: 40px;
+	margin-bottom: 44px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 60px;
@@ -731,7 +736,7 @@
 /* Block get-funded__workflow */
 .get-funded__workflow {
 	/* 2 Block model */
-	margin-bottom: 116px;
+	margin-bottom: 96px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 130px;
@@ -855,7 +860,7 @@
 /* Blocks get-funded__deliverables */
 .get-funded__deliverables {
 	/* 2 Block model */
-	margin-bottom: 109px;
+	margin-bottom: 104px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 140px;
@@ -981,7 +986,7 @@
 	/* 2 Block model */
 	display: inline-block;
 	width: 100%;
-	padding-left: 106px;
+	padding-left: 82px;
 
 	/* 3 Typography */
 	font-family: $font-third;
@@ -1017,10 +1022,11 @@
 .get-funded__block-img-1 img {
 	/* 1 Positioning */
 	position: relative;
+	left: 0;
 
 	/* 2 Block model */
 	display: block;
-	width: 890px;
+	width: 855px;
 
 	/* 4 Visual */
 	transform: translate(-6%);
@@ -1075,7 +1081,7 @@
 	width: 864px;
 
 	/* 4 Visual */
-	transform: translate(10%);
+	transform: translate(-20.7%);
 	@media (min-width: 768px) {
 		/* 1 Positioning */
 		left: 50%;
@@ -1103,7 +1109,7 @@
 }
 .get-funded__block-img-3 {
 	/* 2 Block model */
-	margin-bottom: 10px;
+	margin-bottom: -5px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 20px;
@@ -1153,6 +1159,13 @@
 	/* 2 Block model */
 	display: block;
 	width: 862px;
+
+	/* 4 Visual */
+	transform: translate(-20%);
+	@media (min-width: 576px) {
+		/* 4 Visual */
+		transform: translate(-10%);
+	}
 	@media (min-width: 768px) {
 		/* 1 Positioning */
 		left: 50%;
@@ -1178,10 +1191,15 @@
 .get-funded__block-img-5 img {
 	/* 1 Positioning */
 	position: relative;
+	left: -15px;
 
 	/* 2 Block model */
 	display: block;
-	width: 767px;
+	width: 745px;
+	@media (min-width: 576px) {
+		/* 4 Visual */
+		transform: translateX(5%);
+	}
 	@media (min-width: 768px) {
 		/* 1 Positioning */
 		left: 50%;
@@ -1215,12 +1233,19 @@
 	}
 }
 .get-funded__block-img-6 img {
+	/* 1 Positioning */
+	position: relative;
+	left: -39px;
+
 	/* 2 Block model */
 	display: block;
-	width: 100%;
-	max-width: 373px;
+	width: 373px;
 	@media (min-width: 768px) {
+		/* 1 Positioning */
+		position: static;
+
 		/* 2 Block model */
+		width: 100%;
 		max-width: 978px;
 	}
 }
