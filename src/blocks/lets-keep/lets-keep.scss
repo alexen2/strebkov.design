@@ -1,4 +1,107 @@
 .lets-keep {
 	/* 2 Block model */
-	display: block;
+	padding: 30px 20px 40px 20px;
+
+	/* 4 Visual */
+	background: #ffffff;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05), 0 5px 40px rgba(39, 57, 76, 0.1);
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding: 40px;
+
+		/* 4 Visual */
+		border-radius: 10px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding: 40px 60px 48px 61px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding: 42px 60px 46px 61px;
+	}
+}
+.lets-keep__top {
+	/* 2 Block model */
+	margin-bottom: 20px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 32px;
+	}
+}
+.lets-keep__title {
+	/* 2 Block model */
+	margin: 0;
+	margin-bottom: 6px;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 34px;
+	color: #000000;
+	letter-spacing: -0.147692px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 16px;
+
+		/* 3 Typography */
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: -0.184615px;
+	}
+}
+.lets-keep__text {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 25px;
+	color: #000000;
+	letter-spacing: -0.1px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 22px;
+		line-height: 32px;
+		letter-spacing: normal;
+	}
+}
+.lets-keep__form {
+	/* 2 Block model */
+	display: flex;
+	flex-direction: column;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+.lets-keep__form-item:first-child {
+	/* 2 Block model */
+	width: 100%;
+	margin-bottom: 29px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 20px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-width: 380px;
+		margin-bottom: 0;
+	}
+}
+.lets-keep__form-item:last-child {
+	/* 2 Block model */
+	flex: 1 0 auto;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-width: 252px;
+	}
+}
+.lets-keep__form-item .btn {
+	/* 2 Block model */
+	width: 100%;
 }

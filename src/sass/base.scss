@@ -409,6 +409,14 @@ ul {
 	/* 4 Visual */
 	background-color: #fbfbfb;
 }
+.gray-dark--fix {
+	/* 2 Block model */
+	overflow: initial;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		overflow: hidden;
+	}
+}
 .scrolled {
 	/* 2 Block model */
 	padding-top: 70px;

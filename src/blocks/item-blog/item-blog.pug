@@ -1,0 +1,13 @@
+mixin item-blog(data)
+	div.item-blog(class!=attributes.class)
+		div.item-blog__img
+			a.item-blog__link(href="@" target="_blank")
+				img(src="images/"+data.img+".jpg" srcset="images/"+data.img+".jpg 2x", alt=data.alt, title=data.img_title)
+		div.item-blog__time
+			span!=data.time
+		div.item-blog__info
+			h2.item-blog__title!=data.title
+			if data.desc
+				p.item-blog__desc!=data.desc
+
+

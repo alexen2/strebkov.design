@@ -1,35 +1,41 @@
 section.blog
 	div.container
 		div.row
-			h1.blog__title.h1 Blog
-		div.row
-			div.col-12.col-md-11.col-lg-8
-				div.blog__item
-					//- +item-blog
-			div.col-12.col-lg-4
-				div.row
-					div.col-12.col-md-6.col-lg-12
-						div.blog__item
-							//- +item-blog
-					div.col-12.col-md-6.col-lg-12
-						div.blog__item
-							//- +item-blog
-		div.row
-			div.col-12.col-md-6.col-lg-4
-				div.blog__item
-					//- +item-blog
-			div.col-12.col-md-6.col-lg-4
-				div.blog__item
-					//- +item-blog
-			div.col-12.col-md-6.col-lg-4
-				div.blog__item
-					//- +item-blog
-			div.col-12.col-md-6.col-lg-4
-				div.blog__item
-					//- +item-blog
-			div.col-12.col-md-6.col-lg-4
-				div.blog__item
-					//- +item-blog
-			div.col-12.col-md-6.col-lg-4
-				div.blog__item
-					//- +item-blog
+			div.col-12
+				h1.blog__title.h0 Blog
+	div.blog__top
+		div.container
+			div.row
+				div.col-12.col-md-11.col-lg-8
+					div.blog__item.blog__item--big
+						+item-blog({img: 'blog__img-mask-01', alt: 'img', img_title: 'img', time: '12 min read', title: 'How Much Does It&nbsp;Cost to&nbsp;Build a&nbsp;Mobile App MVP?', desc: 'MVP stands for &lsquo;minimum viable product&rsquo;, which is&nbsp;shorthand for a&nbsp;working prototype that includes all of&nbsp;the must haves that your final version will include. As&nbsp;such, gives you a&nbsp;chance to&nbsp;gather useful ...'})(class="item-blog--big")
+				div.col-12.col-lg-4
+					div.blog__right
+						div.row
+							div.col-12.col-md-6.col-lg-12
+								div.blog__item.blog__item--first
+									+item-blog({img: 'blog__img-mask-01', alt: 'img', img_title: 'img', time: '8 min read', title: 'Financial Apps Monetization Models', desc: false})
+							div.col-12.col-md-6.col-lg-12
+								div.blog__item.blog__item--last
+									+item-blog({img: 'blog__img-mask-01', alt: 'img', img_title: 'img', time: '8 min read', title: '6&nbsp;Steps to&nbsp;kickstart your proof of&nbsp;concept', desc: false})
+	div.blog__body
+		div.container
+			div.row
+				div.col-12.col-md-6.col-lg-4
+					div.blog__item
+						+item-blog({img: 'blog__img-mask-01', alt: 'img', img_title: 'img', time: '8 min read', title: '5&nbsp;Ways that investing in&nbsp;UI/UX helps your business', desc: false})
+				div.col-12.col-md-6.col-lg-4
+					div.blog__item
+						+item-blog({img: 'blog__img-mask-01', alt: 'img', img_title: 'img', time: '8 min read', title: '6&nbsp;Steps to&nbsp;kickstart your proof of&nbsp;concept', desc: false})
+				div.col-12.col-md-6.col-lg-4
+					div.blog__item
+						+item-blog({img: 'blog__img-mask-01', alt: 'img', img_title: 'img', time: '8 min read', title: '6&nbsp;Steps to&nbsp;kickstart your proof of&nbsp;concept', desc: false})
+				div.col-12.col-md-6.col-lg-4
+					div.blog__item
+						+item-blog({img: 'blog__img-mask-01', alt: 'img', img_title: 'img', time: '8 min read', title: 'Top 6&nbsp;checklist for a&nbsp;Top Finance App', desc: false})
+				div.col-12.col-md-6.col-lg-4
+					div.blog__item
+						+item-blog({img: 'blog__img-mask-01', alt: 'img', img_title: 'img', time: '8 min read', title: '10&nbsp;things to&nbsp;check before launching finance product', desc: false})
+				div.col-12.col-md-6.col-lg-4
+					div.blog__item
+						+item-blog({img: 'blog__img-mask-01', alt: 'img', img_title: 'img', time: '8 min read', title: '8&nbsp;tips to&nbsp;conduct an&nbsp;effective design sprint', desc: false})
