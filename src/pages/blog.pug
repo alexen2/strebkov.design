@@ -1,0 +1,32 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Blog')
+
+	body
+		div.wrapper
+			include ../blocks/mixins.pug
+
+			include ../blocks/header/header.pug
+
+			include ../blocks/blog/blog.pug
+
+			div.gray-dark
+				div.bottom-img
+					div.container
+						div.bottom-img__imgs
+							img.bottom-img__icon.bottom-img__icon-01(src="images/bottom-img__icon-01.svg" alt="icon")
+							img.bottom-img__icon.bottom-img__icon-02(src="images/bottom-img__icon-02.svg" alt="icon")
+							img.bottom-img__icon.bottom-img__icon-03(src="images/bottom-img__icon-03.svg" alt="icon")
+							img.bottom-img__icon.bottom-img__icon-04(src="images/bottom-img__icon-04.svg" alt="icon")
+							img.bottom-img__icon.bottom-img__icon-05(src="images/bottom-img__icon-05.svg" alt="icon")
+						div.row
+							div.col-12.col-md-10.col-xl-8.offset-md-1
+								div.bottom-img__lets-keep
+									include ../blocks/lets-keep/lets-keep.pug
+				div.container
+					div.row.pd-pb62
+						div.col-12.col-lg-7-6.offset-lg-1
+							include ../blocks/footer/footer.pug 
+
+		include include/script.pug
