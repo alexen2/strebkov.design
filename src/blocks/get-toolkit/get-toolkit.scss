@@ -4,44 +4,50 @@
 	margin: 0 -20px;
 
 	/* 4 Visual */
-	background-color: #000000;
+	background-color: #ff5900;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05), 0 5px 40px rgba(39, 57, 76, 0.1);
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		padding: 39px 22px 10px 33px;
+		width: 302px;
+		padding: 29px 31px 10px 29px;
 		margin: 0;
+		margin-right: 0;
+		margin-left: auto;
 
 		/* 4 Visual */
 		border-radius: 10px;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
+		width: 100%;
 		padding: 30px 60px 13px 60px;
+		margin: 0;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
-		padding: 30px 50px 13px 50px;
+		padding: 33px 50px 13px 50px;
 	}
 }
 .get-toolkit__title {
 	/* 2 Block model */
 	margin: 0;
-	margin-bottom: 30px;
+	margin-bottom: 28px;
 
 	/* 3 Typography */
 	font-family: $font-second;
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 34px;
-	color: #000000;
+	color: #ffffff;
 	text-align: left;
 	letter-spacing: -0.19px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		margin-bottom: 29px;
+		margin-bottom: 18px;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		margin-bottom: 38px;
+		margin-bottom: 28px;
 
 		/* 3 Typography */
 		font-size: 30px;
@@ -61,16 +67,6 @@
 		margin-bottom: 10px;
 	}
 }
-.get-toolkit__item--btn {
-	@media (min-width: 768px) {
-		/* 2 Block model */
-		padding-top: 12px;
-	}
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		padding-top: 0;
-	}
-}
 .get-toolkit .btn {
 	/* 2 Block model */
 	width: 100%;
@@ -82,7 +78,11 @@
 	border-color: #ffd933;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		margin-top: 10px;
+		margin-top: 13px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-top: 20px;
 	}
 }
 .get-toolkit__response {

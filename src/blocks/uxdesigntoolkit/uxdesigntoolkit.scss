@@ -1,49 +1,71 @@
 .uxdesigntoolkit__top {
 	/* 2 Block model */
-	margin-bottom: 87px;
+	margin-bottom: 67px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		margin-bottom: 20px;
+		margin-bottom: 80px;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		margin-bottom: 46px;
+		margin-bottom: 124px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
-		margin-bottom: 72px;
+		margin-bottom: 101px;
 	}
 }
 .uxdesigntoolkit__text {
 	/* 2 Block model */
 	width: 100%;
 	max-width: 439px;
-	margin-bottom: 47px;
+	margin-bottom: 29px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 0;
 	}
 }
-.uxdesigntoolkit__text .h0 {
+.uxdesigntoolkit__attention {
 	/* 2 Block model */
-	margin-bottom: 30px;
+	display: inline-block;
+	margin-bottom: 17px;
+
+	/* 3 Typography */
+	font-family: $font-third;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 30px;
+	color: #ff5900;
+	letter-spacing: -0.685px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 20px;
+	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		margin-bottom: 40px;
+		margin-bottom: 22px;
 	}
 }
-.uxdesigntoolkit__text .text-lg-thre {
+.uxdesigntoolkit__title {
 	/* 2 Block model */
-	margin-bottom: 24px;
-	@media (min-width: 992px) {
+	margin: 0;
+	margin-bottom: 15px;
+
+	/* 3 Typography */
+	font-family: $font-third;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 34px;
+	color: #000000;
+	letter-spacing: -0.184615px;
+	@media (min-width: 768px) {
 		/* 2 Block model */
-		margin-bottom: 29px;
+		margin-bottom: 20px;
 	}
-}
-.uxdesigntoolkit .get-toolkit {
-	/* 4 Visual */
-	background-color: #ffffff;
-	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05), 0 1px 4px rgba(0, 0, 0, 0.05), 0 5px 40px rgba(39, 57, 76, 0.1);
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 40px;
+		line-height: 50px;
+	}
 }
 .uxdesigntoolkit__body .container {
 	/* 2 Block model */
@@ -65,66 +87,90 @@
 		padding-left: 10px;
 	}
 }
+.uxdesigntoolkit__img {
+	/* 2 Block model */
+	margin-bottom: 74px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 19px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 16px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 13px;
+	}
+}
 .uxdesigntoolkit__img img {
 	/* 1 Positioning */
 	position: relative;
 	top: 0;
+	left: 50%;
 
 	/* 2 Block model */
-	display: inline-block;
-	width: 910px;
+	display: block;
+	width: 913px;
 
 	/* 4 Visual */
-	transform: translate(-24.5%, 0);
-	@media (min-width: 500px) {
-		/* 4 Visual */
-		transform: translate(-16.5%, 0);
-	}
-	@media (min-width: 580px) {
-		/* 4 Visual */
-		transform: translate(-14.5%, 0);
-	}
+	transform: translate(-46.2%, 0);
 	@media (min-width: 768px) {
-		/* 1 Positioning */
-		position: static;
-
 		/* 2 Block model */
-		display: block;
-		width: 100%;
-		margin: 0 auto;
+		width: 768px;
 
 		/* 4 Visual */
-		transform: translate(0, 0);
+		transform: translate(-50.7%, 0);
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 949px;
+
+		/* 4 Visual */
+		transform: translate(-49.5%, 0);
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
-		max-width: 1042px;
+		width: 1064px;
+
+		/* 4 Visual */
+		transform: translateX(-42.5%);
+	}
+}
+.uxdesigntoolkit__info .text-lg-two {
+	/* 2 Block model */
+	margin-bottom: 10px;
+}
+.uxdesigntoolkit__info .text-lg-bold {
+	/* 2 Block model */
+	margin-top: 46px;
+	margin-bottom: 18px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-top: 32px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-top: 40px;
+		margin-bottom: 22px;
 	}
 }
 .uxdesigntoolkit__bottom {
 	/* 2 Block model */
-	padding-top: 45px;
+	padding-top: 50px;
 	padding-bottom: 30px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		padding-top: 122px;
+		padding-top: 75px;
 		padding-bottom: 30px;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		padding-top: 56px;
+		padding-top: 73px;
 		padding-bottom: 65px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
-		padding-top: 106px;
-	}
-}
-.uxdesigntoolkit__bottom .footer {
-	/* 2 Block model */
-	padding-top: 20px;
-	@media (min-width: 768px) {
-		/* 2 Block model */
-		padding-top: 38px;
+		padding-top: 60px;
 	}
 }

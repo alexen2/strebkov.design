@@ -21,19 +21,10 @@
 	/* 2 Block model */
 	display: block;
 	width: 100%;
-	max-height: 250px;
 	overflow: hidden;
 
 	/* 4 Visual */
 	border-radius: 10px;
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		max-height: 200px;
-	}
-	@media (min-width: 1200px) {
-		/* 2 Block model */
-		max-height: 250px;
-	}
 }
 .item-blog__time {
 	/* 2 Block model */
@@ -124,10 +115,6 @@
 		/* 2 Block model */
 		margin-bottom: 16px;
 	}
-}
-.item-blog--big .item-blog__img img {
-	/* 2 Block model */
-	max-height: 100%;
 }
 .item-blog--big .item-blog__time {
 	@media (min-width: 768px) {
