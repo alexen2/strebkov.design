@@ -398,6 +398,32 @@ ul {
 		padding: 0 10px;
 	}
 }
+.overlay {
+	/* 1 Positioning */
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+
+	/* 2 Block model */
+	display: none;
+
+	/* 4 Visual */
+	background-color: rgba(0, 0, 0, 0.7);
+	opacity: 0;
+
+	/* 5 Animation */
+	transition: all 0.4s ease;
+}
+.overlay--open {
+	/* 2 Block model */
+	display: block;
+
+	/* 4 Visual */
+	opacity: 1;
+}
 .gray {
 	/* 4 Visual */
 	background-color: #fafafa;

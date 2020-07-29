@@ -2,6 +2,7 @@ jQuery(document).ready(function () {
 	jQuery("#hamburger").click(function () {
 		jQuery(this).toggleClass("close");
 		jQuery(".menu-mobile").toggleClass("menu-mobile--open");
+		jQuery(".overlay").toggleClass("overlay--open");
 		jQuery("body").toggleClass("overflow-hidden");
 	});
 
@@ -9,6 +10,7 @@ jQuery(document).ready(function () {
 		if (jQuery(window).width() > 767) {
 			jQuery(".menu-mobile").removeClass("menu-mobile--open");
 			jQuery("body").removeClass("overflow-hidden");
+			jQuery(".overlay").removeClass("overlay--open");
 		}
 	});
 
@@ -25,6 +27,11 @@ jQuery(document).ready(function () {
 
 	$(".menu__item-dropdown").click(function () {
 		if (jQuery(window).width() < 1200) {
+			// if ($("body .menu__item-dropdown-active").length) {
+			// 	$(".menu__wrapper-dropdown").hide(290);
+			// } else {
+			// 	$(".menu__wrapper-dropdown").show(290);
+			// }
 			$(this).toggleClass("menu__item-dropdown-active");
 		}
 	});

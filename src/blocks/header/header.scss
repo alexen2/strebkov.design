@@ -16,6 +16,9 @@
 	}
 }
 .header__in {
+	/* 1 Positioning */
+	position: relative;
+
 	/* 2 Block model */
 	display: flex;
 	flex-direction: row;
@@ -38,6 +41,11 @@
 		/* 2 Block model */
 		display: block;
 	}
+}
+.header__in .header__logo {
+	/* 1 Positioning */
+	position: absolute;
+	right: 0;
 }
 .header .logo,
 .header .icon--logo {
@@ -72,7 +80,7 @@
 }
 .scrolled .header__in {
 	/* 2 Block model */
-	height: 50px;
+	height: 70px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		height: 60px;

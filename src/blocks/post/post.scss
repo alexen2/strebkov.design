@@ -21,9 +21,19 @@
 .post__title {
 	/* 2 Block model */
 	margin-bottom: 16px;
+
+	/* 3 Typography */
+	font-size: 40px;
+	line-height: 44px;
+	letter-spacing: -0.246154px;
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-bottom: 14px;
+
+		/* 3 Typography */
+		font-size: 60px;
+		line-height: 70px;
+		letter-spacing: -1.37px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
@@ -62,14 +72,18 @@
 }
 .post__img {
 	/* 2 Block model */
+	margin-right: -20px;
 	margin-bottom: 40px;
+	margin-left: -20px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
+		margin-right: 0;
 		margin-bottom: 50px;
+		margin-left: 0;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		margin-bottom: 60px;
+		margin-bottom: 62px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
@@ -88,7 +102,19 @@
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-top: 60px;
-		margin-bottom: 60px;
+		margin-bottom: 64px;
+	}
+}
+.post__img--1 img {
+	/* 4 Visual */
+	border-radius: 0;
+}
+.post__mobile-show {
+	/* 2 Block model */
+	display: none;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		display: block;
 	}
 }
 .post__share-tex {
@@ -100,13 +126,59 @@
 	font-family: $font-second;
 	font-size: 20px;
 	font-weight: 500;
-	line-height: 40px;
+	line-height: 27px;
 	color: #000000;
 	letter-spacing: -0.123077px;
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-bottom: 50px;
 	}
+	@media (min-width: 1200px) {
+		/* 3 Typography */
+		line-height: 40px;
+	}
+}
+.post__social {
+	/* 2 Block model */
+	padding: 0;
+	padding-left: 10px;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.post__social__item {
+	/* 2 Block model */
+	margin-bottom: 20px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 40px;
+	}
+}
+.post__social__item:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.post__social-link {
+	/* 2 Block model */
+	display: flex;
+	flex: 0 0 32px;
+	width: 32px;
+
+	/* 3 Typography */
+	text-decoration: none;
+
+	/* 4 Visual */
+	outline: none;
+
+	/* 5 Animation */
+	transition: all 0.4s ease;
+}
+.post__social-link:hover,
+.post__social-link:focus,
+.post__social-link:active {
+	/* 4 Visual */
+	opacity: 0.5;
 }
 .post__text-top {
 	/* 2 Block model */
@@ -185,10 +257,10 @@
 
 	/* 2 Block model */
 	padding-left: 44px;
-	margin-bottom: 20px;
-	@media (min-width: 1200px) {
+	margin-bottom: 16px;
+	@media (min-width: 992px) {
 		/* 2 Block model */
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 }
 .post__item:last-child {
@@ -198,8 +270,8 @@
 .post__item::before {
 	/* 1 Positioning */
 	position: absolute;
-	top: 12px;
-	left: 0;
+	top: 10px;
+	left: -2px;
 
 	/* 2 Block model */
 	display: block;
@@ -209,17 +281,22 @@
 	/* 4 Visual */
 	content: "";
 	background-color: #ff7100;
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		top: 11px;
+		left: 6px;
+	}
 	@media (min-width: 992px) {
 		/* 1 Positioning */
-		top: 23px;
+		top: 13px;
 		left: 0;
 	}
 }
 .post__item::after {
 	/* 1 Positioning */
 	position: absolute;
-	top: 2px;
-	left: 11px;
+	top: 0px;
+	left: 9px;
 
 	/* 2 Block model */
 	display: block;
@@ -229,10 +306,15 @@
 	/* 4 Visual */
 	content: "";
 	background-color: #ff7100;
+	@media (min-width: 768px) {
+		/* 1 Positioning */
+		top: 1px;
+		left: 16px;
+	}
 	@media (min-width: 992px) {
 		/* 1 Positioning */
-		top: 13px;
-		left: 11px;
+		top: 3px;
+		left: 10px;
 	}
 }
 .post__item-text {
@@ -249,13 +331,13 @@
 	@media (min-width: 992px) {
 		/* 3 Typography */
 		font-size: 20px;
-		line-height: 48px;
+		line-height: 28px;
 		letter-spacing: -0.123077px;
 	}
 }
 .post__text-body {
 	/* 2 Block model */
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 .post__text-body-1 {
 	/* 2 Block model */
@@ -315,4 +397,22 @@
 
 	/* 4 Visual */
 	opacity: 0.7;
+}
+.post__example-text {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-main;
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 17px;
+	color: #000000;
+	letter-spacing: -0.0764706px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: -0.0823529px;
+	}
 }
