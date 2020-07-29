@@ -1049,10 +1049,14 @@
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
-		width: 1105px;
+		width: 950px;
 
 		/* 4 Visual */
 		transform: translate(-59.1%);
+	}
+	@media (min-width: 1400px) {
+		/* 2 Block model */
+		width: 1105px;
 	}
 }
 .get-funded__block-img-2 {

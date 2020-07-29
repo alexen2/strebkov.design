@@ -16,7 +16,7 @@
 	opacity: 0;
 
 	/* 5 Animation */
-	transition: all 0.6s;
+	transition: left 0.6s;
 }
 .menu-mobile--open {
 	/* 1 Positioning */
@@ -30,7 +30,7 @@
 	opacity: 1;
 
 	/* 5 Animation */
-	transition: all 0.4s;
+	transition: left 0.2s;
 }
 .menu-mobile__list {
 	/* 2 Block model */
