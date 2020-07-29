@@ -305,12 +305,16 @@
 	font-family: $font-third;
 	font-size: 30px;
 	font-weight: 900;
-	line-height: 34;
+	line-height: 34px;
 	color: #000000;
 
 	/* 4 Visual */
 	background-color: #ffd933;
 	border-radius: 50%;
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS styles go here */
+		position: relative;
+	}
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-right: 20px;
@@ -326,6 +330,21 @@
 		font-size: 40px;
 		line-height: 50px;
 	}
+}
+.get-funded__number-value span {
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS styles go here */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		/* 4 Visual */
+		transform: translate(-50%, -32%);
+	}
+}
+.get-funded__number-body {
+	/* 2 Block model */
+	width: 100%;
 }
 .get-funded__number-body .h2 {
 	/* 2 Block model */
@@ -1244,6 +1263,11 @@
 	/* 2 Block model */
 	display: block;
 	width: 373px;
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS styles go here */
+		left: 0;
+		width: 100%;
+	}
 	@media (min-width: 768px) {
 		/* 1 Positioning */
 		position: static;

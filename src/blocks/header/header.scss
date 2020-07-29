@@ -45,7 +45,11 @@
 .header__in .header__logo {
 	/* 1 Positioning */
 	position: absolute;
+	top: 50%;
 	right: 0;
+
+	/* 4 Visual */
+	transform: translateY(-50%);
 }
 .header .logo,
 .header .icon--logo {

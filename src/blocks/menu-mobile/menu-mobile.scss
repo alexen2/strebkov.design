@@ -2,6 +2,7 @@
 	/* 1 Positioning */
 	position: fixed;
 	top: 0;
+	right: auto;
 	left: -100vw;
 	z-index: -1;
 
@@ -20,6 +21,7 @@
 }
 .menu-mobile--open {
 	/* 1 Positioning */
+	right: auto;
 	left: 0;
 	z-index: 1000;
 
