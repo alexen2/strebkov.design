@@ -136,8 +136,8 @@ li.current_page_item::before {
 	z-index: 20;
 
 	/* 2 Block model */
-	padding-top: 27px;
 	display: none;
+	padding-top: 27px;
 
 	/* 4 Visual */
 	border-radius: 0 2px 2px 2px;
@@ -218,12 +218,9 @@ li.current_page_item::before {
 	/* 2 Block model */
 	display: flex;
 	align-items: flex-start;
+	padding-left: 0;
 	margin: 0;
 	margin-bottom: 20px;
-}
-.menu__list.menu__level-2 li {
-	/* 2 Block model */
-	padding-left: 0;
 }
 .menu__list.menu__level-2 li:last-child {
 	/* 2 Block model */

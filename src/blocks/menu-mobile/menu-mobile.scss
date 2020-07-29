@@ -1,12 +1,13 @@
 .menu-mobile {
 	/* 1 Positioning */
 	position: fixed;
-	top: -100vh;
-	left: 0;
+	top: 0;
+	left: -100vw;
 	z-index: -1;
 
 	/* 2 Block model */
 	width: 100%;
+	max-width: 340px;
 	height: 100vh;
 	overflow-y: auto;
 
@@ -19,7 +20,7 @@
 }
 .menu-mobile--open {
 	/* 1 Positioning */
-	top: 0;
+	left: 0;
 	z-index: 1000;
 
 	/* 2 Block model */
