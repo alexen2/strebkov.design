@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Confirm Email - Strebkov Design')
+
+	body
+		div.wrapper-fix
+			include ../blocks/mixins.pug
+
+			include ../blocks/confirm-email/confirm-email.pug
+
+		include include/script.pug
