@@ -1,4 +1,120 @@
 .claim-free {
 	/* 2 Block model */
+	padding-top: 60px;
+	padding-bottom: 30px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-bottom: 28px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 100px;
+		padding-bottom: 78px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-bottom: 59px;
+	}
+}
+.claim-free__top {
+	/* 2 Block model */
+	margin-bottom: 40px;
+}
+.claim-free__title {
+	/* 2 Block model */
+	margin-bottom: 30px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 34px;
+	}
+}
+.claim-free__title-yellow {
+	/* 3 Typography */
+	color: #ff6600;
+}
+.claim-free__text {
+	/* 2 Block model */
+	margin-bottom: 10px;
+}
+.claim-free__text:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}
+.claim-free__btn {
+	/* 2 Block model */
+	margin-bottom: 50px;
+}
+.claim-free__btn .btn {
+	/* 2 Block model */
+	width: 100%;
+	padding: 15px 43px 17px 46px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		width: auto;
+		padding: 11px 43px 11px 46px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding: 16px 71px 18px 71px;
+	}
+}
+.claim-free__img {
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		width: 100%;
+		max-width: 960px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		max-width: 1200px;
+	}
+}
+.claim-free__picture {
+	/* 2 Block model */
 	display: block;
+	margin-bottom: 30px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 50px;
+	}
+}
+.claim-free__img img {
+	/* 2 Block model */
+	display: block;
+	width: 100%;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-width: 940px;
+		margin: 0 auto;
+
+		/* 4 Visual */
+		border-radius: 7.5px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		max-width: 980px;
+	}
+	@media (min-width: 1300px) {
+		/* 2 Block model */
+		max-width: 100%;
+	}
+}
+.claim-free--fix {
+	/* 2 Block model */
+	padding-right: 0;
+	padding-left: 0;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}
+.claim-free--fix .claim-free__col-p {
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-right: 10px;
+		padding-left: 10px;
+	}
 }

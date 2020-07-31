@@ -1,0 +1,30 @@
+section.claim-free
+	div.container
+		div.row
+			div.col-12.col-md-10.col-xl-8.offset-md-1.offset-xl-2
+				div.claim-free__top
+					h1.h0.h0--free.claim-free__title Your report is&nbsp;on&nbsp;its way.
+						br
+						|Now book your 
+						span.claim-free__title-yellow FREE 
+						|strategy session.
+					p.text-lg-two.claim-free__text We&nbsp;sent the Fintech Product Design Toolkit to&nbsp;the e-mail address you just confirmed. If&nbsp;you don&rsquo;t receive&nbsp;it, check your junk folder.
+					p.text-lg-two.claim-free__text We&nbsp;provide a&nbsp;free blueprinting session with each download. Make sure to&nbsp;claim your spot by&nbsp;clicking the button below.
+				div.claim-free__btn
+					+btn({text: 'Claim free session!', type: 'link', url: '#'})
+	div.container-fluid.claim-free--fix
+		div.claim-free__img
+			div.row.no-gutters
+				div.col-12.col-xl-10.offset-xl-1.claim-free__col-p
+					picture.claim-free__picture
+						source(srcset="images/claim-free__img-375-01.jpg, images/claim-free__img-375-01@2x.jpg 2x" media="(max-width: 767px)")
+						source(srcset="images/claim-free__img-992-01.jpg, images/claim-free__img-992-01@2x.jpg 2x" media="(min-width: 992px)")
+						source(srcset="images/claim-free__img-768-01.jpg, images/claim-free__img-768-01@2x.jpg 2x" media="(min-width: 768px)")
+						img(src="images/claim-free__img-992-01.jpg" srcset="images/claim-free__img-992-01@2x.jpg 2x" alt="Tim Strebkov" title="Tim Strebkov")
+
+	div.claim-free__bottom
+		div.container
+			div.row
+				div.col-12.col-md-10.col-xl-10.offset-md-1.offset-xl-2
+					footer.footer
+						p 2019&nbsp;&copy; Strebkov Design. All rights reserved.
