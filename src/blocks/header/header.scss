@@ -1,4 +1,8 @@
 .header {
+	/* 1 Positioning */
+	position: relative;
+	z-index: 990;
+
 	/* 2 Block model */
 	width: 100%;
 
@@ -42,15 +46,6 @@
 		display: block;
 	}
 }
-.header__in .header__logo {
-	/* 1 Positioning */
-	position: absolute;
-	top: 50%;
-	right: 0;
-
-	/* 4 Visual */
-	transform: translateY(-50%);
-}
 .header .logo,
 .header .icon--logo {
 	/* 2 Block model */
@@ -73,7 +68,7 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 99999;
+	z-index: 990;
 
 	/* 4 Visual */
 	background-color: #ffffff;
@@ -98,13 +93,30 @@
 	/* 2 Block model */
 	display: none;
 }
+// .header__in .header__btn {
+// 	/* 1 Positioning */
+// 	position: absolute;
+// 	top: 50%;
+// 	right: 0;
+
+// 	/* 4 Visual */
+// 	transform: translateY(-50%);
+// }
 .scrolled .header__logo {
 	/* 2 Block model */
 	display: none;
 }
 .scrolled .header__btn {
+	// /* 1 Positioning */
+	// position: absolute;
+	// top: 50%;
+	// right: 0;
+
 	/* 2 Block model */
 	display: block;
+
+	// /* 4 Visual */
+	// transform: translateY(-50%);
 }
 .header__btn .btn__text {
 	/* 3 Typography */
