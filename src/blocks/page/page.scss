@@ -51,6 +51,19 @@
 	margin: 0;
 	margin-bottom: 10px;
 }
+.page a {
+	/* 5 Animation */
+	transition: all 0.4s ease;
+}
+.page a:hover,
+.page a:active,
+.page a:focus {
+	/* 3 Typography */
+	color: #ff7100;
+
+	/* 4 Visual */
+	opacity: 0.7;
+}
 .page ul {
 	/* 2 Block model */
 	padding-left: 40px;

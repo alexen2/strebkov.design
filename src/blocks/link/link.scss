@@ -3,11 +3,17 @@
 	color: blue;
 	text-decoration: none;
 
+	/* 4 Visual */
+	outline: none;
+
 	/* 5 Animation */
 	transition: all 0.4s;
 }
-.link:hover {
+.link:hover,
+.link:active,
+.link:focus {
 	/* 3 Typography */
+	color: #ff7100;
 	text-decoration: underline;
 
 	/* 4 Visual */
