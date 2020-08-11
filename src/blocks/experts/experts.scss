@@ -128,14 +128,6 @@
 	/* 2 Block model */
 	margin-bottom: 0;
 	margin-bottom: 40px;
-
-	/* 3 Typography */
-	font-family: $font-main;
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 17px;
-	color: #000000;
-	letter-spacing: -0.0764706px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 25px;
@@ -143,11 +135,6 @@
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-bottom: 28px;
-
-		/* 3 Typography */
-		font-size: 14px;
-		line-height: 18px;
-		letter-spacing: -0.0823529px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
@@ -159,22 +146,8 @@
 	display: inline-block;
 
 	/* 3 Typography */
-	font-family: $font-main;
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 17px;
 	color: #000000;
 	text-decoration: none;
-	letter-spacing: -0.0764706px;
-
-	/* 5 Animation */
-	transition: all 0.4s ease;
-	@media (min-width: 992px) {
-		/* 3 Typography */
-		font-size: 14px;
-		line-height: 18px;
-		letter-spacing: -0.0823529px;
-	}
 }
 .experts__bottom {
 	@media (min-width: 768px) {

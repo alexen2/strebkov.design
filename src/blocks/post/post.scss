@@ -387,25 +387,14 @@
 	margin-bottom: 8px;
 
 	/* 3 Typography */
-	font-family: $font-second;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 22px;
 	color: #ff6600;
 	text-decoration: none;
-	letter-spacing: -0.0984615px;
 
 	/* 4 Visual */
 	outline: none;
 
 	/* 5 Animation */
 	transition: all 0.4s;
-	@media (min-width: 992px) {
-		/* 3 Typography */
-		font-size: 20px;
-		line-height: 28px;
-		letter-spacing: -0.123077px;
-	}
 }
 .post__link:hover,
 .post__link:focus,
@@ -415,22 +404,4 @@
 
 	/* 4 Visual */
 	opacity: 0.7;
-}
-.post__example-text {
-	/* 2 Block model */
-	margin: 0;
-
-	/* 3 Typography */
-	font-family: $font-main;
-	font-size: 13px;
-	font-weight: 300;
-	line-height: 17px;
-	color: #000000;
-	letter-spacing: -0.0764706px;
-	@media (min-width: 992px) {
-		/* 3 Typography */
-		font-size: 14px;
-		line-height: 18px;
-		letter-spacing: -0.0823529px;
-	}
 }

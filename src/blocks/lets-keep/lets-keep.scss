@@ -31,42 +31,10 @@
 }
 .lets-keep__title {
 	/* 2 Block model */
-	margin: 0;
 	margin-bottom: 6px;
-
-	/* 3 Typography */
-	font-family: $font-second;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 34px;
-	color: #000000;
-	letter-spacing: -0.147692px;
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-bottom: 16px;
-
-		/* 3 Typography */
-		font-size: 30px;
-		line-height: 40px;
-		letter-spacing: -0.184615px;
-	}
-}
-.lets-keep__text {
-	/* 2 Block model */
-	margin: 0;
-
-	/* 3 Typography */
-	font-family: $font-main;
-	font-size: 17px;
-	font-weight: 500;
-	line-height: 25px;
-	color: #000000;
-	letter-spacing: -0.1px;
-	@media (min-width: 992px) {
-		/* 3 Typography */
-		font-size: 22px;
-		line-height: 32px;
-		letter-spacing: normal;
 	}
 }
 .lets-keep__form {

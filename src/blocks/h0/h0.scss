@@ -6,15 +6,9 @@
 	font-family: $font-third;
 	font-size: 40px;
 	font-weight: 900;
-	line-height: 50px;
+	line-height: 44px;
 	color: #000000;
 	letter-spacing: -0.246154px;
-	@media (min-width: 768px) {
-		/* 3 Typography */
-		font-size: 50px;
-		line-height: 60px;
-		letter-spacing: -0.307692px;
-	}
 	@media (min-width: 992px) {
 		/* 3 Typography */
 		font-size: 60px;
@@ -27,18 +21,6 @@
 	font-size: 50px;
 	line-height: 60px;
 	letter-spacing: -0.307692px;
-	@media (min-width: 992px) {
-		/* 3 Typography */
-		font-size: 60px;
-		line-height: 70px;
-		letter-spacing: -1.37px;
-	}
-}
-.h0--free {
-	/* 3 Typography */
-	font-size: 40px;
-	line-height: 44px;
-	letter-spacing: -0.246154px;
 	@media (min-width: 992px) {
 		/* 3 Typography */
 		font-size: 60px;

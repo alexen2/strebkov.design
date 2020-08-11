@@ -1,9 +1,9 @@
 mixin worth-list(data)
 	div.worth-list(class!=attributes.class)
-		p.worth-list__title!=data.title
+		h3.h3.worth-list__title!=data.title
 		ul.worth-list__list
 			- for (var i = 0; i < data.items.length; i++)
 				li.worth-list__item
 					div.worth-list__check 
 						+icon('icon--check-yelow', 'icon--10')
-					p.worth-list__text!=data.items[i]
+					p.text.worth-list__text!=data.items[i]

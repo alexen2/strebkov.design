@@ -36,7 +36,7 @@
 		margin-bottom: 34px;
 	}
 }
-.home-top--getfunded .lead-bold {
+.home-top--getfunded .h2 {
 	/* 2 Block model */
 	margin-bottom: 19px;
 	@media (min-width: 768px) {
@@ -47,6 +47,10 @@
 		/* 2 Block model */
 		margin-bottom: 20px;
 	}
+}
+.home-top--getfunded .lead {
+	/* 2 Block model */
+	margin-bottom: 0;
 }
 .home-top--getfunded .home-top__bottom {
 	/* 2 Block model */
@@ -76,9 +80,6 @@
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		width: 320px;
-
-		/* 3 Typography */
-		line-height: 18px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */

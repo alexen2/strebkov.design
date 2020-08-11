@@ -11,6 +11,12 @@ body {
 	line-height: 24px;
 	color: #000000;
 	letter-spacing: -0.0941176px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: -0.105882px;
+	}
 }
 p,
 ul {

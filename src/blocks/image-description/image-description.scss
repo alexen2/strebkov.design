@@ -6,12 +6,18 @@
 
 	/* 3 Typography */
 	font-family: $font-main;
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: 300;
-	line-height: 21px;
+	line-height: 19px;
 	color: #969696;
 	text-align: center;
-	letter-spacing: -0.0882353px;
+	letter-spacing: -0.0764706px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 15px;
+		line-height: 21px;
+		letter-spacing: -0.0882353px;
+	}
 }
 .image-description--w-420 {
 	/* 2 Block model */

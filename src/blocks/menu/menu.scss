@@ -281,14 +281,6 @@ li.current_page_item::before {
 	margin: 0;
 	margin-bottom: 6px;
 
-	/* 3 Typography */
-	font-family: $font-second;
-	font-size: 16px;
-	font-weight: 500;
-	line-height: 22px;
-	color: #000000;
-	letter-spacing: -0.0984615px;
-
 	/* 5 Animation */
 	transition: all 0.4s ease;
 	@media (min-width: 768px) {
@@ -298,11 +290,6 @@ li.current_page_item::before {
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin-bottom: 10px;
-
-		/* 3 Typography */
-		font-size: 20px;
-		line-height: 28px;
-		letter-spacing: -0.123077px;
 	}
 }
 .menu__level-2-link:hover .menu__info-title,

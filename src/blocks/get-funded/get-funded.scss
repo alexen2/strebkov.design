@@ -346,7 +346,7 @@
 	/* 2 Block model */
 	width: 100%;
 }
-.get-funded__number-body .h2 {
+.get-funded__number-body .h2-2 {
 	/* 2 Block model */
 	margin-bottom: 20px;
 	@media (min-width: 768px) {
@@ -580,26 +580,8 @@
 	color: #000000;
 	letter-spacing: -0.082353px;
 }
-.get-funded__phase-top p {
-	/* 2 Block model */
-	display: block;
-	margin: 0;
-
-	/* 3 Typography */
-	font-family: $font-second;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 28px;
-	color: #000000;
-	letter-spacing: -0.110769px;
-	@media (min-width: 992px) {
-		/* 3 Typography */
-		font-size: 20px;
-		letter-spacing: -0.123077px;
-	}
-}
 .get-funded__phase-top--text-white span,
-.get-funded__phase-top--text-white p {
+.get-funded__phase-top--text-white .h3 {
 	/* 3 Typography */
 	color: #ffffff;
 }
@@ -689,7 +671,7 @@
 		padding-left: 66px;
 	}
 }
-.get-funded__phase-body .text-lg-two {
+.get-funded__phase-body .text {
 	/* 2 Block model */
 	margin-bottom: 9px;
 	@media (min-width: 768px) {
@@ -697,7 +679,7 @@
 		margin-bottom: 11px;
 	}
 }
-.get-funded__phase-body .text-lg-two:last-child {
+.get-funded__phase-body .text:last-child {
 	/* 2 Block model */
 	margin-bottom: 0;
 }
@@ -981,7 +963,7 @@
 		margin-bottom: 14px;
 	}
 }
-.get-funded__investment-info .h2 {
+.get-funded__investment-info .h2-2 {
 	/* 2 Block model */
 	margin-bottom: 78px;
 	@media (min-width: 768px) {
@@ -1027,7 +1009,7 @@
 		letter-spacing: -0.246154px;
 	}
 }
-.get-funded__investment-bottom .text-lg {
+.get-funded__investment-bottom .small-text {
 	/* 2 Block model */
 	max-width: 300px;
 
@@ -1045,7 +1027,7 @@
 
 	/* 2 Block model */
 	display: block;
-	width: 855px;
+	width: 795px;
 
 	/* 4 Visual */
 	transform: translate(-6%);
@@ -1054,14 +1036,14 @@
 		left: 50%;
 
 		/* 2 Block model */
-		width: 714px;
+		width: 718px;
 
 		/* 4 Visual */
 		transform: translate(-51.1%);
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		width: 857px;
+		width: 858px;
 
 		/* 4 Visual */
 		transform: translate(-56.5%);
@@ -1075,7 +1057,7 @@
 	}
 	@media (min-width: 1400px) {
 		/* 2 Block model */
-		width: 1105px;
+		width: 1098px;
 	}
 }
 .get-funded__block-img-2 {
@@ -1101,7 +1083,7 @@
 
 	/* 2 Block model */
 	display: block;
-	width: 864px;
+	width: 402px;
 
 	/* 4 Visual */
 	transform: translate(-20.7%);
@@ -1110,24 +1092,28 @@
 		left: 50%;
 
 		/* 2 Block model */
-		width: 847px;
+		width: 849px;
 
 		/* 4 Visual */
 		transform: translate(-50.5%);
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		width: 1060px;
+		width: 1048px;
 
 		/* 4 Visual */
-		transform: translate(-49.99%);
+		transform: translate(-51.99%);
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
-		width: 1258px;
+		width: 1100px;
 
 		/* 4 Visual */
 		transform: translate(-50.5%);
+	}
+	@media (min-width: 1400px) {
+		/* 2 Block model */
+		width: 1258px;
 	}
 }
 .get-funded__block-img-3 {
@@ -1152,16 +1138,16 @@
 
 	/* 2 Block model */
 	display: block;
-	width: 625px;
+	width: 396px;
 	@media (min-width: 768px) {
 		/* 1 Positioning */
 		left: 50%;
 
 		/* 2 Block model */
-		width: 910px;
+		width: 768px;
 
 		/* 4 Visual */
-		transform: translateX(-42.5%);
+		transform: translateX(-49.5%);
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
@@ -1181,7 +1167,7 @@
 
 	/* 2 Block model */
 	display: block;
-	width: 862px;
+	width: 375px;
 
 	/* 4 Visual */
 	transform: translate(-20%);
@@ -1194,10 +1180,10 @@
 		left: 50%;
 
 		/* 2 Block model */
-		width: 1071px;
+		width: 768px;
 
 		/* 4 Visual */
-		transform: translateX(-52.5%);
+		transform: translateX(-50.5%);
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
@@ -1218,7 +1204,7 @@
 
 	/* 2 Block model */
 	display: block;
-	width: 745px;
+	width: 480px;
 	@media (min-width: 576px) {
 		/* 4 Visual */
 		transform: translateX(5%);
@@ -1227,12 +1213,15 @@
 		/* 1 Positioning */
 		left: 50%;
 
+		/* 2 Block model */
+		width: 820px;
+
 		/* 4 Visual */
 		transform: translateX(-50%);
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		width: 1033px;
+		width: 1060px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */

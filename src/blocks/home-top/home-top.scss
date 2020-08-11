@@ -200,14 +200,6 @@
 	/* 2 Block model */
 	padding-top: 20px;
 	margin: 0;
-
-	/* 3 Typography */
-	font-family: $font-main;
-	font-size: 13px;
-	font-weight: 375;
-	line-height: 17px;
-	color: #000000;
-	letter-spacing: -0.0764706px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		padding-top: 21px;
@@ -217,11 +209,6 @@
 		max-width: 350px;
 		padding-top: 0;
 		margin-left: 29px;
-
-		/* 3 Typography */
-		font-size: 14px;
-		line-height: 21px;
-		letter-spacing: -0.0823529px;
 	}
 }
 

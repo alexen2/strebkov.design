@@ -1,0 +1,20 @@
+.table-bold {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-third;
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 19px;
+	color: #000000;
+	letter-spacing: -0.0923076px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-family: $font-second;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 21px;
+		letter-spacing: -0.0882353px;
+	}
+}

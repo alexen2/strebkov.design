@@ -36,9 +36,22 @@
 	/* 2 Block model */
 	display: inline-block;
 	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	color: #000000;
+	letter-spacing: -0.123077px;
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		max-width: 380px;
+
+		/* 3 Typography */
+		font-size: 24px;
+		line-height: 30px;
+		letter-spacing: -0.147692px;
 	}
 }
 .cat-item--white .cat-item__title {

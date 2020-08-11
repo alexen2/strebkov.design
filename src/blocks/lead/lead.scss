@@ -13,28 +13,27 @@
 		/* 3 Typography */
 		font-size: 22px;
 		line-height: 32px;
-		letter-spacing: -0.105882px;
+		letter-spacing: normal;
 	}
 }
-.lead-bold {
-	/* 2 Block model */
-	margin: 0;
-
+.lead--bold {
 	/* 3 Typography */
 	font-family: $font-second;
-	font-size: 24px;
 	font-weight: 500;
-	line-height: 34px;
-	color: #000000;
-	letter-spacing: -0.147692px;
-	@media (min-width: 992px) {
-		/* 3 Typography */
-		font-size: 30px;
-		line-height: 40px;
-		letter-spacing: -0.184615px;
-	}
 }
-.lead-bold__bg-yelow {
-	/* 4 Visual */
-	background-color: #ffec99;
+.lead--mb-lg {
+	/* 2 Block model */
+	margin-bottom: 60px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 72px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 78px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 75px;
+	}
 }

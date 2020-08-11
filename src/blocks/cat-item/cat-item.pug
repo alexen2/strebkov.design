@@ -2,7 +2,7 @@ mixin cat-item(data)
 	article.cat-item(class!=attributes.class)
 		a.cat-item__link(href!=data.link)
 			div.cat-item__content
-				h3.h3.cat-item__title(class=data.color_company)!=data.title
+				h3.cat-item__title(class=data.color_company)!=data.title
 			picture.cat-item__bg
 				source(
 					srcset="images/"+data.img+".png, images/"+data.img+"@2x.png 2x",

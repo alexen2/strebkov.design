@@ -3,6 +3,28 @@
 	margin: 0;
 
 	/* 3 Typography */
+	font-family: $font-second;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 34px;
+	color: #000000;
+	letter-spacing: -0.147692px;
+	@media (min-width: 992px) {
+		/* 3 Typography */
+		font-size: 30px;
+		line-height: 40px;
+		letter-spacing: -0.184615px;
+	}
+}
+.h2__bg-yelow {
+	/* 4 Visual */
+	background-color: #ffec99;
+}
+.h2-2 {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
 	font-family: $font-third;
 	font-size: 30px;
 	font-weight: 900;
@@ -16,7 +38,7 @@
 		letter-spacing: -0.246154px;
 	}
 }
-.h2--mb-sm {
+.h2-2--mb-sm {
 	/* 2 Block model */
 	margin-bottom: 30px;
 }

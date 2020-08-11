@@ -6,7 +6,10 @@ mixin item-blog(data)
 		div.item-blog__time
 			span!=data.time
 		div.item-blog__info
-			h2.item-blog__title!=data.title
+			if data.h2_title
+				h2.h2.item-blog__title!=data.h2_title
+			else 
+				h2.item-blog__title!=data.title
 			if data.desc
 				p.item-blog__desc!=data.desc
 

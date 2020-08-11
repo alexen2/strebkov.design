@@ -47,24 +47,24 @@
 }
 .uxdesigntoolkit__title {
 	/* 2 Block model */
-	margin: 0;
 	margin-bottom: 15px;
 
 	/* 3 Typography */
-	font-family: $font-third;
-	font-size: 30px;
-	font-weight: 900;
-	line-height: 34px;
-	color: #000000;
-	letter-spacing: -0.184615px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		margin-bottom: 20px;
 	}
+}
+.uxdesigntoolkit__body {
+	/* 2 Block model */
+	margin-bottom: 10px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 30px;
+	}
 	@media (min-width: 992px) {
-		/* 3 Typography */
-		font-size: 40px;
-		line-height: 50px;
+		/* 2 Block model */
+		margin-bottom: 40px;
 	}
 }
 .uxdesigntoolkit__body .container {
@@ -111,37 +111,37 @@
 
 	/* 2 Block model */
 	display: block;
-	width: 913px;
+	width: 375px;
 
 	/* 4 Visual */
 	transform: translate(-46.2%, 0);
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		width: 768px;
+		width: 689px;
 
 		/* 4 Visual */
 		transform: translate(-50.7%, 0);
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		width: 949px;
+		width: 940px;
 
 		/* 4 Visual */
 		transform: translate(-49.5%, 0);
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
-		width: 1064px;
+		width: 1180px;
 
 		/* 4 Visual */
 		transform: translateX(-42.5%);
 	}
 }
-.uxdesigntoolkit__info .text-lg-two {
+.uxdesigntoolkit__info .text {
 	/* 2 Block model */
 	margin-bottom: 10px;
 }
-.uxdesigntoolkit__info .text-lg-bold {
+.uxdesigntoolkit__info .h3 {
 	/* 2 Block model */
 	margin-top: 46px;
 	margin-bottom: 18px;
