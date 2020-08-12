@@ -1027,10 +1027,10 @@
 
 	/* 2 Block model */
 	display: block;
-	width: 795px;
+	width: 530px;
 
 	/* 4 Visual */
-	transform: translate(-6%);
+	transform: translate(-4%);
 	@media (min-width: 768px) {
 		/* 1 Positioning */
 		left: 50%;
@@ -1080,17 +1080,19 @@
 .get-funded__block-img-2 img {
 	/* 1 Positioning */
 	position: relative;
+	left: 50%;
 
 	/* 2 Block model */
 	display: block;
-	width: 402px;
+	width: 881px;
 
 	/* 4 Visual */
-	transform: translate(-20.7%);
+	transform: translate(-42.7%);
+	@media (min-width: 576px) {
+		/* 4 Visual */
+		transform: translate(-40%);
+	}
 	@media (min-width: 768px) {
-		/* 1 Positioning */
-		left: 50%;
-
 		/* 2 Block model */
 		width: 849px;
 
@@ -1135,19 +1137,24 @@
 .get-funded__block-img-3 img {
 	/* 1 Positioning */
 	position: relative;
+	left: 50%;
 
 	/* 2 Block model */
 	display: block;
-	width: 396px;
-	@media (min-width: 768px) {
-		/* 1 Positioning */
-		left: 50%;
+	width: 740px;
 
+	/* 4 Visual */
+	transform: translate(-33.7%);
+	@media (min-width: 576px) {
+		/* 4 Visual */
+		transform: translate(-50%);
+	}
+	@media (min-width: 768px) {
 		/* 2 Block model */
-		width: 768px;
+		width: 976px;
 
 		/* 4 Visual */
-		transform: translateX(-49.5%);
+		transform: translateX(-47.5%);
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
@@ -1164,23 +1171,21 @@
 .get-funded__block-img-4 img {
 	/* 1 Positioning */
 	position: relative;
+	left: 50%;
 
 	/* 2 Block model */
 	display: block;
-	width: 375px;
+	width: 800px;
 
 	/* 4 Visual */
-	transform: translate(-20%);
+	transform: translate(-45%);
 	@media (min-width: 576px) {
 		/* 4 Visual */
-		transform: translate(-10%);
+		transform: translate(-48%);
 	}
 	@media (min-width: 768px) {
-		/* 1 Positioning */
-		left: 50%;
-
 		/* 2 Block model */
-		width: 768px;
+		width: 1071px;
 
 		/* 4 Visual */
 		transform: translateX(-50.5%);
@@ -1200,15 +1205,11 @@
 .get-funded__block-img-5 img {
 	/* 1 Positioning */
 	position: relative;
-	left: -15px;
+	left: -40px;
 
 	/* 2 Block model */
 	display: block;
-	width: 480px;
-	@media (min-width: 576px) {
-		/* 4 Visual */
-		transform: translateX(5%);
-	}
+	width: 824px;
 	@media (min-width: 768px) {
 		/* 1 Positioning */
 		left: 50%;
