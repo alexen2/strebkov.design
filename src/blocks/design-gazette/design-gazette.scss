@@ -1,0 +1,72 @@
+.design-gazette {
+	/* 2 Block model */
+	display: block;
+}
+.design-gazette__attention {
+	/* 2 Block model */
+	margin-bottom: 16px;
+}
+.design-gazette__title {
+	/* 2 Block model */
+	margin-bottom: 30px;
+}
+.design-gazette__body {
+	/* 2 Block model */
+	margin-bottom: 29px;
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		max-width: 430px;
+	}
+}
+.design-gazette__text {
+	/* 2 Block model */
+	margin-bottom: 30px;
+}
+.design-gazette__list {
+	/* 2 Block model */
+	padding: 0;
+	margin: 0;
+
+	/* 4 Visual */
+	list-style: none;
+}
+.design-gazette__list > li {
+	/* 1 Positioning */
+	position: relative;
+
+	/* 2 Block model */
+	padding-left: 25px;
+	margin-bottom: 10px;
+	&:last-child {
+		/* 2 Block model */
+		margin-bottom: 0;
+	}
+	&::before {
+		/* 1 Positioning */
+		position: absolute;
+		top: 11px;
+		left: 1px;
+
+		/* 2 Block model */
+		display: block;
+		width: 9px;
+		height: 1px;
+
+		/* 4 Visual */
+		content: "";
+		background-color: #000000;
+		@media (min-width: 992px) {
+			/* 1 Positioning */
+			top: 13px;
+		}
+	}
+}
+.design-gazette__desc {
+	/* 2 Block model */
+	width: 100%;
+	max-width: 300px;
+	margin: 0 auto;
+
+	/* 3 Typography */
+	text-align: center;
+}

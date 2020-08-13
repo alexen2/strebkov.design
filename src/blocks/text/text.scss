@@ -16,3 +16,16 @@
 		letter-spacing: -0.105882px;
 	}
 }
+.text-atenchen {
+	/* 2 Block model */
+	display: inline-block;
+	margin: 0;
+
+	/* 3 Typography */
+	font-family: $font-third;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 30px;
+	color: #ff5900;
+	letter-spacing: -0.685px;
+}
