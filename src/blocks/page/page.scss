@@ -52,6 +52,10 @@
 	margin-bottom: 10px;
 }
 .page a {
+	/* 3 Typography */
+	color: #ff7100;
+	text-decoration: none;
+
 	/* 5 Animation */
 	transition: all 0.4s ease;
 }
@@ -59,7 +63,7 @@
 .page a:active,
 .page a:focus {
 	/* 3 Typography */
-	color: #ff7100;
+	text-decoration: underline;
 
 	/* 4 Visual */
 	opacity: 0.7;

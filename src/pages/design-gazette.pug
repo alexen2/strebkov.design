@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+	include include/head.pug
+	+head('Uxdesigntoolkit - Strebkov Design')
+
+	body
+		div.content-only.wrapper-fix
+			include ../blocks/mixins.pug
+
+			div.content-only__body
+
+				include ../blocks/header/--in-header.pug
+
+				include ../blocks/design-gazette/design-gazette.pug
+
+			div.content-only__footer
+				include ../blocks/footer/footer-content-only.pug
+
+		include include/script.pug
