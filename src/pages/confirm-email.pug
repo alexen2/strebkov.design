@@ -4,9 +4,17 @@ html(lang="en")
 	+head('Confirm Email - Strebkov Design')
 
 	body
-		div.wrapper-fix
+		div.content-only.wrapper-fix
 			include ../blocks/mixins.pug
 
-			include ../blocks/confirm-email/confirm-email.pug
+			div.content-only__body
+				include ../blocks/confirm-email/confirm-email.pug
+
+			div.content-only__footer
+				div.container
+					div.row
+						div.col-12.col-md-5.offset-xl-2
+							footer.footer
+								p 2019&nbsp;&copy; Strebkov Design. All rights reserved.
 
 		include include/script.pug

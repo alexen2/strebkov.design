@@ -1,0 +1,19 @@
+.content-only__footer {
+	/* 2 Block model */
+	padding-top: 50px;
+	padding-bottom: 30px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 75px;
+		padding-bottom: 30px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-top: 73px;
+		padding-bottom: 65px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-top: 60px;
+	}
+}

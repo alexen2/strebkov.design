@@ -111,10 +111,14 @@
 
 	/* 2 Block model */
 	display: block;
-	width: 375px;
+	width: 310px;
 
 	/* 4 Visual */
-	transform: translate(-46.2%, 0);
+	transform: translate(-50.2%, 0);
+	@media (min-width: 375px) {
+		/* 2 Block model */
+		width: 375px;
+	}
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		width: 689px;
@@ -127,14 +131,18 @@
 		width: 940px;
 
 		/* 4 Visual */
-		transform: translate(-49.5%, 0);
+		transform: translate(-51.5%, 0);
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
 		width: 1180px;
 
 		/* 4 Visual */
-		transform: translateX(-42.5%);
+		transform: translateX(-46%);
+	}
+	@media (min-width: 1400px) {
+		/* 4 Visual */
+		transform: translateX(-45.5%);
 	}
 }
 .uxdesigntoolkit__info .text {
@@ -153,24 +161,5 @@
 		/* 2 Block model */
 		margin-top: 40px;
 		margin-bottom: 22px;
-	}
-}
-.uxdesigntoolkit__bottom {
-	/* 2 Block model */
-	padding-top: 50px;
-	padding-bottom: 30px;
-	@media (min-width: 768px) {
-		/* 2 Block model */
-		padding-top: 75px;
-		padding-bottom: 30px;
-	}
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		padding-top: 73px;
-		padding-bottom: 65px;
-	}
-	@media (min-width: 1200px) {
-		/* 2 Block model */
-		padding-top: 60px;
 	}
 }

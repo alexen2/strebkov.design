@@ -1,16 +1,13 @@
 .confirm-email {
 	/* 2 Block model */
 	padding-top: 40px;
-	padding-bottom: 91px;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		padding-top: 44px;
-		padding-bottom: 66px;
 	}
 	@media (min-width: 922px) {
 		/* 2 Block model */
 		padding-top: 52px;
-		padding-bottom: 116px;
 	}
 }
 .confirm-email__top {
@@ -255,21 +252,5 @@
 
 		/* 4 Visual */
 		transform: translateX(-50%);
-	}
-}
-.confirm-email__footer {
-	/* 2 Block model */
-	padding-top: 51px;
-	@media (min-width: 768px) {
-		/* 2 Block model */
-		padding-top: 58px;
-	}
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		padding-top: 70px;
-	}
-	@media (min-width: 1200px) {
-		/* 2 Block model */
-		padding-top: 100px;
 	}
 }
