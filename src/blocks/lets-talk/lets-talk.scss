@@ -1,7 +1,7 @@
 .lets-talk {
 	/* 2 Block model */
 	width: 100%;
-	padding: 25px 30px 47px 30px;
+	padding: 30px 30px 50px 30px;
 
 	/* 4 Visual */
 	background-color: #ff5900;
@@ -13,7 +13,7 @@
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		max-width: 320px;
-		padding: 34px 30px 41px 32px;
+		padding: 34px 30px 41px 30px;
 		margin-bottom: 0;
 	}
 	@media (min-width: 992px) {
@@ -28,7 +28,7 @@
 }
 .lets-talk__title {
 	/* 2 Block model */
-	margin: 0 0 14px 0;
+	margin: 0 0 12px 0;
 
 	/* 3 Typography */
 	font-family: $font-third;
@@ -37,6 +37,10 @@
 	line-height: 1.4;
 	color: #ffffff;
 	letter-spacing: -0.19px;
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin: 0 0 14px 0;
+	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
 		margin: 0 0 10px 0;
