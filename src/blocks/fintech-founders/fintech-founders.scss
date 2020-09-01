@@ -1,0 +1,20 @@
+.fintech-founders img {
+  /* 2 Block model */
+  display: block;
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    max-width: 768px;
+  }
+  @media(min-width: 992px) {
+    /* 2 Block model */
+    max-width: 1024px;
+  }
+  @media(min-width: 1200px) {
+    /* 2 Block model */
+    max-width: 1440px;
+  }
+}

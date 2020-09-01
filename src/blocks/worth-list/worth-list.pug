@@ -1,6 +1,8 @@
 mixin worth-list(data)
 	div.worth-list(class!=attributes.class)
-		h3.h3.worth-list__title!=data.title
+		if data.title
+			h3.h3.worth-list__title!=data.title
+			
 		ul.worth-list__list
 			- for (var i = 0; i < data.items.length; i++)
 				li.worth-list__item

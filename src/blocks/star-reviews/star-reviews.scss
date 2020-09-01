@@ -1,13 +1,12 @@
 .star-reviews {
 	/* 2 Block model */
-	margin-bottom: 31px;
+	padding-top: 28px;
+	padding-bottom: 28px;
+
 	@media (min-width: 768px) {
 		/* 2 Block model */
-		margin-bottom: 80px;
-	}
-	@media (min-width: 992px) {
-		/* 2 Block model */
-		margin-bottom: 60px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 }
 .star-reviews__item {

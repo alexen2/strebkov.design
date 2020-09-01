@@ -1,0 +1,14 @@
+mixin worth-list-grid(data)
+  div.worth-list-grid
+    div.row
+      div.col-12.col-md-4
+        div.worth-list-grid__item
+          +worth-list(data.item1)
+
+      div.col-12.col-md-4
+        div.worth-list-grid__item.worth-list-grid__item--xl-pl
+          +worth-list(data.item2)
+          
+      div.col-12.col-md-4
+        div.worth-list-grid__item.worth-list-grid__item--xl-pl
+          +worth-list(data.item3)

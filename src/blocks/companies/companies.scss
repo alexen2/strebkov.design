@@ -4,21 +4,25 @@
 	width: 100%;
 	max-width: 315px;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	padding: 25px 0;
 	@media (min-width: 768px) {
 		/* 2 Block model */
 		max-width: none;
 		margin: 0;
-		margin-bottom: 80px;
+		padding-top: 25px;
+		padding-bottom: 80px;
 	}
 	@media (min-width: 992px) {
 		/* 2 Block model */
+		padding-top: 70px;
 		padding-right: 32px;
-		margin-bottom: 91px;
+		padding-bottom: 90px;
 	}
 	@media (min-width: 1200px) {
 		/* 2 Block model */
+		padding-top: 10px;
 		padding-right: 0;
+		padding-bottom: 130px;
 	}
 }
 .companies__list {

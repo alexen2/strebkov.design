@@ -1,0 +1,35 @@
+.worth-list-grid {
+	@media(min-width: 768px) {
+		/* 2 Block model */
+		padding-left: 37px;
+    padding-right: 50px;
+	}
+	@media(min-width: 992px) {
+		/* 2 Block model */
+		padding-left: 60px;
+	}
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		padding-left: 10px;
+    padding-right: 0;
+	}
+}
+.worth-list-grid__item {
+	/* 2 Block model */
+  padding-bottom: 40px;
+  
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-bottom: 0;
+	}
+}
+.worth-list-grid .col-12:last-child .worth-list-grid__item {
+	/* 2 Block model */
+	padding-bottom: 0;
+}
+.worth-list-grid__item--xl-pl {
+	@media(min-width: 1200px) {
+		/* 2 Block model */
+		padding-left: 25px;
+	}
+}

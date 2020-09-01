@@ -1,0 +1,14 @@
+mixin block-header(data)
+  div.block-header
+    div.container
+      div.row
+        div.col-12.col-md-10.col-xl-9.offset-xl-1
+          div.block-header__body
+            div.block-header__number 
+              span!=data.number
+
+            div.block-header__content
+              h2.h2-2!=data.title
+              
+              if data.text
+                p.lead!=data.text

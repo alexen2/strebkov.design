@@ -1,0 +1,50 @@
+.plan-item {
+  /* 2 Block model */
+  width: 100%;
+  max-width: 335px;
+  padding: 30px 30px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  /* 4 Visual */
+  background-color: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 2px 40px rgba(219, 222, 231, 0.5);
+  border-radius: 6px;
+}
+.plan-item__desc {
+  /* 2 Block model */
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+
+  /* 3 Typography */
+  font-size: 16px;
+	font-weight: 300;
+	line-height: 24px;
+	color: #707070;
+	letter-spacing: -0.09px;
+}
+.plan-item__list {
+  /* 2 Block model */
+  padding-bottom: 28px;
+}
+.plan-item__price {
+  /* 3 Typography */
+  font-family: $font-second;
+  font-size: 26px;
+	font-weight: 500;
+	line-height: 34px;
+	color: #FF6600;
+	letter-spacing: -0.16px;
+}
+.plan-item__price span {
+  /* 2 Block model */
+  display: inline-block;
+  padding-left: 10px;
+
+  /* 3 Typography */
+  font-size: 16px;
+	line-height: 28px;
+	letter-spacing: -0.1px;
+}

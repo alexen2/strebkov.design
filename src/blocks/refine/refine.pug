@@ -1,35 +1,18 @@
-section.get-funded
+div.refine
 	div.container
-		include ../home-top/home-top--getfunded.pug
-	
-	include ../star-reviews/star-reviews.pug
-	
-	div.block.block--sm.gray-dark.get-funded__email
-		div.container
-			div.get-funded__body-img
-				img.get-funded__icon.get-funded__icon-01(src="images/get-funded__icon-01.svg" alt="icon")
-				img.get-funded__icon.get-funded__icon-02(src="images/get-funded__icon-02.svg" alt="icon")
-				img.get-funded__icon.get-funded__icon-03(src="images/get-funded__icon-03.svg" alt="icon")
-				img.get-funded__icon.get-funded__icon-04(src="images/get-funded__icon-04.svg" alt="icon")
-				img.get-funded__icon.get-funded__icon-05(src="images/get-funded__icon-05.svg" alt="icon")
-				img.get-funded__icon.get-funded__icon-06(src="images/get-funded__icon-06.svg" alt="icon")
-				img.get-funded__icon.get-funded__icon-07(src="images/get-funded__icon-07.svg" alt="icon")
-				img.get-funded__icon.get-funded__icon-08(src="images/get-funded__icon-08.svg" alt="icon")
+		include ../home-top/home-top--refine.pug
 
-				div.get-funded__block-img-1
-					+picture({img: 'email-request-hd', img_320: 'email-request-mobile', img_768: 'email-request-tablet', img_992: 'email-request-desktop', img_1200: 'email-request-hd', alt: 'email'})
-	
-	section.block.block--top-l
+	section.block
+		div.refine__img1
+			include ../fintech-founders/fintech-founders.pug
+
+	section.block.block--bg.gray
 		+block-header({
 			number: 1,
-			title: 'Get full clarity on&nbsp;your MVP scope. Only focus on&nbsp;what&rsquo;s essential.',
-			text: 'Start simple, get fancy later&nbsp;&mdash; because we&rsquo;ve found that works well. Using tools like user personas, storyboards, empathy maps, a&nbsp;feature matrix and a&nbsp;How Might We&nbsp;exercise, we&rsquo;ll help you clearly define the scope for the MVP, whether it&rsquo;s a&nbsp;web or&nbsp;mobile app. You&rsquo;ll get a&nbsp;professional design style for your app that you can add to&nbsp;and refine further down the road, and also a&nbsp;knockout pitch deck to&nbsp;impress potential investors even more.'
+			title: 'Professional, proactive work on&nbsp;any product design project'
 		})
-		
-		div.get-funded__block-img-2
-			+picture({img: 'mvp-scope-hd', img_320: 'mvp-scope-mobile', img_768: 'mvp-scope-tablet', img_992: 'mvp_scope-desktop', img_1200: 'mvp-scope-hd', alt: 'Get full clarity on your MVP scope'})
 
-		div.container
+		div.container.margin-top-negative--m
 			div.row
 				div.col-12.col-xl-10.offset-xl-1
 					+worth-list-grid({
@@ -63,15 +46,8 @@ section.get-funded
 							]
 						}
 					})
-
-	section.block
-		+block-header({
-			number: 2,
-			title: 'Rely on&nbsp;our proven process. Get a&nbsp;better product in&nbsp;less time.',
-			text: 'At&nbsp;Strebkov Design we&rsquo;re experts at&nbsp;elevating fintech brands with apps and online products that your customers will need and want, and part of&nbsp;the reason why we&rsquo;re so&nbsp;good at&nbsp;what we&nbsp;do&nbsp;is&nbsp;because of&nbsp;our 3-phase process. We&rsquo;ve spent 10&nbsp;years shaping it&nbsp;and now we&nbsp;use it&nbsp;on&nbsp;every project.'
-		})
-
-		include ../phase/phase.pug
+		
+	include ../star-reviews/star-reviews.pug
 
 	section.block
 		+block-header({
@@ -162,19 +138,8 @@ section.get-funded
 		div.get-funded__block-img-5
 			+picture({img: 'launch-support-hd', img_320: 'launch-support-mobile', img_768: 'launch-support-tablet', img_992: 'launch-support-desktop', img_1200: 'launch-support-hd', alt: 'Development support'})
 
-	section.block
-		div.get-funded__investment-top
-			div.container
-				div.row
-					div.col-12.col-md-11.offset-md-1
-						div.get-funded__investment-info
-							h2.h2-2 Investment and Timeframe
-							span.get-funded__investment-price $5,995
-
-						div.get-funded__block-img-6
-							+picture({img: 'get-funded__img-06-1200', img_320: 'get-funded__img-06-320', img_768: 'get-funded__img-06-768', img_992: 'get-funded__img-06-992', img_1200: 'get-funded__img-06-1200', alt: 'Investment and Timeframe'})
-
-				div.row
-					div.col-12.col-md-11.offset-md-1
-						div.get-funded__investment-bottom
-							p.small-text A&nbsp;free 20-minute call that gets you full clarity on&nbsp;timing and budget for your project.
+	section.block.margin-top-negative--xl
+		div.container
+			div.row
+				div.col-12.col-xl-10.offset-xl-1
+					include ../plans/plans.pug

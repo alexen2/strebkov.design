@@ -1,0 +1,110 @@
+.block-header {
+  /* 2 Block model */
+  margin-bottom: 50px;
+  
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-bottom: 60px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 70px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-bottom: 110px;
+	}
+}
+.block-header__body {
+  /* 2 Block model */
+	display: flex;
+	flex-direction: column;
+  align-items: flex-start;
+  
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		flex-direction: row;
+		padding-left: 37px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		padding-left: 60px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		padding-left: 0;
+	}
+}
+.block-header__number {
+  /* 2 Block model */
+	display: flex;
+	flex: 0 0 60px;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	margin-bottom: 24px;
+
+	/* 3 Typography */
+	font-family: $font-third;
+	font-size: 30px;
+	font-weight: 900;
+	line-height: 34px;
+	color: #000000;
+
+	/* 4 Visual */
+	background-color: #ffd933;
+  border-radius: 50%;
+  
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS styles go here */
+		position: relative;
+	}
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		flex: 0 0 80px;
+		width: 80px;
+		height: 80px;
+
+		/* 3 Typography */
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+.block-header__number span {
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		/* IE10+ CSS styles go here */
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		/* 4 Visual */
+		transform: translate(-50%, -32%);
+	}
+}
+.block-header__content {
+	/* 2 Block model */
+	width: 100%;
+}
+.block-header__content .h2-2 {
+	/* 2 Block model */
+  margin-bottom: 20px;
+  
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		padding-top: 15px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-bottom: 40px;
+	}
+}
+.block-header__content .h2-2:last-child {
+	/* 2 Block model */
+	margin-bottom: 0;
+}

@@ -1,0 +1,12 @@
+mixin plan-item(data)
+  div.plan-item
+    div.plan-item__body
+      h3.h3-2.plan-item__title!=data.title
+
+      p.plan-item__desc!=data.desc
+
+      div.plan-item__list
+        +worth-list({items: data.items})(class="worth-list--sm")
+
+    div.plan-item__price!=data.price 
+      span &nbsp;per month

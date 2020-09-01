@@ -79,6 +79,29 @@ ul {
 		width: 1180px;
 	}
 }
+.margin-top-negative--m {
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-top: -45px;
+	}
+}
+.margin-top-negative--xl {
+	/* 2 Block model */
+	margin-top: -45px;
+
+	@media (min-width: 768px) {
+		/* 2 Block model */
+		margin-top: -100px;
+	}
+	@media (min-width: 992px) {
+		/* 2 Block model */
+		margin-top: -45px;
+	}
+	@media (min-width: 1200px) {
+		/* 2 Block model */
+		margin-top: -65px;
+	}
+}
 .mob-show {
 	/* 2 Block model */
 	display: none;

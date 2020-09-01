@@ -1,0 +1,47 @@
+div.plans
+  div.row.plans__header
+    div.col-12
+      h2.h2-2 Pricing plans
+
+  div.row
+    div.col-12.col-md-4
+      +plan-item({
+        title: 'Refine™ S',
+        desc: 'Perfect solution for occasional design projects',
+        items: [
+          'Dedicated Art Director',
+          'Dedicated designer',
+          '1 UX/UI review per month',
+          'Quarterly product design sessions1'
+        ],
+        price: '$1,595'
+      })
+
+    div.col-12.col-md-4
+      +plan-item({
+        title: 'Refine™ M',
+        desc: 'Replaces 1 full-time in-house team member',
+        items: [
+          'Dedicated Art Director',
+          'Dedicated designer',
+          '2 UX/UI reviews per month',
+          'Weekly 30-minute meetings',
+          'Quarterly product design sessions'
+        ],
+        price: '$2,995'
+      })
+
+    div.col-12.col-md-4
+      +plan-item({
+        title: 'Refine™ L',
+        desc: 'Replaces full-time in-house product design team of 2-3',
+        items: [
+          'Art Director',
+          'Dedicated designer',
+          'Illustrator',
+          '2 UX/UI reviews per month',
+          'Weekly 1-hour meeting',
+          'Quarterly product design sessions'
+        ],
+        price: '$6,995'
+      })

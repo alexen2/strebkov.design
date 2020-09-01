@@ -14,12 +14,12 @@
 .page h2 {
 	/* 2 Block model */
 	margin: 0;
-	margin-top: 39px;
-	margin-bottom: 26px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+
 	@media (min-width: 992px) {
 		/* 2 Block model */
-		margin-top: 64px;
-		margin-bottom: 30px;
+		margin-bottom: 22px;
 	}
 }
 .page h2:first-child {
@@ -29,6 +29,7 @@
 .page h3 {
 	/* 2 Block model */
 	margin: 0;
+	margin-top: 40px;
 	margin-bottom: 22px;
 }
 .page h4 {

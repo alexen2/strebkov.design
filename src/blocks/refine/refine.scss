@@ -1,0 +1,34 @@
+.refine {
+  /* 1 Positioning */
+
+  /* 2 Block model */
+
+  /* 3 Typography */
+
+  /* 4 Visual */
+
+  /* 5 Animation */
+
+  /* 6 Misc */
+}
+.refine__img1 {
+  /* 2 Block model */
+  margin-top: -20px;
+  margin-bottom: -60px;
+
+  @media(min-width: 768px) {
+    /* 2 Block model */
+    margin-top: -32px;
+    margin-bottom: -100px;
+  }
+  @media(min-width: 992px) {
+    /* 2 Block model */
+    margin-top: -25px;
+    margin-bottom: -70px;
+  }
+  @media(min-width: 1200px) {
+    /* 2 Block model */
+    margin-top: -30px;
+    margin-bottom: -100px;
+  }
+}

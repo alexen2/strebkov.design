@@ -1,0 +1,27 @@
+.worth-list--sm .worth-list__item {
+	/* 2 Block model */
+	margin-bottom: 5px;
+}
+.worth-list--sm .worth-list__check {
+	/* 2 Block model */
+	display: flex;
+	flex: 0 0 12px;
+	align-items: center;
+	justify-content: center;
+	width: 12px;
+	height: 12px;
+	margin-right: 10px;
+}
+.worth-list--sm .worth-list__text.text {
+	/* 2 Block model */
+	margin: 0;
+
+	/* 3 Typography */
+	font-size: 14px;
+	line-height: 18px;
+}
+.worth-list--sm .icon {
+	/* 2 Block model */
+	width: 8px;
+	height: 8px;
+}

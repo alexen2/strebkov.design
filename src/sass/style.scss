@@ -63,13 +63,21 @@
 @import "../blocks/star-reviews/star-reviews";
 @import "../blocks/bottom-img/bottom-img";
 @import "../blocks/lets-keep/lets-keep";
+@import '../blocks/plan-item/plan-item.scss';
 
 // Main Blocks
 
+@import '../blocks/fintech-founders/fintech-founders.scss';
+@import '../blocks/plans/plans.scss';
+@import '../blocks/soft-logos/soft-logos.scss';
+@import '../blocks/phase/phase.scss';
+@import '../blocks/block/block.scss';
 @import "../blocks/header/header";
+@import '../blocks/block-header/block-header.scss';
 @import "../blocks/about/about";
 @import "../blocks/case/case";
 @import "../blocks/experts/experts";
+@import '../blocks/worth-list-grid/worth-list-grid.scss';
 @import "../blocks/case-cryptology/case-cryptology";
 @import "../blocks/case-updown/case-updown";
 @import "../blocks/case-broker/case-broker";
@@ -89,3 +97,4 @@
 @import "../blocks/content-only/content-only";
 @import "../blocks/footer/footer";
 @import "../blocks/main/main";
+@import '../blocks/refine/refine.scss';
