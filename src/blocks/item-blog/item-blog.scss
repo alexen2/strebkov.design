@@ -21,6 +21,7 @@
 	/* 2 Block model */
 	display: block;
 	width: 100%;
+	height: auto;
 	overflow: hidden;
 
 	/* 4 Visual */
@@ -52,7 +53,8 @@
 		letter-spacing: -0.0882353px;
 	}
 }
-.item-blog__title {
+.item-blog__title,
+.item-blog__title a { 
 	/* 2 Block model */
 	margin: 0;
 
@@ -63,6 +65,8 @@
 	line-height: 34px;
 	color: #000000;
 	letter-spacing: -0.147692px;
+	text-decoration: none;
+
 	@media (min-width: 992px) {
 		/* 3 Typography */
 		font-size: 22px;

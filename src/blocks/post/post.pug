@@ -2,8 +2,9 @@ section.post
 	div.post__top
 		div.container
 			div.row
-				div.col-12
+				div.col-12.col-md-9
 					h1.h0.post__title How Much Does It&nbsp;Cost to&nbsp;Build a&nbsp;Mobile App MVP?
+				div.col-12
 					span.post__time 8 min read
 					div.post__img
 						img(src="images/post__img-01.jpg" srcset="images/post__img-01.jpg 2x" alt="img" title="img")
@@ -13,16 +14,18 @@ section.post
 				div.col-2.post__mobile-show
 					div.post__share 
 						span.post__share-tex Share
-						ul.post__social
-							li.post__social__item
-								a.post__social-link(href="#" target="_blank" aria-label="instagram" title="Instagram")
-									+icon('icon--instagram-32', 'icon--32')
-							li.post__social__item
-								a.post__social-link(href="#" target="_blank" aria-label="twitter" title="Twitter")
-									+icon('icon--twitter-32', 'icon--32')
-							li.post__social__item
+						div.post__social
+							div.post__social__item
+								a.post__social-link(href="http://www.facebook.com/sharer.php?s=100&p[url]=<?php echo urlencode( $url ); ?>&p[title]=<?php echo $title ?>&p[summary]=<?php echo $summary ?>&p[images][0]=<?php echo $image_url ?>" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent" aria-label="facebook" title="Facebook")
+									+icon('icon--fb', 'icon--32')
+
+							div.post__social__item
+								a.post__social-link(href="http://twitter.com/share?text=<? the_title(); ?>&url=<?php echo $url; ?>" title="Share Twitter" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent" aria-label="Twitter")
+									+icon('icon--tw', 'icon--32')
+
+							div.post__social__item
 								a.post__social-link(href="#" target="_blank" aria-label="linkedin" title="Linkedin")
-									+icon('icon--linkedin-32', 'icon--32')
+									+icon('icon--li', 'icon--32')
 
 				div.col-12.col-md-9.col-lg-8
 					p.lead.post__text-top To&nbsp;make your finance app successful in&nbsp;2020, you&rsquo;re going to&nbsp;need to&nbsp;include features that your users want, and also think about how to&nbsp;attract them to&nbsp;your product and keep them loyal for the long term. Here&rsquo;s what we&nbsp;think you need to&nbsp;focus&nbsp;on:
