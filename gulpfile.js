@@ -54,6 +54,10 @@ let plumberCfg = {
 	}),
 };
 
+function exportWebP() {
+	
+}
+
 function style() {
 	return gulp
 		.src(path.src.style)
@@ -198,6 +202,7 @@ gulp.task(
 		resources_images,
 		resources_js,
 		resources_fonts,
-		resources_css
+		resources_css,
+		// exportWebP
 	)
 );

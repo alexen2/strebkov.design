@@ -471,7 +471,7 @@
 .post a {
 	/* 2 Block model */
 	display: inline-block;
-	margin-bottom: 8px;
+	// margin-bottom: 8px;
 
 	/* 3 Typography */
 	color: #ff6600;
@@ -489,4 +489,9 @@
 .post a:active {
 	/* 3 Typography */
 	text-decoration: none;
+}
+.post b {
+	/* 3 Typography */
+	font-family: $font-second;
+	font-weight: 500;
 }
